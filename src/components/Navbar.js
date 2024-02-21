@@ -6,29 +6,29 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   return (
-    <div className="navbar">Navbar
-    <div className="leftSide">
-        <img src={Logo} />
+    <div className="navbar">
+      <div className="leftSide">
+        <img src={Logo} alt="Logo" />
         <div className="hiddenLinks">
-        <Link to="./"> Home </Link>
-      <Link to="./Profile"> Profile </Link>
-      <Link to="./SkillShell"> Skill Shell </Link>
-      <Link to="./Advice"> Advice </Link>
-      <Link to="./Blog"> Blog </Link>
+          <Link to="/">Home</Link>
+          <Link to="/SkillShell">Skill Shell</Link>
+          <Link to="/Profile">Profile</Link>
+          <Link to="/Advice">Advice</Link>
+          <Link to="/Blog">Blog</Link>
         </div>
+      </div>
+      <div className="rightSide">
+        <Link to="/">Home</Link>
+        <Link to="/Profile">Profile</Link>
+        <Link to="/SkillShell">Skill Shell</Link>
+        <Link to="/Advice">Advice</Link>
+        <Link to="/Blog">Blog</Link>
+        <button>
+          <ReorderIcon />
+        </button>
+      </div>
     </div>
-    <div className="rightSide">
-      <Link to="./"> Home </Link>
-      <Link to="./Profile"> Profile </Link>
-      <Link to="./SkillShell"> Skill Shell </Link>
-      <Link to="./Advice"> Advice </Link>
-      <Link to="./Blog"> Blog </Link>
-      <button>
-        <ReorderIcon />
-      </button>
-    </div>
-    </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
