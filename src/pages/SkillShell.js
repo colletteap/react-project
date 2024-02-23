@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-function SkillShell() {
+function SkillShellPage() {
   return (
-    <div>Skill Shell</div>
-    {onClick={() => console.log ('Clicked')}}
-  )
+    <div>
+      <h1>Skill Shell</h1>
+      <input type="text" placeholder="Search..." />
+    </div>
+  );
 }
 
-export default SkillShell
+export default SkillShellPage;
