@@ -2,7 +2,9 @@ import React from 'react'
 
 function SkillShell() {
   return (
-    <div>Skill Shell</div>
+    <div>
+      <h1>Skill Shell</h1>
+      </div>
   )
 }
 

@@ -1,0 +1,26 @@
+.GridContainer {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .ImageContainer img {
+    max-width: 50%;
+    padding-right: 10px;
+    height: auto;
+    float: right;
+    margin: 0;
+  }
+
+  .ImageContainerText img {
+    max-width: 90%;
+    padding-top: 100px;
+    padding-left: 10px;
+    height: auto;
+    float: left;
+  }
+
+  
+  

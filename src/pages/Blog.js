@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Blogcard from "../components/Blogcard";
 
 function Blog() {
   return (
-    <div>Bulletin Board</div>
-  )
+    <div>
+      <Blogcard />
+    </div>
+  );
 }
 
-export default Blog
+export default Blog;
