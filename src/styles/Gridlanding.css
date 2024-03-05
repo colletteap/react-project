@@ -1,26 +1,27 @@
 .GridContainer {
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "logo text";
+    justify-items: center; 
+    align-items: center; 
   }
   
-  .ImageContainer img {
+  .ImageContainer {
+    grid-area: logo;
     max-width: 50%;
-    padding-right: 10px;
-    height: auto;
-    float: right;
-    margin: 0;
   }
-
+  
+  .ImageContainerText {
+    grid-area: text;
+  }
+  
+  .ImageContainer img,
   .ImageContainerText img {
-    max-width: 90%;
-    padding-top: 100px;
-    padding-left: 10px;
+    max-width: 100%;
     height: auto;
-    float: left;
   }
-
+  
   
   
