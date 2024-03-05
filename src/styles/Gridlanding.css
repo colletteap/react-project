@@ -8,6 +8,10 @@
     align-items: center; 
   }
   
+  .skillLandingContainer {
+    background-color: #233349;
+}
+  
   .ImageContainer {
     grid-area: logo;
     max-width: 50%;
