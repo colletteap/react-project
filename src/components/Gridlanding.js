@@ -3,6 +3,7 @@ import LargeLogo from "../assets/GrowthBlue.png";
 import LogoText from "../assets/TopGridText.png";
 import "../styles/Gridlanding.css";
 import SkillLanding from "./Skilllanding";
+import AdviceLanding from "./Advicelanding";
 
 const GridLanding = () => {
   return (
@@ -17,6 +18,9 @@ const GridLanding = () => {
       </div>
       <div className="skillLandingContainer">
         <SkillLanding />
+      </div>
+      <div>
+        <AdviceLanding />
       </div>
     </>
   );

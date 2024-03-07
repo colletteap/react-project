@@ -5,7 +5,7 @@ import SkillButton from "./Skillbutton";
 const SkillLanding = () => {
   return (
     <>
-      <h1>Skills from real teachers</h1>
+      <h1 className="whiteHeading">Skills from real teachers</h1>
       <div className="SkillContainer">
         <SkillButton />
       </div>

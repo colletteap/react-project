@@ -1,0 +1,13 @@
+.AdviceContainer {
+    display: grid;
+    gridTemplateColumns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+
+.blueHeading {
+color: #233349;
+font-size: 30px;
+text-align: center;
+margin: 0;
+}
