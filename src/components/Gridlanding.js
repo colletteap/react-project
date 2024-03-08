@@ -4,6 +4,7 @@ import LogoText from "../assets/TopGridText.png";
 import "../styles/Gridlanding.css";
 import SkillLanding from "./Skilllanding";
 import AdviceLanding from "./Advicelanding";
+import BlogLanding from "./Bloglanding";
 
 const GridLanding = () => {
   return (
@@ -16,11 +17,14 @@ const GridLanding = () => {
           <img src={LogoText} alt="LogoText" />
         </div>
       </div>
-      <div className="skillLandingContainer">
+      <div className="blueLandingContainer">
         <SkillLanding />
       </div>
       <div>
         <AdviceLanding />
+      </div>
+      <div className="blueLandingContainer">
+        <BlogLanding />
       </div>
     </>
   );
