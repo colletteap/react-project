@@ -5,31 +5,9 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-export default function AdviceBox({ type, question, linkTo }) {
-  const [comment, setComment] = React.useState("");
-  const [commentsList, setCommentsList] = React.useState(() => {
-    const storedComments = localStorage.getItem("comments");
-    return storedComments ? JSON.parse(storedComments) : [];
-  });
+let cardIdCounter = 1;
 
-  React.useEffect(() => {
-    localStorage.setItem("comments", JSON.stringify(commentsList));
-  }, [commentsList]);
-
-  const handlePostClick = () => {
-    if (comment.trim() === "") {
-      return;
-    }
-
-    const newComment = {
-      id: commentsList.length + 1,
-      text: comment,
-    };
-
-    setCommentsList([...commentsList, newComment]);
-    setComment("");
-  };
-
+export default function AdviceBox({ type, question, linkTo, comment }) {
   return (
     <Card
       variant="outlined"
@@ -59,7 +37,7 @@ export default function AdviceBox({ type, question, linkTo }) {
             component="button"
             color="neutral"
             fontWeight="lg"
-            textColor="text.primary"
+            textColor="#233349"
           >
             {type}
           </Link>{" "}
@@ -83,21 +61,21 @@ export default function AdviceBox({ type, question, linkTo }) {
           sx={{ color: "text.tertiary", my: 0.5 }}
         ></Link>
       </CardContent>
-      {commentsList.map((commentItem) => (
-        <CardContent key={commentItem.id} sx={{ mt: 1 }}>
-          {commentItem.text}
-        </CardContent>
-      ))}
+
       <CardContent orientation="horizontal" sx={{ gap: 1 }}>
         <Input
           variant="plain"
           size="sm"
-          placeholder="Add a comment…"
           value={comment}
-          onChange={(e) => setComment(e.target.value)}
-          sx={{ flex: 1, px: 0, "--Input-focusedThickness": "0px" }}
+          sx={{
+            flex: 1,
+            px: 0,
+            "--Input-focusedThickness": "0px",
+            backgroundColor: "#D4E1F4",
+            padding: "5px",
+          }}
         />
-        <Link onClick={handlePostClick} underline="none" role="button">
+        <Link underline="none" role="button">
           Post
         </Link>
       </CardContent>

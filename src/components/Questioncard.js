@@ -5,6 +5,8 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
+let cardIdCounter = 1;
+
 export default function Questioncard() {
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
@@ -22,7 +24,7 @@ export default function Questioncard() {
     }
 
     const newComment = {
-      id: commentsList.length + 1,
+      id: cardIdCounter++,
       text: comment,
     };
 
