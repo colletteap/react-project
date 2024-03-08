@@ -1,12 +1,11 @@
 import * as React from "react";
-import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-export default function AdviceBox() {
+export default function AdviceBox({ type, question }) {
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
     const storedComments = localStorage.getItem("comments");
@@ -19,7 +18,7 @@ export default function AdviceBox() {
 
   const handlePostClick = () => {
     if (comment.trim() === "") {
-      return; // Do not add empty comments
+      return;
     }
 
     const newComment = {
@@ -36,32 +35,14 @@ export default function AdviceBox() {
       variant="outlined"
       sx={{
         minWidth: 300,
+        width: "25%",
         "--Card-radius": (theme) => theme.vars.radius.xs,
       }}
     >
       <CardContent
         orientation="horizontal"
         sx={{ alignItems: "center", gap: 1 }}
-      >
-        <Box
-          sx={{
-            position: "relative",
-            "&::before": {
-              content: '""',
-              position: "absolute",
-              top: 0,
-              left: 0,
-              bottom: 0,
-              right: 0,
-              m: "-2px",
-              borderRadius: "50%",
-              background:
-                "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
-            },
-          }}
-        ></Box>
-        <Typography fontWeight="lg">Question</Typography>
-      </CardContent>
+      ></CardContent>
 
       <CardContent>
         <Link
@@ -78,9 +59,9 @@ export default function AdviceBox() {
             fontWeight="lg"
             textColor="text.primary"
           >
-            Question:
+            {type}
           </Link>{" "}
-          How do I manage my workload?
+          {question}
         </Typography>
         <Link
           component="button"
