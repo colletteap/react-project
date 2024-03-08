@@ -18,7 +18,7 @@ export default function SkillButton({ skill, linkTo }) {
         <Button
           variant="contained"
           size="medium"
-          sx={{ bgcolor: "#ffff", color: "#233349" }}
+          sx={{ bgcolor: "#ffff", color: "#233349", borderRadius: "10px" }}
         >
           <Typography
             sx={{
