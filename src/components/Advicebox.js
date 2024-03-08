@@ -5,7 +5,7 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-export default function AdviceBox({ type, question }) {
+export default function AdviceBox({ type, question, linkTo }) {
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
     const storedComments = localStorage.getItem("comments");
@@ -46,6 +46,7 @@ export default function AdviceBox({ type, question }) {
 
       <CardContent>
         <Link
+          to={linkTo}
           component="button"
           underline="none"
           fontSize="sm"
@@ -54,6 +55,7 @@ export default function AdviceBox({ type, question }) {
         ></Link>
         <Typography fontSize="sm">
           <Link
+            to={linkTo}
             component="button"
             color="neutral"
             fontWeight="lg"
@@ -64,6 +66,7 @@ export default function AdviceBox({ type, question }) {
           {question}
         </Typography>
         <Link
+          to={linkTo}
           component="button"
           underline="none"
           fontSize="sm"
@@ -73,6 +76,7 @@ export default function AdviceBox({ type, question }) {
           more
         </Link>
         <Link
+          to={linkTo}
           component="button"
           underline="none"
           fontSize="10px"
