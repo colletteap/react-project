@@ -19,7 +19,16 @@ export default function Landingblogcard({ content, title, linkTo, image }) {
         flexDirection: "column",
       }}
     >
-      <CardHeader title={title} />
+      <CardHeader
+        title={title}
+        titleTypographyProps={{
+          sx: {
+            fontFamily: "Verdana, sans-serif",
+            color: "#233349",
+            fontWeight: "bold",
+          },
+        }}
+      />
       <CardMedia component="img" height="50%" image={image} />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
