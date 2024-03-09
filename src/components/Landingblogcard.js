@@ -5,13 +5,10 @@ import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import BlogLanding1 from "../assets/bloglanding1.png";
 
-export default function Landingblogcard({ content, title, linkTo }) {
+export default function Landingblogcard({ content, title, linkTo, image }) {
   return (
     <Card
       sx={{
@@ -23,12 +20,7 @@ export default function Landingblogcard({ content, title, linkTo }) {
       }}
     >
       <CardHeader title={title} />
-      <CardMedia
-        component="img"
-        height="50%"
-        image={BlogLanding1}
-        alt="YouTube Video"
-      />
+      <CardMedia component="img" height="50%" image={image} />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {content}
