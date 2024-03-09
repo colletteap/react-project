@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function SkillShell() {
+function SkillShellPage() {
   return (
     <div>
       <h1>Skill Shell</h1>
-      </div>
-  )
+    </div>
+  );
 }
 
-export default SkillShell
+export default SkillShellPage;
