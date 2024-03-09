@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="leftSide">
-        <img src={Logo} />
+        <img className="logoNav" src={Logo} />
         <div className="hiddenLinks">
           <Link to="./"> Home </Link>
           <Link to="./SkillShell"> Skill Shell </Link>
