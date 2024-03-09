@@ -9,8 +9,9 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import imgSrc from "./assets/bloglanding1.png";
 
-export default function Landingblogcard({ linkTo }) {
+export default function Landingblogcard({ content, title, linkTo }) {
   return (
     <Card
       sx={{
@@ -22,24 +23,22 @@ export default function Landingblogcard({ linkTo }) {
       }}
     >
       <CardHeader
+        title={title}
         action={
           <IconButton aria-label="settings">
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
       />
       <CardMedia
         component="img"
         height="194"
-        image="/static/images/cards/paella.jpg"
-        alt="Paella dish"
+        image={imgSrc}
+        alt="youtube video"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
+          {content}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

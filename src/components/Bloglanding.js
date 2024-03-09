@@ -7,7 +7,11 @@ const AdviceLanding = () => {
     <>
       <h1 className="whiteHeading">Resources from real teachers</h1>
       <div className="BlogContainer">
-        <Landingblogcard linkTo="/Blog.js" />
+        <Landingblogcard
+          title="Google Classroom Tips"
+          content="NewEd Tech is a YouTube channel geared toward helping teachers learn tech is simple, quick & manageable bites. They focus on technology tools related to Google, such as Google Classroom, Slides, Jamboard, Extensions etc.."
+          linkTo="/Blog.js"
+        />
         <Landingblogcard />
         <Landingblogcard />
       </div>
