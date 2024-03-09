@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 
 function SkillShellPage() {
   return (
     <div>
       <h1>Skill Shell</h1>
-      <input type="text" placeholder="Search..." />
     </div>
   );
 }

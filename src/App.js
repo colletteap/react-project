@@ -1,27 +1,27 @@
-import './App.css';
-import Navbar from './components/Navbar';
+import "./App.css";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import SkillShell from "./pages/SkillShell";
-import Profile from "./pages/Profile";
 import Advice from "./pages/Advice";
 import Blog from "./pages/Blog";
+import GridLanding from "./components/Gridlanding";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" exact component={Home}/>
-        <Route path="/SkillShell" exact component={SkillShell}/>
-        <Route path="/Profile" exact component={Profile}/>
-        <Route path="/Advice" exact component={Advice}/>
-        <Route path="/Blog" exact component={Blog}/>
-      </Routes>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<GridLanding />} />
+          <Route path="/SkillShell" element={<SkillShell />} />
+          <Route path="/Advice" element={<Advice />} />
+          <Route path="/Blog" element={<Blog />} />
+        </Routes>
       </Router>
-    
-       </div>
+
+      <div></div>
+    </div>
   );
 }
 

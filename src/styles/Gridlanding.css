@@ -1,0 +1,36 @@
+.GridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "logo text";
+    justify-items: center; 
+    align-items: center; 
+  }
+
+  .blueLandingContainer {
+    background-color: #233349;
+    padding-bottom: 25px;
+}
+
+.adviceLandingContainer {
+  padding-bottom: 25px;
+}
+  
+  .ImageContainer {
+    grid-area: logo;
+    max-width: 50%;
+  }
+  
+  .ImageContainerText {
+    grid-area: text;
+  }
+  
+  .ImageContainer img,
+  .ImageContainerText img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  

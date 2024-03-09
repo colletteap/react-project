@@ -1,9 +1,14 @@
 .navbar {
   width: 100%;
   height: 100px;
-  background-color: #121619;
+  background-color: #233349;
   display: flex;
   flex-direction: row;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logoNav {
+  transform: scale(2);
 }
 
 .navbar .leftSide {

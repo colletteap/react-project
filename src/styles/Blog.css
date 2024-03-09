@@ -1,0 +1,9 @@
+.BlogContainer {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);    
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
