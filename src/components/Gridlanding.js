@@ -20,7 +20,7 @@ const GridLanding = () => {
       <div className="blueLandingContainer">
         <SkillLanding />
       </div>
-      <div>
+      <div className="adviceLandingContainer">
         <AdviceLanding />
       </div>
       <div className="blueLandingContainer">

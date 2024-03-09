@@ -10,6 +10,11 @@
 
   .blueLandingContainer {
     background-color: #233349;
+    padding-bottom: 25px;
+}
+
+.adviceLandingContainer {
+  padding-bottom: 25px;
 }
   
   .ImageContainer {

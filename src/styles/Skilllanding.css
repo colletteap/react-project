@@ -2,7 +2,7 @@
         display: grid;
         grid-template-columns: repeat(6, minmax(150px, 1fr));
         grid-template-rows: repeat(3, minmax(50px, 1fr));
-        padding: 20px;
+        padding: 5px;
       }
       
       @media (max-width: 768px) {

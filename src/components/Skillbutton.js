@@ -10,7 +10,7 @@ export default function SkillButton({ skill, linkTo }) {
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
         gridGap: "10px",
-        padding: "20px",
+        padding: "10px",
         justifyItems: "center",
       }}
     >
