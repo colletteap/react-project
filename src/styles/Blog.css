@@ -1,16 +1,9 @@
 .BlogContainer {
     display: grid;
     width: auto;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);    
-    gap: 10px;
-    padding: 20px;
+    gap: 20px;
     justify-items: center;
     align-items: center;
   }
-
-  @media (max-width: 768px) {
-    .BlogContainer {
-      padding-left: 20px;
-    }
-}
