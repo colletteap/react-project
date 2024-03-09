@@ -9,7 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import imgSrc from "./assets/bloglanding1.png";
+import BlogLanding1 from "../assets/bloglanding1.png";
 
 export default function Landingblogcard({ content, title, linkTo }) {
   return (
@@ -22,19 +22,12 @@ export default function Landingblogcard({ content, title, linkTo }) {
         flexDirection: "column",
       }}
     >
-      <CardHeader
-        title={title}
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-      />
+      <CardHeader title={title} />
       <CardMedia
         component="img"
-        height="194"
-        image={imgSrc}
-        alt="youtube video"
+        height="50%"
+        image={BlogLanding1}
+        alt="YouTube Video"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
