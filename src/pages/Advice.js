@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/Advice.css";
+import "../styles/Advice.css";
 import SkillButton from "../components/Skillbutton";
 import QuestionCard from "../components/Questioncard";
 import SearchBar from "../components/Searchbar";
@@ -8,8 +8,13 @@ function Advice() {
   return (
     <div>
       <SearchBar />
-      <SkillButton skill="Ask Question" />
-      <SkillButton skill="Add Advice" />
+      <div className="AdviceButtonContainer">
+      <SkillButton skill="Ask Question" className='Question' />
+      <SkillButton skill="Add Advice" className='Advice' />
+      </div>
+      <div className="AdviceInputContainer">
+
+      </div>
       <div className="AdvicePostsContainer">
         <QuestionCard />
         <QuestionCard />
