@@ -32,10 +32,10 @@ function Blog() {
         para1=""
         para2=""
       />
-      <Blogcard
+       <Blogcard
         title="The Happy Teacher Planner"
         content="With this planner, you can use a personalized calendar to keep track of special events and your to do list; focus on your personal growth through using a reflective journal and core values list; has a substitute plan and has resources for the tough times. "
-        linkTo="/Blog.js"
+        linkTo="https://colletteap.github.io/gratitude-planner/"
         image={BlogLanding3}
         para1=""
         para2=""

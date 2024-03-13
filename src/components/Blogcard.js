@@ -40,7 +40,8 @@ export default function Blogcard({
   return (
     <Card
       sx={{
-        maxWidth: 345,
+        maxWidth: 385,
+        minWidth: 350,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

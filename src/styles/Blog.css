@@ -1,13 +1,22 @@
 .BlogContainer {
-    display: grid;
-    width: auto;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(6, auto);    
-    gap: 20px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 20px 40px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
     justify-items: center;
     align-items: center;
   }
 
+  @media screen and (max-width: 1080px) {
+    .BlogContainer {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
   .BlogContainer > * {
     margin: 20px;
     align-self: stretch;
