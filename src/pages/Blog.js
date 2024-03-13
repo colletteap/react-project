@@ -3,10 +3,13 @@ import Blogcard from "../components/Blogcard";
 import BlogLanding1 from "../assets/bloglanding1.png";
 import BlogLanding2 from "../assets/bloglanding2.png";
 import BlogLanding3 from "../assets/bloglanding3.png";
+import SearchBar from "../components/Searchbar";
 import "../styles/Blog.css";
 
 function Blog() {
   return (
+    <div>
+    <SearchBar />
     <div className="BlogContainer">
       <Blogcard
         title="Google Classroom Tips"
@@ -40,6 +43,7 @@ function Blog() {
         para1=""
         para2=""
       />
+      </div>
     </div>
   );
 }
