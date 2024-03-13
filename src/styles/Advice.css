@@ -7,18 +7,19 @@
     justify-items: center;
     align-items: center;
   }
-
   .AdviceButtonContainer {
     display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      gap: 20px 20px;
-      grid-auto-flow: row;
-      grid-template-areas:
-        ". Advice Question .";
-        justify-items: center;
-        align-items: center;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: ". Advice Question .";
+  }
+  
+  .AdviceButtonContainer > * {
+    justify-self: center;
+    align-self: center;
+  } 
     
     .Question { grid-area: Question; }
     

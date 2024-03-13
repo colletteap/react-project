@@ -8,13 +8,11 @@ function Advice() {
   return (
     <div>
       <SearchBar />
-      <div className="AdviceButtonContainer">
-      <SkillButton skill="Ask Question" className='Question' />
-      <SkillButton skill="Add Advice" className='Advice' />
+      <div>
+      <SkillButton skill="Ask Question" />
+      <SkillButton skill="Add Advice" />
       </div>
-      <div className="AdviceInputContainer">
 
-      </div>
       <div className="AdvicePostsContainer">
         <QuestionCard />
         <QuestionCard />
