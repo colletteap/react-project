@@ -14,8 +14,8 @@ function Advice() {
       </div>
 
       <div className="AdvicePostsContainer">
-        <QuestionCard />
-        <QuestionCard />
+        <QuestionCard cardID='1' />
+        <QuestionCard cardID='2' />
       </div>
     </div>
   );

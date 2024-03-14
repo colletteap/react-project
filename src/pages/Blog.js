@@ -10,7 +10,7 @@ function Blog() {
   return (
     <div>
     <SearchBar />
-    <div className="BlogContainer">
+    <div className="BlogPageContainer">
       <Blogcard
         title="Google Classroom Tips"
         content="NewEd Tech was a YouTube channel geared toward helping teachers learn tech is simple, quick & manageable bites. They then expanded into a website where, with a free plan, you can learn bite sized, useful teacher skills."

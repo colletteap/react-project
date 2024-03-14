@@ -5,18 +5,16 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-let cardIdCounter = 1;
-
-export default function Questioncard() {
+export default function Questioncard({ cardId }) {
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
-    const storedComments = localStorage.getItem("comments");
+    const storedComments = localStorage.getItem(`comments_${cardId}`);
     return storedComments ? JSON.parse(storedComments) : [];
   });
 
   React.useEffect(() => {
-    localStorage.setItem("comments", JSON.stringify(commentsList));
-  }, [commentsList]);
+    localStorage.setItem(`comments_${cardId}`, JSON.stringify(commentsList));
+  }, [commentsList, cardId]);
 
   const handlePostClick = () => {
     if (comment.trim() === "") {
@@ -24,7 +22,7 @@ export default function Questioncard() {
     }
 
     const newComment = {
-      id: cardIdCounter++,
+      id: commentsList.length + 1,
       text: comment,
     };
 
