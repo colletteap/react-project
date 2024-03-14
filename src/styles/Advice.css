@@ -21,9 +21,13 @@
     align-self: center;
   } 
     
-    .Question { grid-area: Question; }
+    .Question { 
+      grid-area: Question;
+     }
     
-    .Advice { grid-area: Advice; }
+    .Advice {
+       grid-area: Advice; 
+      }
     
     .AdvicePostsContainer {
       display: grid;

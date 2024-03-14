@@ -8,7 +8,7 @@ function Advice() {
   return (
     <div>
       <SearchBar />
-      <div>
+      <div className="AdviceButtonContainer">
       <SkillButton skill="Ask Question" />
       <SkillButton skill="Add Advice" />
       </div>
