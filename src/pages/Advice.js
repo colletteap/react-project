@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/Advice.css";
-import SkillButton from "../components/Skillbutton";
+import AdviceButton from "../components/Advicebutton";
 import QuestionCard from "../components/Questioncard";
+import PostCard from "../components/Postcard";
 import SearchBar from "../components/Searchbar";
 
 function Advice() {
@@ -9,10 +10,12 @@ function Advice() {
     <div>
       <SearchBar />
       <div className="AdviceButtonContainer">
-      <SkillButton skill="Ask Question" />
-      <SkillButton skill="Add Advice" />
+      <AdviceButton skill="Ask Question" />
+      <AdviceButton skill="Add Advice" />
       </div>
-
+      <div className="AdviceInputContainer">
+    
+      </div>
       <div className="AdvicePostsContainer">
         <QuestionCard cardID='1' />
         <QuestionCard cardID='2' />
