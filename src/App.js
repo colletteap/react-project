@@ -1,6 +1,5 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
 import SkillShell from "./pages/SkillShell";
 import Advice from "./pages/Advice";
 import Blog from "./pages/Blog";
