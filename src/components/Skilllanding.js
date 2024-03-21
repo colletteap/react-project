@@ -6,11 +6,15 @@ import TechCard from "./Techcard";
 const SkillLanding = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
 
+  const handleSkillButtonClick = (skill) => {
+    setSelectedSkill(skill);
+  };
+
   return (
     <>
       <h1 className="whiteHeading">Skills from real teachers</h1>
       <div className="SkillContainer">
-        <SkillButton skill="Technology" linkTo="/SkillShell/Technology" onClick={() => setSelectedSkill("Technology")} />
+        <SkillButton skill="Technology" linkTo="/SkillShell/Technology" onClick={() => handleSkillButtonClick("Technology")} />
         <SkillButton skill="Classroom Management" linkTo="/SkillShell/Classroom-Management" />
         <SkillButton skill="Life Work Balance" linkTo="/SkillShell/Life-Work-Balance" />
         <SkillButton skill="Art" linkTo="/SkillShell/Art" />
