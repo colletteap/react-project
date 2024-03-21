@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Advice.css";
-import AdviceButton from "../components/Advicebutton";
+import ActionButton from "../components/Actionbutton";
 import QuestionCard from "../components/Questioncard";
 import PostCard from "../components/Postcard";
 import SearchBar from "../components/Searchbar";
@@ -20,8 +20,8 @@ function Advice() {
     <div>
       <SearchBar />
       <div className="AdviceButtonContainer">
-        <AdviceButton skill="Ask Question" onClick={handleOpenPostCard} />
-        <AdviceButton skill="Add Advice" onClick={handleOpenPostCard} />
+        <ActionButton skill="Ask Question" onClick={handleOpenPostCard} />
+        <ActionButton skill="Add Advice" onClick={handleOpenPostCard} />
       </div>
       <div className="AdviceInputContainer">
         {isPostCardOpen && (
