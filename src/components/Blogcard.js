@@ -44,6 +44,7 @@ export default function Blogcard({
         minWidth: 350,
         display: "flex",
         justifyContent: "center",
+        justifySelf: "stretch",
         alignItems: "center",
         flexDirection: "column",
       }}
