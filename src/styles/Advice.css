@@ -1,3 +1,9 @@
+.SearchBarContainer {
+  display: grid;
+  width: auto;
+  justify-items: center;
+}
+
 .AdviceInputContainer {
     display: grid;
     width: auto;
@@ -7,7 +13,7 @@
     justify-items: center;
     align-items: center;
   }
-  .AdviceButtonContainer {
+.AdviceButtonContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -16,20 +22,20 @@
     grid-template-areas: ". Advice Question .";
   }
   
-  .AdviceButtonContainer > * {
+.AdviceButtonContainer > * {
     justify-self: center;
     align-self: center;
   } 
     
-    .Question { 
+.Question { 
       grid-area: Question;
      }
     
-    .Advice {
+.Advice {
        grid-area: Advice; 
       }
     
-    .AdvicePostsContainer {
+.AdvicePostsContainer {
       display: grid;
       width: auto;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -40,7 +46,7 @@
     }
     
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .AdviceContainer {
       padding-left: 20px;
     }

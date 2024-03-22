@@ -7,25 +7,28 @@ import SearchBar from "../components/Searchbar";
 
 function Advice() {
   const [isPostCardOpen, setIsPostCardOpen] = useState(false);
+  const [actionType, setActionType] = useState(null);
 
-  const handleOpenPostCard = () => {
+  const handleOpenPostCard = (skill) => {
     setIsPostCardOpen(true);
+    setActionType(skill);
   };
 
   const handleClosePostCard = () => {
     setIsPostCardOpen(false);
+    setActionType(null);
   };
 
   return (
-    <div>
+    <div className="SearchBarContainer">
       <SearchBar />
       <div className="AdviceButtonContainer">
-        <ActionButton skill="Ask Question" onClick={handleOpenPostCard} />
-        <ActionButton skill="Add Advice" onClick={handleOpenPostCard} />
+        <ActionButton skill="Ask Question" onClick={() => handleOpenPostCard("Ask Question")} />
+        <ActionButton skill="Add Advice" onClick={() => handleOpenPostCard("Add Advice")} />
       </div>
       <div className="AdviceInputContainer">
         {isPostCardOpen && (
-          <PostCard onClose={handleClosePostCard} />
+          <PostCard onClose={handleClosePostCard} actionType={actionType} />
         )}
       </div>
       <div className="AdvicePostsContainer">

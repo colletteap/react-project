@@ -11,6 +11,12 @@
     align-items: center;
   }
 
+  .SearchBarContainer {
+    display: grid;
+    width: auto;
+    justify-items: center;
+  }
+
   @media screen and (max-width: 1080px) {
     .BlogContainer {
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

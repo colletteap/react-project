@@ -9,7 +9,9 @@ import "../styles/Blog.css";
 function Blog() {
   return (
     <div>
+      <div className="SearchBarContainer">
     <SearchBar />
+    </div>
     <div className="BlogPageContainer">
       <Blogcard
         title="Google Classroom Tips"
@@ -44,7 +46,7 @@ function Blog() {
         para2=""
       />
       </div>
-    </div>
+      </div>
   );
 }
 
