@@ -6,31 +6,33 @@ import PostCard from "../components/Postcard";
 import SearchBar from "../components/Searchbar";
 
 function Advice() {
-  const [isPostCardOpen, setIsPostCardOpen] = useState(false);
-  const [actionType, setActionType] = useState(null);
+  const [showPostcard, setShowPostcard] = useState(false);
 
-  const handleOpenPostCard = (skill) => {
-    setIsPostCardOpen(true);
-    setActionType(skill);
-  };
+const handleBtnQClick = () => {
+setShowPostcard(true);
+}
 
-  const handleClosePostCard = () => {
-    setIsPostCardOpen(false);
-    setActionType(null);
-  };
+const handleBtnAClick = () => {
+if (!showPostcard) {
+setShowPostcard(true);
+}
+};
 
   return (
-    <div className="SearchBarContainer">
-      <SearchBar />
+   <div>
+     
       <div className="AdviceButtonContainer">
-        <ActionButton skill="Ask Question" onClick={() => handleOpenPostCard("Ask Question")} />
-        <ActionButton skill="Add Advice" onClick={() => handleOpenPostCard("Add Advice")} />
+        <ActionButton skill="Ask Question" onClick={handleBtnQClick} />
+        <ActionButton skill="Add Advice" onClick={handleBtnAClick} />
+        {showPostcard && <PostCard />}
       </div>
       <div className="AdviceInputContainer">
-        {isPostCardOpen && (
-          <PostCard onClose={handleClosePostCard} actionType={actionType} />
-        )}
+     
       </div>
+      <div className="SearchBarContainer">
+      <SearchBar />
+      </div>
+      
       <div className="AdvicePostsContainer">
         <QuestionCard cardID="1" />
         <QuestionCard cardID="2" />

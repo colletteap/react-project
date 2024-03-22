@@ -7,6 +7,10 @@ import SearchBar from "../components/Searchbar";
 import "../styles/Blog.css";
 
 function Blog() {
+
+const [searchValue, setSearchValue] = React.useState("");
+
+
   return (
     <div>
       <div className="SearchBarContainer">
