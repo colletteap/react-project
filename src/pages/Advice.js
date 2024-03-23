@@ -16,9 +16,10 @@ const handleBtnAClick = () => {
   if (!showPostcard) {
     setShowPostcard(true);
   } else {
-    // If showPostcard is already true, do nothing
+    console.log('Postcard is already open');
   }
 };
+
 
   return (
    <div>
