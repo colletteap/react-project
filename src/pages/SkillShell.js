@@ -1,9 +1,12 @@
 import React from "react";
+import "../styles/SkillShell.css";
 
 function SkillShellPage() {
   return (
     <div>
-      <h1>Skill Shell</h1>
+    <div className="whiteLandingContainer">
+      <h2>Skill Shell</h2>
+    </div>
     </div>
   );
 }

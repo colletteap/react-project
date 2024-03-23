@@ -1,0 +1,11 @@
+body {
+    background-color: #233349;
+}
+
+.whiteLandingContainer {
+    display: flex;
+    background-color: #fcf9da;
+    justify-content: center;
+    align-content: center;
+  }
+  
