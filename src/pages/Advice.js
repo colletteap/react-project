@@ -8,37 +8,51 @@ import SearchBar from "../components/Searchbar";
 function Advice() {
   const [showPostcard, setShowPostcard] = useState(false);
 
-const handleBtnQClick = () => {
-setShowPostcard(true);
-}
-
-const handleBtnAClick = () => {
-  if (!showPostcard) {
+  const handleBtnQClick = () => {
     setShowPostcard(true);
-  } else {
-    console.log('Postcard is already open');
-  }
-};
+  };
 
+  const handleBtnAClick = () => {
+    if (!showPostcard) {
+      setShowPostcard(true);
+    } else {
+      console.log("Postcard is already open");
+    }
+  };
 
   return (
-   <div>
-     
+    <div>
       <div className="AdviceButtonContainer">
         <ActionButton skill="Ask Question" onClick={handleBtnQClick} />
         <ActionButton skill="Add Advice" onClick={handleBtnAClick} />
-        {showPostcard && <PostCard />}
       </div>
-      <div className="AdviceInputContainer">
-     
-      </div>
+      <div className="AdviceInputContainer">{showPostcard && <PostCard />}</div>
       <div className="SearchBarContainer">
-      <SearchBar />
+        <SearchBar />
       </div>
-      
+   <div className="Titles">
+    <h2>Advice</h2>
+    <h2>Questions</h2>
+   </div>
       <div className="AdvicePostsContainer">
-        <QuestionCard cardID="1" />
-        <QuestionCard cardID="2" />
+   
+        <div className="InsideAdvicePostsContainer">
+          <QuestionCard cardID="1" />
+          <QuestionCard cardID="2" />
+          <QuestionCard cardID="1" />
+          <QuestionCard cardID="2" />
+          <QuestionCard cardID="1" />
+          <QuestionCard cardID="2" />
+        </div>
+
+        <div className="InsideAdvicePostsContainer">
+          <QuestionCard cardID="1" />
+          <QuestionCard cardID="2" />
+          <QuestionCard cardID="1" />
+          <QuestionCard cardID="2" />
+          <QuestionCard cardID="1" />
+          <QuestionCard cardID="2" />
+        </div>
       </div>
     </div>
   );

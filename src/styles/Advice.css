@@ -36,14 +36,36 @@
   grid-area: Advice;
 }
 
+.Titles {
+  display: grid;
+  width: auto;
+	grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; 
+}
+
 .AdvicePostsContainer {
   display: grid;
   width: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 20px;
   justify-items: center;
   align-items: center;
+  background-color: #fcf9da;
+}
+
+.InsideAdvicePostsContainer {
+  display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+  padding: 20px;
+	width: 95%;
+	height: 95%;
+  background-color: #233349;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
