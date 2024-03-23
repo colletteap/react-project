@@ -7,9 +7,7 @@
     ". . ."
     ". . ."
     ". . ."; 
-    justify-items: center;
-    justify-self: stretch;
-    align-items: center;
+    align-items: stretch;
     padding: 20px 0 0 60px;
   }
 

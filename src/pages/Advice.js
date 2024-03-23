@@ -13,9 +13,11 @@ setShowPostcard(true);
 }
 
 const handleBtnAClick = () => {
-if (!showPostcard) {
-setShowPostcard(true);
-}
+  if (!showPostcard) {
+    setShowPostcard(true);
+  } else {
+    // If showPostcard is already true, do nothing
+  }
 };
 
   return (
