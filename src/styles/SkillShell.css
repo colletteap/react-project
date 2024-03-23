@@ -1,11 +1,35 @@
 body {
-    background-color: #233349;
+  background-color: #233349;
 }
 
 .whiteLandingContainer {
-    display: flex;
-    background-color: #fcf9da;
-    justify-content: center;
-    align-content: center;
-  }
-  
+  background-color: #fcf9da;
+  width: auto;
+}
+
+.img {
+  width: 80%;
+  height: 100%;
+}
+
+.imgContainer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px 10px;
+  padding: 20px;
+  width: auto;
+  height: 100%;
+}
+
+.skillContainer {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-rows: repeat(3, minmax(50px, 1fr));
+  padding: 50px;
+  gap: 30px 30px;
+}
+
+.skillContainer > * {
+  transform: scale(1.3);
+}
