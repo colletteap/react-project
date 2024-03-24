@@ -1,12 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styles/SkillShell.css";
 import Skill from "../assets/skill.png";
 import Superhero from "../assets/superhero.png";
 import Discover from "../assets/discover.png";
 import Community from "../assets/community.png";
 import SkillButton from "../components/Skillbutton";
+import TechCard from "../components/Techcard";
 
 function SkillShellPage() {
+  const [selectedButton, setSelectedButton] = useState(null);
+
+  const handleButtonClick = (buttonName) => {
+    setSelectedButton(buttonName);
+  };
+
   return (
     <div>
     <div className="whiteLandingContainer">
@@ -21,7 +28,7 @@ function SkillShellPage() {
     <div className="skillContainer">
     <SkillButton
           skill="Technology"
-          linkTo="/SkillShell/Technology"
+          onClick={() => handleButtonClick('Technology')}
         />
         <SkillButton
           skill="Classroom Management"
@@ -71,6 +78,7 @@ function SkillShellPage() {
         <SkillButton skill="Creativity" linkTo="/SkillShell/Creativity" />
         <SkillButton skill="More+" linkTo="/SkillShell" />
     </div>
+    {selectedButton === 'Technology' && <TechCard />}
     </div>
   );
 }
