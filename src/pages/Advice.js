@@ -8,11 +8,8 @@ import SearchBar from "../components/Searchbar";
 function Advice() {
   const [showPostcard, setShowPostcard] = useState(false);
 
-  const handleBtnQClick = () => {
-    setShowPostcard(true);
-  };
-
   const handleBtnAClick = () => {
+    console.log("show postcard", showPostcard)
     if (!showPostcard) {
       setShowPostcard(true);
     } else {
@@ -23,19 +20,20 @@ function Advice() {
   return (
     <div>
       <div className="AdviceButtonContainer">
-        <ActionButton skill="Ask Question" onClick={handleBtnQClick} />
-        <ActionButton skill="Add Advice" onClick={handleBtnAClick} />
+        <ActionButton skill="Ask Question" openPost= {showPostcard} onClick={handleBtnAClick} />
+        <ActionButton skill="Add Advice" openPost= {showPostcard} onClick={handleBtnAClick} />
       </div>
-      <div className="AdviceInputContainer">{showPostcard && <PostCard />}</div>
+      <div className="AdviceInputContainer">
+        {showPostcard && <PostCard />}
+        </div>
       <div className="SearchBarContainer">
         <SearchBar />
       </div>
-   <div className="Titles">
-    <h2>Advice</h2>
-    <h2>Questions</h2>
-   </div>
+      <div className="Titles">
+        <h2>Advice</h2>
+        <h2>Questions</h2>
+      </div>
       <div className="AdvicePostsContainer">
-   
         <div className="InsideAdvicePostsContainer">
           <QuestionCard cardID="1" />
           <QuestionCard cardID="2" />

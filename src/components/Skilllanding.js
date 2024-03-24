@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import "../styles/Skilllanding.css";
 import SkillButton from "./Skillbutton";
-import TechCard from "./Techcard";
+
 
 const SkillLanding = () => {
-  const [selectedSkill, setSelectedSkill] = useState(null);
-
-  const handleSkillButtonClick = (skill) => {
-    setSelectedSkill(skill);
-  };
 
   return (
     <>
@@ -17,7 +12,6 @@ const SkillLanding = () => {
         <SkillButton
           skill="Technology"
           linkTo="/SkillShell/Technology"
-          onClick={() => handleSkillButtonClick("Technology")}
         />
         <SkillButton
           skill="Classroom Management"
@@ -67,7 +61,6 @@ const SkillLanding = () => {
         <SkillButton skill="Creativity" linkTo="/SkillShell/Creativity" />
         <SkillButton skill="More+" linkTo="/SkillShell" />
       </div>
-      {selectedSkill === "Technology" && <TechCard />}
     </>
   );
 };

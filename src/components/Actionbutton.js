@@ -1,15 +1,15 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
-import { Link } from "react-router-dom";
 import PostCard from "./Postcard"; 
 
 
-export default function SkillButton({ skill, linkTo }) {
+export default function ActionButton({ skill, openPost, onClick }) {
   const [isPostCardOpen, setIsPostCardOpen] = React.useState(false);
 
   const handleClick = () => {
-    setIsPostCardOpen(true);
+    setIsPostCardOpen(!isPostCardOpen);
+    onClick();
   };
 
   return (
@@ -22,7 +22,6 @@ export default function SkillButton({ skill, linkTo }) {
         justifyItems: "center",
       }}
     >
-      <Link to={linkTo}>
         <Button
           variant="contained"
           size="medium"
@@ -39,8 +38,7 @@ export default function SkillButton({ skill, linkTo }) {
             {skill}
           </Typography>
         </Button>
-      </Link>
-      {isPostCardOpen && <PostCard />} 
+      {isPostCardOpen && openPost && <PostCard />} 
     </div>
   );
 }
