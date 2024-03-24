@@ -20,8 +20,8 @@ function Advice() {
   return (
     <div>
       <div className="AdviceButtonContainer">
-        <ActionButton skill="Ask Question" openPost= {showPostcard} onClick={handleBtnAClick} />
-        <ActionButton skill="Add Advice" openPost= {showPostcard} onClick={handleBtnAClick} />
+        <ActionButton skill="Ask Question" onClick={handleBtnAClick} />
+        <ActionButton skill="Add Advice"  onClick={handleBtnAClick} />
       </div>
       <div className="AdviceInputContainer">
         {showPostcard && <PostCard />}

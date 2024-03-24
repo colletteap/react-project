@@ -4,13 +4,7 @@ import { Typography } from "@mui/material";
 import PostCard from "./Postcard"; 
 
 
-export default function ActionButton({ skill, openPost, onClick }) {
-  const [isPostCardOpen, setIsPostCardOpen] = React.useState(false);
-
-  const handleClick = () => {
-    setIsPostCardOpen(!isPostCardOpen);
-    onClick();
-  };
+export default function ActionButton({ skill, onClick }) {
 
   return (
     <div
@@ -26,7 +20,7 @@ export default function ActionButton({ skill, openPost, onClick }) {
           variant="contained"
           size="medium"
           sx={{ bgcolor: "#ffff", color: "#233349", borderRadius: "10px" }}
-          onClick={handleClick}
+          onClick={onClick}
         >
           <Typography
             sx={{
@@ -38,7 +32,6 @@ export default function ActionButton({ skill, openPost, onClick }) {
             {skill}
           </Typography>
         </Button>
-      {isPostCardOpen && openPost && <PostCard />} 
     </div>
   );
 }
