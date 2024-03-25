@@ -1,7 +1,6 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
-import PostCard from "./Postcard"; 
 
 
 export default function ActionButton({ skill, onClick }) {
