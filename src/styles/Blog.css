@@ -11,10 +11,11 @@
     padding: 20px 0 0 60px;
   }
 
-  .SearchBarContainer {
+  .CenterContainer {
     display: grid;
     width: auto;
     justify-items: center;
+    padding: 20px 0 20px 0;
   }
 
   @media screen and (max-width: 1080px) {
@@ -26,4 +27,19 @@
   .BlogContainer > * {
     margin: 20px;
     align-self: stretch;
+}
+
+.resourceButton {
+  background-color: #233349;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.resourceButton:hover {
+  background-color: #5477a8;
 }
