@@ -30,3 +30,9 @@
   max-width: 100%;
   height: auto;
 }
+
+.centerContainer {
+  display: grid;
+  width: auto;
+  justify-items: center;
+}

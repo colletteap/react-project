@@ -15,7 +15,7 @@ function SkillShellPage() {
   };
 
   return (
-    <div>
+    <div className="blueBody">
     <div className="whiteLandingContainer">
       <h2 style={{ textAlign: 'center' }}>Skill Shell</h2>
       <div className="imgContainer">
