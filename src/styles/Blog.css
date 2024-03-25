@@ -37,6 +37,7 @@
     padding: 20px;
     font-size: 22px;
     font-weight: bold;
+    letter-spacing: 0.8px;
     transition: background-color 0.3s;
 }
 
