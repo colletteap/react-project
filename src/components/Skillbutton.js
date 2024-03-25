@@ -19,7 +19,7 @@ export default function SkillButton({ skill, linkTo, onClick }) {
       <Link to={linkTo}>
         <Button
           variant="contained"
-          size="medium"
+          size="large"
           sx={{ bgcolor: "#ffff", color: "#233349", borderRadius: "10px" }}
           onClick={onClick}
          
@@ -27,6 +27,7 @@ export default function SkillButton({ skill, linkTo, onClick }) {
           <Typography
             sx={{
               fontFamily: "Arial",
+              fontSize: "19px",
               textTransform: "initial",
               whiteSpace: "nowrap",
             }}
