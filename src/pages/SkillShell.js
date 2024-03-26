@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../styles/SkillShell.css";
 import Skill from "../assets/skill.png";
 import Superhero from "../assets/superhero.png";
@@ -21,9 +21,20 @@ import CreativityCard from "../components/skillcards/CreativityCard";
 
 function SkillShellPage() {
   const [selectedButton, setSelectedButton] = useState(null);
+  const newComponentRef = useRef(null);
 
+  useEffect(() => {
+    if (selectedButton && newComponentRef.current) {
+      newComponentRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [selectedButton]);
+  
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
+    if (newComponentRef.current) {
+      const topPos = newComponentRef.current.offsetTop;
+      window.scrollTo({ top: topPos, behavior: "smooth" });
+    }
   };
 
   const skills = [
