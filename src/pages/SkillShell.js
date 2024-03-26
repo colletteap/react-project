@@ -16,6 +16,8 @@ import ConflictManagementCard from "../components/skillcards/ConflictManagementC
 import BehaviourManagementCard from "../components/skillcards/BehaviourManagementCard";
 import ResourcefulnessCard from "../components/skillcards/ResourcefulnessCard";
 import CriticalThinkingCard from "../components/skillcards/CriticalThinkingCard";
+import LeadershipCard from "../components/skillcards/LeadershipCard";
+import CreativityCard from "../components/skillcards/Creativity";
 
 
 const skills = [
