@@ -17,54 +17,7 @@ import BehaviourManagementCard from "../components/skillcards/BehaviourManagemen
 import ResourcefulnessCard from "../components/skillcards/ResourcefulnessCard";
 import CriticalThinkingCard from "../components/skillcards/CriticalThinkingCard";
 import LeadershipCard from "../components/skillcards/LeadershipCard";
-import CreativityCard from "../components/skillcards/Creativity";
-
-
-const skills = [
-  { skill: "Technology", onClick: () => handleButtonClick("Technology") },
-  {
-    skill: "Classroom Management",
-    onClick: () => handleButtonClick("Classroom Management"),
-  },
-  {
-    skill: "Life Work Balance",
-    onClick: () => handleButtonClick("Life Work Balance"),
-  },
-  {
-    skill: "Home Economics",
-    onClick: () => handleButtonClick("Home Economics"),
-  },
-  {
-    skill: "Boundary Setting",
-    onClick: () => handleButtonClick("Boundary Setting"),
-  },
-  {
-    skill: "Time Management",
-    onClick: () => handleButtonClick("Time Management"),
-  },
-  {
-    skill: "Physical Education",
-    onClick: () => handleButtonClick("Physical Education"),
-  },
-  {
-    skill: "Conflict Management",
-    onClick: () => handleButtonClick("Conflict Management"),
-  },
-  {
-    skill: "Behaviour Management",
-    onClick: () => handleButtonClick("Behaviour Management"),
-  },
-  {
-    skill: "Resourcefulness",
-    onClick: () => handleButtonClick("Resourcefulness"),
-  },
-  {
-    skill: "Critical Thinking",
-    onClick: () => handleButtonClick("Critical Thinking"),
-  },
-  { skill: "Leadership", onClick: () => handleButtonClick("Leadership") },
-  { skill: "Creativity", onClick: () => handleButtonClick("Creativity") },
-];
+import CreativityCard from "../components/skillcards/CreativityCard";
 
 function SkillShellPage() {
   const [selectedButton, setSelectedButton] = useState(null);
@@ -72,6 +25,52 @@ function SkillShellPage() {
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
   };
+
+  const skills = [
+    { skill: "Technology", onClick: () => handleButtonClick("Technology") },
+    {
+      skill: "Classroom Management",
+      onClick: () => handleButtonClick("Classroom Management"),
+    },
+    {
+      skill: "Life Work Balance",
+      onClick: () => handleButtonClick("Life Work Balance"),
+    },
+    {
+      skill: "Home Economics",
+      onClick: () => handleButtonClick("Home Economics"),
+    },
+    {
+      skill: "Boundary Setting",
+      onClick: () => handleButtonClick("Boundary Setting"),
+    },
+    {
+      skill: "Time Management",
+      onClick: () => handleButtonClick("Time Management"),
+    },
+    {
+      skill: "Physical Education",
+      onClick: () => handleButtonClick("Physical Education"),
+    },
+    {
+      skill: "Conflict Management",
+      onClick: () => handleButtonClick("Conflict Management"),
+    },
+    {
+      skill: "Behaviour Management",
+      onClick: () => handleButtonClick("Behaviour Management"),
+    },
+    {
+      skill: "Resourcefulness",
+      onClick: () => handleButtonClick("Resourcefulness"),
+    },
+    {
+      skill: "Critical Thinking",
+      onClick: () => handleButtonClick("Critical Thinking"),
+    },
+    { skill: "Leadership", onClick: () => handleButtonClick("Leadership") },
+    { skill: "Creativity", onClick: () => handleButtonClick("Creativity") },
+  ];
 
   return (
     <div className="blueBody">
