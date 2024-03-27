@@ -31,10 +31,6 @@ function SkillShellPage() {
   
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
-    if (newComponentRef.current) {
-      const topPos = newComponentRef.current.offsetTop;
-      window.scrollTo({ top: topPos, behavior: "smooth" });
-    }
   };
 
   const skills = [
@@ -98,6 +94,7 @@ function SkillShellPage() {
         {skills.map((skill, index) => (<SkillButton key={index} skill={skill.skill} onClick={skill.onClick} />
         ))}
       </div>
+      <div ref={newComponentRef}>
       {selectedButton === "Technology" && <TechCard />}
       {selectedButton === "Classroom Management" && <ClassroomManagementCard />}
       {selectedButton === "Life Work Balance" && <LifeWorkBalanceCard />}
@@ -111,6 +108,7 @@ function SkillShellPage() {
       {selectedButton === "Critical Thinking" && <CriticalThinkingCard />}
       {selectedButton === "Leadership" && <LeadershipCard />}
       {selectedButton === "Creativity" && <CreativityCard />}
+      </div>
     </div>
   );
 }
