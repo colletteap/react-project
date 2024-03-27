@@ -21,7 +21,7 @@ const HomeEconomicsCard = () => {
 
   return (
     <>
-      <h1>Shared Classroom Management Skills</h1>
+      <h1>Shared Home Economics Skills</h1>
       <div>
         {skillinfo.map((key, index) => (
           <BlankSkillCard

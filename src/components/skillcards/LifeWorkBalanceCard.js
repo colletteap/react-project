@@ -21,7 +21,7 @@ const LifeWorkBalanceCard = () => {
 
   return (
     <>
-      <h1>Shared Classroom Management Skills</h1>
+      <h1>Shared Life Work Balance Skills</h1>
       <div>
         {skillinfo.map((key, index) => (
           <BlankSkillCard
