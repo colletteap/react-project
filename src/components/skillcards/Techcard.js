@@ -19,10 +19,17 @@ const TechCard = () => {
     },
   ];
 
+  const cardStyle = {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr",
+    gap: "30px",
+    padding: "10px",
+  };
+
   return (
     <>
       <h1>Shared Technology Skills</h1>
-      <div>
+      <div style={cardStyle}>
         {skillinfo.map((key, index) => (
           <BlankSkillCard
             skill = {key.skill}
