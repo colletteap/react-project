@@ -26,9 +26,16 @@ const TechCard = () => {
     padding: "10px",
   };
 
+  const headingStyle = {
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "Verdana, sans serif",
+    color: "#ffff",
+  }
+
   return (
     <>
-      <h1>Shared Technology Skills</h1>
+      <h1 style={headingStyle}>Shared Technology Skills</h1>
       <div style={cardStyle}>
         {skillinfo.map((key, index) => (
           <BlankSkillCard
