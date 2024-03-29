@@ -19,10 +19,25 @@ const TimeManagementCard = () => {
     },
   ];
 
+  const cardStyle = {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr",
+    gap: "30px",
+    padding: "10px",
+    marginLeft: "50px",
+  };
+
+  const headingStyle = {
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "Verdana, sans serif",
+    color: "#ffff",
+  };
+
   return (
     <>
-      <h1>Shared Time Management Skills</h1>
-      <div>
+      <h1 style={headingStyle}>Shared Time Management Skills</h1>
+      <div style={cardStyle}>
         {skillinfo.map((key, index) => (
           <BlankSkillCard
             skill = {key.skill}

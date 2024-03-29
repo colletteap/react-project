@@ -24,6 +24,7 @@ const PhysicalEducationCard = () => {
     gridTemplateColumns: "1fr 1fr 1fr",
     gap: "30px",
     padding: "10px",
+    marginLeft: "50px",
   };
 
   const headingStyle = {

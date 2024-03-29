@@ -24,13 +24,16 @@ const TechCard = () => {
     gridTemplateColumns: "1fr 1fr 1fr",
     gap: "30px",
     padding: "10px",
+    marginLeft: "50px",
   };
 
   const headingStyle = {
     display: "flex",
     justifyContent: "center",
     fontFamily: "Verdana, sans serif",
-    color: "#ffff",
+    color: "#233349",
+    backgroundColor: "#fcf9da",
+    paddingBottom: "40px",
   }
 
   return (
