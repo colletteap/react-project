@@ -31,7 +31,9 @@ const CriticalThinkingCard = () => {
     display: "flex",
     justifyContent: "center",
     fontFamily: "Verdana, sans serif",
-    color: "#ffff",
+    color: "#233349",
+    backgroundColor: "#fcf9da",
+    paddingBottom: "40px",
   };
 
   return (
