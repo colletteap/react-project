@@ -1,12 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AdviceBox from "./Advicebox";
 import "../styles/Advicelanding.css";
+import Advice from "../pages/Advice.js";
 
 const AdviceLanding = () => {
   return (
     <>
       <h1 className="blueHeading">Advice from real teachers</h1>
-      <div className="AdviceContainer">
+      <Link to= "Advice" style={{ textDecoration: 'none' }}>
+        <div className="AdviceContainer">
+        
         <AdviceBox
           type="Question:"
           question="How do I manage my workload?"
@@ -23,6 +27,7 @@ const AdviceLanding = () => {
           comment="NewEd Tech on YouTube has been my game changer!"
         />
       </div>
+      </Link>
     </>
   );
 };
