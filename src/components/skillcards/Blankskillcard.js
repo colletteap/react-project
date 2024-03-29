@@ -11,18 +11,19 @@ export default function BlankSkillCard({ skill, details }) {
       sx={{
         minWidth: 300,
         width: "25%",
+        borderRadius: "5px",
         "--Card-radius": (theme) => theme.vars.radius.xs,
       }}
     >
       <CardContent
         orientation="horizontal"
-        sx={{ alignItems: "center", gap: 1 }}
+        sx={{ alignItems: "flex-start", gap: 1, position: "relative" }}
       ></CardContent>
       <CardContent>
-        <Typography align="center" sx={{ fontWeight: 'bold' }} fontSize="sm">
+        <Typography sx={{ textAlign: "start", fontWeight: 'bold', position: "absolute", top: 5 }} fontSize="sm">
             {skill}
           </Typography>
-          <Typography>
+          <Typography sx= {{ textAlign: 'start', border: "1px solid #233349", borderRadius: "5px", padding: "6px" }}>
           {details}
         </Typography>
       </CardContent>
