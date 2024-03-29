@@ -20,7 +20,7 @@ export default function BlankSkillCard({ skill, details }) {
         sx={{ alignItems: "flex-start", gap: 1, position: "relative" }}
       ></CardContent>
       <CardContent>
-        <Typography sx={{ textAlign: "start", fontWeight: 'bold', position: "absolute", top: 5 }} fontSize="sm">
+        <Typography sx={{ textAlign: "start", fontWeight: 'bold', position: "absolute", top: 3 }} fontSize="16px">
             {skill}
           </Typography>
           <Typography sx= {{ textAlign: 'start', border: "1px solid #233349", borderRadius: "5px", padding: "6px" }}>
