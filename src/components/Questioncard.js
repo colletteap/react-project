@@ -5,7 +5,7 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-export default function Questioncard({ cardId }) {
+export default function Questioncard({ type, cardId }) {
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
     const storedComments = localStorage.getItem(`comments_${cardId}`);
@@ -36,12 +36,13 @@ export default function Questioncard({ cardId }) {
       sx={{
         minWidth: 300,
         width: "25%",
+        border: "2px solid #233349", borderRadius: "5px", 
         "--Card-radius": (theme) => theme.vars.radius.xs,
       }}
     >
       <CardContent
         orientation="horizontal"
-        sx={{ alignItems: "center", gap: 1 }}
+        sx={{ alignItems: "center", gap: 1, }}
       ></CardContent>
 
       <CardContent>
@@ -52,14 +53,14 @@ export default function Questioncard({ cardId }) {
           fontWeight="lg"
           textColor="text.primary"
         ></Link>
-        <Typography fontSize="sm">
+        <Typography fontSize="sm" >
           <Link
             component="button"
             color="neutral"
             fontWeight="lg"
             textColor="text.primary"
           >
-            ***
+            {type}
           </Link>{" "}
           ***
         </Typography>
@@ -68,7 +69,7 @@ export default function Questioncard({ cardId }) {
           underline="none"
           fontSize="sm"
           startDecorator="…"
-          sx={{ color: "text.tertiary" }}
+          sx={{ color: "text.tertiary",  }}
         >
           more
         </Link>
@@ -76,7 +77,7 @@ export default function Questioncard({ cardId }) {
           component="button"
           underline="none"
           fontSize="10px"
-          sx={{ color: "text.tertiary", my: 0.5 }}
+          sx={{ color: "text.tertiary", my: 0.5,  }}
         ></Link>
       </CardContent>
       {commentsList.map((commentItem) => (
@@ -91,7 +92,7 @@ export default function Questioncard({ cardId }) {
           placeholder="Add a comment…"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
-          sx={{ flex: 1, px: 0, "--Input-focusedThickness": "0px" }}
+          sx={{ flex: 1, px: 0, "--Input-focusedThickness": "0px", border: "2px solid #233349", borderRadius: "5px",  }}
         />
         <Link onClick={handlePostClick} underline="none" role="button">
           Post
