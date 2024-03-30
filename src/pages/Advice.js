@@ -9,21 +9,25 @@ import AdviceInitialButton from "../components/AdviceInitialButton";
 import GiveAdvice from "../assets/GiveAdvice.png";
 import AskAdvice from "../assets/AskAdvice.png";
 import Home from "../assets/Home.png";
+import Back from "../assets/Back.png";
 
 function Advice() {
   const [showPostcard, setShowPostcard] = useState(false);
   const [showAskAdvice, setShowAskAdvice] = useState(false);
   const [showGiveAdvice, setShowGiveAdvice] = useState(false);
   const [showAdviceTopContainer, setShowAdviceTopContainer] = useState(true);
+  const [showBackButton, setShowBackButton] = useState(false);
 
   const handleAskAdviceClick = () => {
     setShowAskAdvice(true);
     setShowAdviceTopContainer(false);
+    setShowBackButton(true);
   };
 
   const handleGiveAdviceClick = () => {
     setShowGiveAdvice(true);
     setShowAdviceTopContainer(false);
+    setShowBackButton(true);
   };
 
   const handleBtnAClick = () => {
@@ -35,11 +39,24 @@ function Advice() {
     }
   };
 
+  const handleBackButton = () => {
+    setShowAskAdvice(false);
+    setShowGiveAdvice(false);
+    setShowAdviceTopContainer(true);
+    setShowBackButton(false);
+    setShowPostcard(false);
+  }
+
   return (
     <div>
        <div className="SearchBarContainer">
             <SearchBar />
           </div>
+          {showBackButton && ( 
+            <div className="SearchBarContainer">
+            <img className="backButton" src={Back} alt="Go Back" onClick={handleBackButton}/>
+            </div>
+            )}
       {showAdviceTopContainer && (<div className="adviceTopContainer">
         <AdviceInitialButton
           type="Give Advice"
@@ -57,8 +74,8 @@ function Advice() {
         <>
          
           
-          <div className="DoubleContainer">
-          <h2 className="Titles">Receive Advice</h2>
+          <div className="Titles">
+          <h2>Ask for Advice</h2>
             <ActionButton skill="Ask Question" onClick={handleBtnAClick} />
           </div>
           <div className="AdviceInputContainer">
@@ -77,8 +94,9 @@ function Advice() {
       {showGiveAdvice && (
         <>
           
-          <h2 className="Titles">Give Advice</h2>
-          <div className="AdviceButtonContainer">
+          
+          <div className="Titles">
+          <h2>Give Advice</h2>
             <ActionButton skill="Add Advice" onClick={handleBtnAClick} />
           </div>
           <div className="AdviceInputContainer">
