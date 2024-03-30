@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Advice.css";
+import { Link } from "react-router-dom";
 import ActionButton from "../components/Actionbutton";
 import QuestionCard from "../components/Questioncard";
 import PostCard from "../components/Postcard";
@@ -7,6 +8,7 @@ import SearchBar from "../components/Searchbar";
 import AdviceInitialButton from "../components/AdviceInitialButton";
 import GiveAdvice from "../assets/GiveAdvice.png";
 import AskAdvice from "../assets/AskAdvice.png";
+import Home from "../assets/Home.png";
 
 function Advice() {
   const [showPostcard, setShowPostcard] = useState(false);
@@ -92,6 +94,11 @@ function Advice() {
           </div>
         </>
       )}
+      <div className="footerA">
+      <Link to="../Home">
+<img src={Home} alt="Home" style={{ padding: "5px", }} />
+</Link>
+      </div>
     </div>
   );
 }

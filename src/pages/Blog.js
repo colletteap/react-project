@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Blogcard from "../components/Blogcard";
 import BlogLanding1 from "../assets/bloglanding1.png";
 import BlogLanding2 from "../assets/bloglanding2.png";
 import BlogLanding3 from "../assets/bloglanding3.png";
 import SearchBar from "../components/Searchbar";
 import "../styles/Blog.css";
+import Home from "../assets/Home.png";
 
 const urls = [
   'https://www.burnedinteacher.com/',
@@ -72,6 +74,11 @@ function Blog() {
           para1=""
           para2=""
         />
+      </div>
+      <div className="footerA">
+      <Link to="../Home">
+<img src={Home} alt="Home" style={{ padding: "5px", }} />
+</Link>
       </div>
     </div>
   );

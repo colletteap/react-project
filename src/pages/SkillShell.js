@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../styles/SkillShell.css";
 import Skill from "../assets/skill.png";
 import Superhero from "../assets/superhero.png";
 import Discover from "../assets/discover.png";
 import Community from "../assets/community.png";
+import Home from "../assets/Home.png";
 import SkillButton from "../components/Skillbutton";
 import TechCard from "../components/skillcards/Techcard";
 import ClassroomManagementCard from "../components/skillcards/ClassroomManagementCard";
@@ -108,6 +110,11 @@ function SkillShellPage() {
       {selectedButton === "Critical Thinking" && <CriticalThinkingCard />}
       {selectedButton === "Leadership" && <LeadershipCard />}
       {selectedButton === "Creativity" && <CreativityCard />}
+      </div>
+      <div className="footerA">
+      <Link to="../Home">
+<img src={Home} alt="Home" style={{ padding: "5px", }} />
+</Link>
       </div>
     </div>
   );
