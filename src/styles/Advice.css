@@ -13,14 +13,14 @@
   justify-items: center;
   align-items: center;
 }
-.AdviceButtonContainer {
+.DoubleContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 40px 20px;
   grid-auto-flow: row;
   grid-template-areas: ". Advice Question .";
-  padding: 60px;
+  padding: 20px;
 }
 
 .Question {
@@ -67,4 +67,18 @@
   .AdviceContainer {
     padding-left: 20px;
   }
+}
+
+.adviceTopContainer {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: auto;
+}
+
+.imgA {
+  width: 30%;
 }

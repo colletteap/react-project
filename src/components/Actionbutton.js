@@ -18,12 +18,12 @@ export default function ActionButton({ skill, onClick }) {
         <Button
           variant="contained"
           size="medium"
-          sx={{ bgcolor: "#ffff", color: "#233349", borderRadius: "10px" }}
+          sx={{ bgcolor: "#233349", color: "#ffff", fontWeight: "bolder", borderRadius: "10px", "&:hover": {backgroundColor: "#5378AB",}  }}
           onClick={onClick}
         >
           <Typography
             sx={{
-              fontFamily: "Arial",
+              fontFamily: "Verdana",
               textTransform: "initial",
               whiteSpace: "nowrap",
             }}
