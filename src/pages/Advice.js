@@ -50,7 +50,7 @@ function Advice() {
   return (
     <div>
        <div className="SearchBarContainer">
-            <SearchBar />
+            <SearchBar style={{ transform: 'scale(7) !important' }} />
           </div>
           {showBackButton && ( 
             <div className="SearchBarContainer">

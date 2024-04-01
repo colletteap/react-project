@@ -1,11 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Landingblogcard from "./Landingblogcard.js";
 import "../styles/Bloglanding.css";
 import BlogLanding1 from "../assets/bloglanding1.png";
 import BlogLanding2 from "../assets/bloglanding2.png";
 import BlogLanding3 from "../assets/bloglanding3.png";
-import Blog from "../pages/Blog.js";
 
 const BlogLanding = () => {
   return (
