@@ -11,7 +11,7 @@ const BlogLanding = () => {
   return (
     <>
       <h1 className="whiteHeading">Resources from real teachers</h1>
-      <Link to= "Blog" style={{ textDecoration: 'none' }}>
+      
       <div className="BlogContainer">
         <Landingblogcard
           title="Google Classroom Tips"
@@ -32,7 +32,7 @@ const BlogLanding = () => {
           image={BlogLanding3}
         />
       </div>
-      </Link>
+      
     </>
   );
 };

@@ -8,7 +8,7 @@ const AdviceLanding = () => {
   return (
     <>
       <h1 className="blueHeading">Advice from real teachers</h1>
-      <Link to= "Advice" style={{ textDecoration: 'none' }}>
+      
         <div className="AdviceContainer">
         
         <AdviceBox
@@ -26,8 +26,9 @@ const AdviceLanding = () => {
           question="Google Classroom confuses me. Help!"
           comment="NewEd Tech on YouTube has been my game changer!"
         />
+        
       </div>
-      </Link>
+      
     </>
   );
 };

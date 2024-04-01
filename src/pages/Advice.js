@@ -113,7 +113,7 @@ function Advice() {
         </>
       )}
       <div className="footerA">
-      <Link to="../Home">
+      <Link to="/">
 <img src={Home} alt="Home" style={{ padding: "5px", }} />
 </Link>
       </div>

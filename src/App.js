@@ -13,10 +13,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/SkillShell/:skill" element={<SkillShell />} />
-          <Route path="/" element={<GridLanding />} />
           <Route path="/SkillShell" element={<SkillShell />} />
           <Route path="/Advice" element={<Advice />} />
           <Route path="/Blog" element={<Blog />} />
+          <Route path="/" element={<GridLanding />} />
         </Routes>
       </Router>
 
