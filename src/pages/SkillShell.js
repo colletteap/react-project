@@ -20,6 +20,7 @@ import ResourcefulnessCard from "../components/skillcards/ResourcefulnessCard";
 import CriticalThinkingCard from "../components/skillcards/CriticalThinkingCard";
 import LeadershipCard from "../components/skillcards/LeadershipCard";
 import CreativityCard from "../components/skillcards/CreativityCard";
+import { skillShellData } from "../components/Data";
 
 function SkillShellPage() {
   const [selectedButton, setSelectedButton] = useState(null);
@@ -30,56 +31,8 @@ function SkillShellPage() {
       newComponentRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [selectedButton]);
-  
-  const handleButtonClick = (buttonName) => {
-    setSelectedButton(buttonName);
-  };
 
-  const skills = [
-    { skill: "Technology", onClick: () => handleButtonClick("Technology") },
-    {
-      skill: "Classroom Management",
-      onClick: () => handleButtonClick("Classroom Management"),
-    },
-    {
-      skill: "Life Work Balance",
-      onClick: () => handleButtonClick("Life Work Balance"),
-    },
-    {
-      skill: "Home Economics",
-      onClick: () => handleButtonClick("Home Economics"),
-    },
-    {
-      skill: "Boundary Setting",
-      onClick: () => handleButtonClick("Boundary Setting"),
-    },
-    {
-      skill: "Time Management",
-      onClick: () => handleButtonClick("Time Management"),
-    },
-    {
-      skill: "Physical Education",
-      onClick: () => handleButtonClick("Physical Education"),
-    },
-    {
-      skill: "Conflict Management",
-      onClick: () => handleButtonClick("Conflict Management"),
-    },
-    {
-      skill: "Behaviour Management",
-      onClick: () => handleButtonClick("Behaviour Management"),
-    },
-    {
-      skill: "Resourcefulness",
-      onClick: () => handleButtonClick("Resourcefulness"),
-    },
-    {
-      skill: "Critical Thinking",
-      onClick: () => handleButtonClick("Critical Thinking"),
-    },
-    { skill: "Leadership", onClick: () => handleButtonClick("Leadership") },
-    { skill: "Creativity", onClick: () => handleButtonClick("Creativity") },
-  ];
+ 
 
   return (
     <div className="blueBody">
@@ -93,28 +46,37 @@ function SkillShellPage() {
         </div>
       </div>
       <div className="skillContainer">
-        {skills.map((skill, index) => (<SkillButton key={index} skill={skill.skill} onClick={skill.onClick} />
+        {skillShellData(setSelectedButton).map((skill, index) => (
+          <SkillButton
+            key={index}
+            skill={skill.skill}
+            onClick={skill.onClick}
+          />
         ))}
       </div>
       <div ref={newComponentRef}>
-      {selectedButton === "Technology" && <TechCard />}
-      {selectedButton === "Classroom Management" && <ClassroomManagementCard />}
-      {selectedButton === "Life Work Balance" && <LifeWorkBalanceCard />}
-      {selectedButton === "Home Economics" && <HomeEconomicsCard />}
-      {selectedButton === "Boundary Setting" && <BoundarySettingCard />}
-      {selectedButton === "Time Management" && <TimeManagementCard />}
-      {selectedButton === "Physical Education" && <PhysicalEducationCard />}
-      {selectedButton === "Conflict Management" && <ConflictManagementCard />}
-      {selectedButton === "Behaviour Management" && <BehaviourManagementCard />}
-      {selectedButton === "Resourcefulness" && <ResourcefulnessCard />}
-      {selectedButton === "Critical Thinking" && <CriticalThinkingCard />}
-      {selectedButton === "Leadership" && <LeadershipCard />}
-      {selectedButton === "Creativity" && <CreativityCard />}
+        {selectedButton === "Technology" && <TechCard />}
+        {selectedButton === "Classroom Management" && (
+          <ClassroomManagementCard />
+        )}
+        {selectedButton === "Life Work Balance" && <LifeWorkBalanceCard />}
+        {selectedButton === "Home Economics" && <HomeEconomicsCard />}
+        {selectedButton === "Boundary Setting" && <BoundarySettingCard />}
+        {selectedButton === "Time Management" && <TimeManagementCard />}
+        {selectedButton === "Physical Education" && <PhysicalEducationCard />}
+        {selectedButton === "Conflict Management" && <ConflictManagementCard />}
+        {selectedButton === "Behaviour Management" && (
+          <BehaviourManagementCard />
+        )}
+        {selectedButton === "Resourcefulness" && <ResourcefulnessCard />}
+        {selectedButton === "Critical Thinking" && <CriticalThinkingCard />}
+        {selectedButton === "Leadership" && <LeadershipCard />}
+        {selectedButton === "Creativity" && <CreativityCard />}
       </div>
       <div className="footerA">
-      <Link to="/">
-<img src={Home} alt="Home" style={{ padding: "5px", }} />
-</Link>
+        <Link to="/">
+          <img src={Home} alt="Home" style={{ padding: "5px" }} />
+        </Link>
       </div>
     </div>
   );
