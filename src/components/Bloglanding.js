@@ -7,21 +7,18 @@ const BlogLanding = () => {
   return (
     <>
       <h1 className="whiteHeading">Resources from real teachers</h1>
-      
+
       <div className="BlogContainer">
-        {blogData.map((item, index) => {
-         <Landingblogcard
-         key={index}
-         title={item.title}
-         content={item.content}
-         linkTo={item.linkTo}
-         image={item.image}
-       /> 
-        })}
-        
-      
+        {blogData.map((item, index) => (
+          <Landingblogcard
+            key={index}
+            title={item.title}
+            content={item.content}
+            linkTo={item.linkTo}
+            image={item.image}
+          />
+        ))}
       </div>
-      
     </>
   );
 };
