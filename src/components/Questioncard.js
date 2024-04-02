@@ -36,16 +36,15 @@ export default function Questioncard({ type, cardId }) {
       sx={{
         minWidth: 300,
         width: "25%",
-        border: "2px solid #233349", borderRadius: "5px", 
+        border: "2px solid black", 
+        borderRadius: "15px", 
         "--Card-radius": (theme) => theme.vars.radius.xs,
+        height: "20vh",
+        overflowY: "auto",
       }}
     >
       <CardContent
-        orientation="horizontal"
-        sx={{ alignItems: "center", gap: 1, }}
-      ></CardContent>
-
-      <CardContent>
+      sx= {{border: "2px solid #233349", borderRadius: "10px", padding: "8px"}}>
         <Link
           component="button"
           underline="none"
@@ -81,7 +80,7 @@ export default function Questioncard({ type, cardId }) {
         ></Link>
       </CardContent>
       {commentsList.map((commentItem) => (
-        <CardContent key={commentItem.id} sx={{ mt: 1 }}>
+        <CardContent key={commentItem.id} sx={{ border: "2px solid #A8512F", borderRadius: "10px", padding: "8px"}}>
           {commentItem.text}
         </CardContent>
       ))}
@@ -92,9 +91,14 @@ export default function Questioncard({ type, cardId }) {
           placeholder="Add a comment…"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
-          sx={{ flex: 1, px: 0, "--Input-focusedThickness": "0px", border: "2px solid #233349", borderRadius: "5px",  }}
+          sx={{ flex: 1, 
+            px: 0, 
+            "--Input-focusedThickness": "0px", 
+            border: "2px solid #233349", 
+            borderRadius: "5px",  
+            padding: "5px"}}
         />
-        <Link onClick={handlePostClick} underline="none" role="button">
+        <Link onClick={handlePostClick} underline="none" role="button" border="1px solid #233349" borderRadius="10px" padding="5px">
           Post
         </Link>
       </CardContent>
