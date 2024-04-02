@@ -14,7 +14,6 @@ export default function AdviceBox({ type, question, linkTo, comment }) {
       variant="outlined"
       sx={{
         minWidth: 300,
-        width: "25%",
         border: "3px solid #233349",
         borderRadius: "10px",
       }}
@@ -57,11 +56,11 @@ export default function AdviceBox({ type, question, linkTo, comment }) {
           component="button"
           underline="none"
           fontSize="10px"
-          sx={{ color: "text.tertiary", my: 0.5 }}
+          sx={{ color: "text.tertiary"}}
         ></Link>
       </CardContent>
 
-      <CardContent orientation="horizontal" sx={{ gap: 1 }}>
+      <CardContent orientation="horizontal" sx={{ display: "flex", gap: 1 }}>
         <Input
           variant="plain"
           size="sm"
@@ -69,7 +68,6 @@ export default function AdviceBox({ type, question, linkTo, comment }) {
           sx={{
             flex: 1,
             px: 0,
-            "--Input-focusedThickness": "0px",
             backgroundColor: "#D4E1F4",
             padding: "5px",
           }}
