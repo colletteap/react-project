@@ -14,6 +14,7 @@ const AdviceLanding = () => {
           key={index}
           type={item.type}
           question={item.question}
+          linkTo={item.linkTo}
           comment={item.comment}
         />
         ))} 

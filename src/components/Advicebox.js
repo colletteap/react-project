@@ -5,24 +5,23 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-let cardIdCounter = 1;
-
 export default function AdviceBox({ type, question, linkTo, comment }) {
   return (
+   <Link
+   to= {linkTo}
+   underline="none">
     <Card
       variant="outlined"
       sx={{
         minWidth: 300,
         width: "25%",
-        "--Card-radius": (theme) => theme.vars.radius.xs,
+        border: "3px solid #233349",
+        borderRadius: "10px",
       }}
     >
-      <CardContent
-        orientation="horizontal"
-        sx={{ alignItems: "center", gap: 1 }}
-      ></CardContent>
 
-      <CardContent>
+      <CardContent
+      sx= {{border: "2px solid #233349", borderRadius: "10px", padding: "8px",}}>
         <Link
           to={linkTo}
           component="button"
@@ -75,10 +74,11 @@ export default function AdviceBox({ type, question, linkTo, comment }) {
             padding: "5px",
           }}
         />
-        <Link underline="none" role="button">
+        <Link underline="none" role="button" border="1px solid #233349" borderRadius="10px" padding="5px">
           Post
         </Link>
       </CardContent>
     </Card>
+    </Link>
   );
 }
