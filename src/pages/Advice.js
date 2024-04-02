@@ -10,6 +10,7 @@ import GiveAdvice from "../assets/GiveAdvice.png";
 import AskAdvice from "../assets/AskAdvice.png";
 import Home from "../assets/Home.png";
 import Back from "../assets/Back.png";
+import { askAdviceCardData } from "../components/Data";
 
 function Advice() {
   const [showPostcard, setShowPostcard] = useState(false);
@@ -82,12 +83,10 @@ function Advice() {
             {showPostcard && <PostCard />}
           </div>
           <div className="receiveAdviceDiv">
-            <QuestionCard cardID="1" />
-            <QuestionCard cardID="2" />
-            <QuestionCard cardID="1" />
-            <QuestionCard cardID="2" />
-            <QuestionCard cardID="1" />
-            <QuestionCard cardID="2" />
+            {askAdviceCardData.map((type, index) => (
+            <QuestionCard key={index} type={type.type} cardId={type.cardId} question={type.question} />
+            ))}
+         
           </div>
         </>
       )}

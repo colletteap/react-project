@@ -104,4 +104,27 @@ const skillShellData = [
   { skill: "Creativity" },
 ];
 
-export { skillData, adviceData, blogData, skillShellData };
+const askAdviceCardData = [
+    {
+    type: "Question",
+    cardId: "1",
+    question: "I am a substitute, how can I gain trust with a new group of students almost daily?",
+    },
+    {
+        type: "Question",
+        cardId: "2",
+        question: "How can I make extra money with teaching skills?",
+    },
+    {
+        type: "Question",
+        cardId: "3",
+        question: "What is your favorite way to relax on Friday evening?",
+    },
+    {
+        type: "Question",
+        cardId: "4",
+        question: "How do you keep everything organized?",
+    },
+]
+
+export { skillData, adviceData, blogData, skillShellData, askAdviceCardData };

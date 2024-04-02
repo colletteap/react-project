@@ -5,7 +5,7 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-export default function Questioncard({ type, cardId }) {
+export default function Questioncard({ type, cardId, question }) {
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
     const storedComments = localStorage.getItem(`comments_${cardId}`);
@@ -61,26 +61,17 @@ export default function Questioncard({ type, cardId }) {
           >
             {type}
           </Link>{" "}
-          ***
+          {question}
         </Typography>
-        <Link
-          component="button"
-          underline="none"
-          fontSize="sm"
-          startDecorator="…"
-          sx={{ color: "text.tertiary",  }}
-        >
-          more
-        </Link>
-        <Link
-          component="button"
-          underline="none"
-          fontSize="10px"
-          sx={{ color: "text.tertiary", my: 0.5,  }}
-        ></Link>
+       
       </CardContent>
       {commentsList.map((commentItem) => (
-        <CardContent key={commentItem.id} sx={{ border: "2px solid #A8512F", borderRadius: "10px", padding: "8px"}}>
+        <CardContent 
+        key={commentItem.id} 
+        sx={{ border: "2px solid #A8512F", 
+        borderRadius: "10px", 
+        padding: "8px",
+        fontSize:"sm"}}>
           {commentItem.text}
         </CardContent>
       ))}
