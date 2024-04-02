@@ -32,7 +32,9 @@ function SkillShellPage() {
     }
   }, [selectedButton]);
 
- 
+  const handleButtonClick = (buttonName) => {
+    setSelectedButton(buttonName);
+  };
 
   return (
     <div className="blueBody">
@@ -46,11 +48,11 @@ function SkillShellPage() {
         </div>
       </div>
       <div className="skillContainer">
-        {skillShellData(setSelectedButton).map((skill, index) => (
+        {skillShellData.map((skill, index) => (
           <SkillButton
             key={index}
             skill={skill.skill}
-            onClick={skill.onClick}
+            onClick={() => handleButtonClick(skill.skill)}
           />
         ))}
       </div>

@@ -65,51 +65,40 @@ const blogData = [
   },
 ];
 
-  const skillShellData = [
-    { skill: "Technology", onClick: () => setSelectedButton("Technology") },
-    {
-      skill: "Classroom Management",
-      onClick: () => setSelectedButton("Classroom Management"),
-    },
-    {
-      skill: "Life Work Balance",
-      onClick: () => setSelectedButton("Life Work Balance"),
-    },
-    {
-      skill: "Home Economics",
-      onClick: () => setSelectedButton("Home Economics"),
-    },
-    {
-      skill: "Boundary Setting",
-      onClick: () => setSelectedButton("Boundary Setting"),
-    },
-    {
-      skill: "Time Management",
-      onClick: () => setSelectedButton("Time Management"),
-    },
-    {
-      skill: "Physical Education",
-      onClick: () => setSelectedButton("Physical Education"),
-    },
-    {
-      skill: "Conflict Management",
-      onClick: () => setSelectedButton("Conflict Management"),
-    },
-    {
-      skill: "Behaviour Management",
-      onClick: () => hsetSelectedButton("Behaviour Management"),
-    },
-    {
-      skill: "Resourcefulness",
-      onClick: () => setSelectedButton("Resourcefulness"),
-    },
-    {
-      skill: "Critical Thinking",
-      onClick: () => setSelectedButton("Critical Thinking"),
-    },
-    { skill: "Leadership", onClick: () => setSelectedButton("Leadership") },
-    { skill: "Creativity", onClick: () => setSelectedButton("Creativity") },
-  ];
-
+const skillShellData = [
+  { skill: "Technology" },
+  {
+    skill: "Classroom Management",
+  },
+  {
+    skill: "Life Work Balance",
+  },
+  {
+    skill: "Home Economics",
+  },
+  {
+    skill: "Boundary Setting",
+  },
+  {
+    skill: "Time Management",
+  },
+  {
+    skill: "Physical Education",
+  },
+  {
+    skill: "Conflict Management",
+  },
+  {
+    skill: "Behaviour Management",
+  },
+  {
+    skill: "Resourcefulness",
+  },
+  {
+    skill: "Critical Thinking",
+  },
+  { skill: "Leadership" },
+  { skill: "Creativity" },
+];
 
 export { skillData, adviceData, blogData, skillShellData };
