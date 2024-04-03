@@ -3,11 +3,18 @@ import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
-import { addCommentToArray } from "./Data";
+import Typography from "@mui/joy/Typography";
 
-export default function Postcard({ type, cardId }) {
+export default function Questioncard({ type, cardId, question }) {
   const [comment, setComment] = React.useState("");
-  const [commentsList, setCommentsList] = React.useState([]);
+  const [commentsList, setCommentsList] = React.useState(() => {
+    const storedComments = localStorage.getItem(`comments_${cardId}`);
+    return storedComments ? JSON.parse(storedComments) : [];
+  });
+
+  React.useEffect(() => {
+    localStorage.setItem(`comments_${cardId}`, JSON.stringify(commentsList));
+  }, [commentsList, cardId]);
 
   const handlePostClick = () => {
     if (comment.trim() === "") {
@@ -18,8 +25,6 @@ export default function Postcard({ type, cardId }) {
       id: commentsList.length + 1,
       text: comment,
     };
-
-    addCommentToArray(newComment);
 
     setCommentsList([...commentsList, newComment]);
     setComment("");
@@ -34,20 +39,35 @@ export default function Postcard({ type, cardId }) {
         border: "2px solid black", 
         borderRadius: "15px", 
         "--Card-radius": (theme) => theme.vars.radius.xs,
+        height: "20vh",
+        overflowY: "auto",
       }}
     >
-    
-      <CardContent>
+      <CardContent
+      sx= {{border: "2px solid #233349", borderRadius: "10px", padding: "8px"}}>
         <Link
-           component="button"
-           underline="none"
-           fontSize="sm"
-           fontWeight="lg"
-           textColor="text.primary"
-        >{type}</Link>
+          component="button"
+          underline="none"
+          fontSize="sm"
+          fontWeight="lg"
+          textColor="text.primary"
+        ></Link>
+        <Typography fontSize="sm" >
+          <Link
+            component="button"
+            color="neutral"
+            fontWeight="lg"
+            textColor="text.primary"
+          >
+            {type}
+          </Link>{" "}
+          {question}
+        </Typography>
+       
       </CardContent>
       {commentsList.map((commentItem) => (
-        <CardContent key={commentItem.id} 
+        <CardContent 
+        key={commentItem.id} 
         sx={{ border: "2px solid #A8512F", 
         borderRadius: "10px", 
         padding: "8px",
@@ -59,7 +79,7 @@ export default function Postcard({ type, cardId }) {
         <Input
           variant="plain"
           size="sm"
-          placeholder="Ask a question!"
+          placeholder="Add a comment…"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
           sx={{ flex: 1, 
@@ -69,7 +89,7 @@ export default function Postcard({ type, cardId }) {
             borderRadius: "5px",  
             padding: "5px"}}
         />
-        <Link onClick={handlePostClick} underline="none" role="button">
+        <Link onClick={handlePostClick} underline="none" role="button" border="1px solid #233349" borderRadius="10px" padding="5px">
           Post
         </Link>
       </CardContent>

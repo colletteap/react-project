@@ -135,6 +135,19 @@ const askAdviceCardData = [
         cardId: "6",
         question: "Who can I contact if I have an issue with my current administration?",
     }
+];
+
+const giveAdviceCardData = [
+  {
+
+  }
 ]
 
-export { skillData, adviceData, blogData, skillShellData, askAdviceCardData };
+let commentsArray = [];
+
+const addCommentToArray = (newComment) => {
+  commentsArray.push(newComment);
+  localStorage.setItem('commentsArray', JSON.stringify(commentsArray));
+;}
+
+export { skillData, adviceData, blogData, skillShellData, askAdviceCardData, giveAdviceCardData, addCommentToArray };

@@ -31,9 +31,7 @@ const ResourcefulnessCard = () => {
     display: "flex",
     justifyContent: "center",
     fontFamily: "Verdana, sans serif",
-    color: "#233349",
-    backgroundColor: "#fcf9da",
-    paddingBottom: "40px",
+    color: "#ffff",
   }
 
   return (
