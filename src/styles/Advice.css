@@ -4,9 +4,23 @@
   align-items: end;
 }
 
-.backButton {
-  transform: scale(0.6);
-  cursor: pointer;
+.centeredContainer {
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.threeRows {
+  display: grid;
+  width: auto;
+	grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; 
+  height: auto;
+}
+
+.smImg {
+  width: 30%;
 }
 
 .AdviceInputContainer {
@@ -18,28 +32,11 @@
   justify-items: center;
   align-items: center;
 }
-.DoubleContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 40px 20px;
-  grid-auto-flow: row;
-  grid-template-areas: ". Advice Question .";
-  padding: 20px;
-}
 
-.Question {
-  grid-area: Question;
-}
-
-.Advice {
-  grid-area: Advice;
-}
-
-.Titles {
+.questionButtonContainer {
   display: grid;
   width: auto;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center; 
   height: auto;
@@ -57,7 +54,7 @@
   background-color: #fcf9da;
 }
 
-.receiveAdviceDiv, .giveAdviceDiv {
+.receiveAdviceDiv {
   display: grid;
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-columns: repeat(3, 1fr);
@@ -73,19 +70,6 @@
   }
 }
 
-.adviceTopContainer {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: repeat(2, auto);
-  justify-items: center;
-  gap: 40px;
-  padding: 20px;
-  width: auto;
-}
-
-.imgA {
-  width: 40%;
-}
 
 .footerA {
   display: flex;
