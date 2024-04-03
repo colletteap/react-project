@@ -41,7 +41,11 @@ export default function Questioncard({ type, cardId, question }) {
         "--Card-radius": (theme) => theme.vars.radius.xs,
         height: "20vh",
         overflowY: "auto",
-      }}
+        WebkitOverflowScrolling: "touch", 
+  "&::-webkit-scrollbar": {
+    display: "none",
+      },
+    }}
     >
       <CardContent
       sx= {{border: "2px solid #233349", borderRadius: "10px", padding: "8px"}}>

@@ -57,9 +57,6 @@ function Advice() {
             {askAdviceCardData.map((type, index) => (
             <ContentCard key={index} type={type.type} cardId={type.cardId} question={type.question} />
             ))}
-            {commentsArray.map((commentItem) => (
-              <ContentCard key={commentItem.id} type={commentItem.type} cardId={commentItem.id} question={commentItem.text} />
-            ))}
          
           </div>
         </>
