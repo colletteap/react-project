@@ -48,12 +48,17 @@ function Advice() {
           <div className="questionButtonContainer">
           <img className="smImg" src={GiveAdvice} alt="Give Advice" />
             {showAskQuestion && <ActionButton skill="Ask Question" onClick={handleBtnAClick} />}
-            {showPostcard && <PostCard type="Question" />}
+            {showPostcard && <PostCard type="Question" setShowPostcard={setShowPostcard} setCommentsArray={setCommentsArray} />}
             <img className="smImg" src={AskAdvice} alt="Ask Advice" />
           </div>
           <h2 className="centeredContainer">Magic in progress..</h2>
           
           <div className="receiveAdviceDiv">
+            {commentsArray.map((question, index) => (
+              <div key={index}>
+                {question}
+                </div>
+            ))}
             {askAdviceCardData.map((type, index) => (
             <ContentCard key={index} type={type.type} cardId={type.cardId} question={type.question} />
             ))}
