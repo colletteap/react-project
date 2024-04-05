@@ -170,11 +170,4 @@ const giveAdviceCardData = [
   }
 ]
 
-let commentsArray = [];
-
-const addCommentToArray = (newComment) => {
-  commentsArray.push(newComment);
-  localStorage.setItem('commentsArray', JSON.stringify(commentsArray));
-;}
-
-export { skillData, adviceData, blogData, skillShellData, askAdviceCardData, giveAdviceCardData, addCommentToArray };
+export { skillData, adviceData, blogData, skillShellData, askAdviceCardData, giveAdviceCardData };

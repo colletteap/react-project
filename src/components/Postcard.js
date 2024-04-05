@@ -4,10 +4,9 @@ import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 
-
-export default function Postcard({ type, cardId }) {
-  const [comment, setComment] = React.useState("");
-  const [commentsList, setCommentsList] = React.useState([]); 
+export default function Postcard({ type, cardId, setCommentsArray }) {
+  const [comment, setComment] = useState("");
+  const [commentsList, setCommentsList] = useState([]);
 
   const handlePostClick = () => {
     if (comment.trim() === "") {
@@ -21,6 +20,9 @@ export default function Postcard({ type, cardId }) {
 
     setCommentsList([...commentsList, newComment]);
     setComment("");
+
+    // Update the comments array in Advice component
+    setCommentsArray((prevComments) => [...prevComments, newComment]);
   };
 
   return (
