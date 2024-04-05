@@ -47,6 +47,8 @@ export default function Blogcard({
         justifySelf: "stretch",
         alignItems: "center",
         flexDirection: "column",
+        border: "5px solid #233349",
+        borderRadius: "10px",
       }}
     >
       <CardHeader

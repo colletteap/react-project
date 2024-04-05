@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import * as React from "react";
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
@@ -8,11 +7,7 @@ import Input from "@mui/joy/Input";
 
 export default function Postcard({ type, cardId }) {
   const [comment, setComment] = React.useState("");
-  const [commentsList, setCommentsList] = React.useState([]);
- 
-  const [commentsArray, setCommentsArray] = useState([]);
-
- 
+  const [commentsList, setCommentsList] = React.useState([]); 
 
   const handlePostClick = () => {
     if (comment.trim() === "") {
@@ -24,12 +19,8 @@ export default function Postcard({ type, cardId }) {
       text: comment,
     };
 
-   
-
     setCommentsList([...commentsList, newComment]);
     setComment("");
-  
-    setCommentsArray([...commentsArray, newComment.text]);
   };
 
   return (
