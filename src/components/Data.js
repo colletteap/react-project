@@ -105,36 +105,38 @@ const skillShellData = [
 ];
 
 const askAdviceCardData = [
-    {
-        type: "Question:",
-        cardId: "1",
-        question: "I am a substitute, how can I gain trust with a new group of students almost daily?",
-    },
-    {
-        type: "Question:",
-        cardId: "2",
-        question: "How can I make extra money with teaching skills?",
-    },
-    {
-        type: "Question:",
-        cardId: "3",
-        question: "What is your favorite way to relax on Friday evening?",
-    },
-    {
-        type: "Question:",
-        cardId: "4",
-        question: "How do you keep everything organized?",
-    },
-    {
-        type: "Question:",
-        cardId: "5",
-        question: "How many years did you substitute before becoming permanent?",
-    },
-    {
-        type: "Question:",
-        cardId: "6",
-        question: "Who can I contact if I have an issue with my current administration?",
-    }
+  {
+    type: "Question:",
+    cardId: "1",
+    question:
+      "I am a substitute, how can I gain trust with a new group of students almost daily?",
+  },
+  {
+    type: "Question:",
+    cardId: "2",
+    question: "How can I make extra money with teaching skills?",
+  },
+  {
+    type: "Question:",
+    cardId: "3",
+    question: "What is your favorite way to relax on Friday evening?",
+  },
+  {
+    type: "Question:",
+    cardId: "4",
+    question: "How do you keep everything organized?",
+  },
+  {
+    type: "Question:",
+    cardId: "5",
+    question: "How many years did you substitute before becoming permanent?",
+  },
+  {
+    type: "Question:",
+    cardId: "6",
+    question:
+      "Who can I contact if I have an issue with my current administration?",
+  },
 ];
 
 const giveAdviceCardData = [
@@ -146,8 +148,9 @@ const giveAdviceCardData = [
   {
     type: "Advice",
     cardId: "2",
-    advice: "Ask your colleagues questions, someone may have the exact answer you're looking for",
-      },
+    advice:
+      "Ask your colleagues questions, someone may have the exact answer you're looking for",
+  },
   {
     type: "Advice",
     cardId: "3",
@@ -156,18 +159,256 @@ const giveAdviceCardData = [
   {
     type: "Advice",
     cardId: "4",
-    advice: "Learn how to emotionally regulate yourself, then you can help your students co-regulate",
-   },
+    advice:
+      "Learn how to emotionally regulate yourself, then you can help your students co-regulate",
+  },
   {
-     type: "Advice",
+    type: "Advice",
     cardId: "5",
     advice: "Get your classes outside whenever you can",
   },
   {
     type: "Advice",
     cardId: "6",
-    advice: "You don't need to be an island, ask for help and keep asking."
-  }
-]
+    advice: "You don't need to be an island, ask for help and keep asking.",
+  },
+];
 
-export { skillData, adviceData, blogData, skillShellData, askAdviceCardData, giveAdviceCardData };
+const skillInfo = [
+  {
+    skill: "Technology",
+    details: "Use YouTube tutorials, search with keywords",
+  },
+  {
+    skill: "Technology",
+    details:
+      "Use a software that automates your emails (beginning of every week/end of every week)",
+  },
+  {
+    skill: "Technology",
+    details:
+      "Make email lists of all parents emails, so you don't need to type them all out individually",
+  },
+
+  {
+    skill: "Time Management",
+    details:
+      "Being able to prioritize tasks based on their importance and deadline helps teachers focus on what needs to be done first and avoid feeling overwhelmed by a long to-do list.",
+  },
+  {
+    skill: "Time Management",
+    details:
+      "Staying organized with lesson plans, grading, and other classroom tasks helps teachers manage their time more efficiently and reduces the risk of forgetting important deadlines or responsibilities.",
+  },
+  {
+    skill: "Time Management",
+    details:
+      "Allocating specific blocks of time for different tasks, such as lesson planning, grading, and administrative work, helps teachers stay focused and productive throughout the day.",
+  },
+
+  {
+    skill: "Resourcefulness",
+    details:
+      "Using positive reinforcement, such as praise, rewards, and encouragement, to reinforce desired behaviors helps motivate students to continue behaving appropriately.",
+  },
+  {
+    skill: "Resourcefulness",
+    details:
+      "Being consistent in enforcing rules and consequences helps establish a predictable and fair environment for students, which is key to effective behavior management.",
+  },
+  {
+    skill: "Resourcefulness",
+    details:
+      "Setting clear expectations for behavior and communicating them effectively to students helps prevent misunderstandings and reduces the likelihood of disruptive behavior.",
+  },
+
+  {
+    skill: "Physical Education",
+    details:
+      "Teaching students fundamental movement skills, such as running, jumping, throwing, and catching, helps build the foundation for more complex physical activities and sports.",
+  },
+  {
+    skill: "Physical Education",
+    details:
+      " Engaging students in activities that require teamwork and cooperation helps develop their social skills and teaches them how to work effectively with others.",
+  },
+  {
+    skill: "Physical Education",
+    details:
+      "Educating students about the importance of physical activity, nutrition, and overall health and fitness helps them make informed decisions about their health and well-being.",
+  },
+  {
+    skill: "Behaviour Management",
+    details: "Using positive reinforcement, such as praise, rewards, and encouragement, to reinforce desired behaviors helps motivate students to continue behaving appropriately.",
+  },
+  {
+    skill: "Behaviour Management",
+    details:
+      "Being consistent in enforcing rules and consequences helps establish a predictable and fair environment for students, which is key to effective behavior management.",
+  },
+  {
+    skill: "Behaviour Management",
+    details:
+      "Setting clear expectations for behavior and communicating them effectively to students helps prevent misunderstandings and reduces the likelihood of disruptive behavior.",
+  },
+];
+
+const lifeWorkBalanceCardInfo = [
+  {
+    skill: "Life Work Balance",
+    details:
+      "Effectively managing time is crucial for teachers to balance their workload with personal time. This includes setting priorities, creating schedules, and learning to delegate tasks when possible.",
+  },
+  {
+    skill: "Life Work Balance",
+    details:
+      "Establishing clear boundaries between work and personal life helps teachers avoid burnout. This can include setting limits on work hours, not checking work emails during personal time, and prioritizing self-care activities.",
+  },
+  {
+    skill: "Life Work Balance",
+    details:
+      "Teaching can be a stressful profession, so having effective stress management strategies is essential. This can include exercise, mindfulness practices, hobbies, or seeking support from colleagues or mental health professionals.",
+  },
+];
+
+const leadershipCardInfo = [
+  {
+    skill: "Leadership",
+    details:
+      "Effective communication skills are crucial for leaders to convey their vision, expectations, and feedback to their team or students. This includes both speaking clearly and listening actively.",
+  },
+  {
+    skill: "Leadership",
+    details:
+      "Strong leaders are able to make informed and timely decisions, weighing the pros and cons and considering the impact on others. They are also able to take responsibility for their decisions.",
+  },
+  {
+    skill: "Leadership",
+    details:
+      "Being empathetic allows leaders to understand and relate to the feelings and perspectives of others, which helps build trust and rapport. It also enables leaders to make decisions that consider the well-being of those they lead.",
+  },
+];
+
+const homeEconomicsCardInfo = [
+  {
+    skill: "Home Economics",
+    details:
+      "Teaching students basic cooking skills, such as meal planning, food preparation, and cooking techniques, is essential for promoting healthy eating habits and independence in the kitchen.",
+  },
+  {
+    skill: "Home Economics",
+    details:
+      "Educating students about budgeting, saving, and making informed financial decisions helps them develop important life skills for managing their finances effectively.",
+  },
+  {
+    skill: "Home Economics",
+    details:
+      "Teaching students basic sewing skills, such as hemming, sewing on buttons, and repairing clothing, as well as clothing care techniques, helps promote sustainability and self-sufficiency in managing their wardrobe.",
+  },
+];
+
+const criticalThinkingCardInfo = [
+  {
+    skill: "Critical Thinking",
+    details:
+      "Using positive reinforcement, such as praise, rewards, and encouragement, to reinforce desired behaviors helps motivate students to continue behaving appropriately.",
+  },
+  {
+    skill: "Critical Thinking",
+    details:
+      "Being consistent in enforcing rules and consequences helps establish a predictable and fair environment for students, which is key to effective behavior management.",
+  },
+  {
+    skill: "Critical Thinking",
+    details:
+      "Setting clear expectations for behavior and communicating them effectively to students helps prevent misunderstandings and reduces the likelihood of disruptive behavior.",
+  },
+];
+
+const creativityCardInfo = [
+  {
+    skill: "Creativity",
+    details: "Creativity often involves finding innovative solutions to challenges or problems. Teachers who encourage students to think creatively help them develop problem-solving skills that can be applied in various contexts.",
+  },
+  {
+    skill: "Creativity",
+    details:
+      "Imagination is the ability to envision new ideas, concepts, or possibilities. Teachers who encourage students to use their imagination help them explore new ways of thinking and expressing themselves.",
+  },
+  {
+    skill: "Creativity",
+    details:
+      "Creativity often requires the ability to adapt and change course when needed. Teachers who foster a flexible mindset in students help them approach problems and tasks with an open mind, leading to more creative outcomes.",
+  },
+];
+
+const conflictManagementCardInfo = [
+  {
+    skill: "Conflict Management",
+    details: " Actively listening to the concerns and perspectives of all parties involved in a conflict helps teachers understand the root cause of the conflict and find a resolution that satisfies everyone.",
+  },
+  {
+    skill: "Conflict Management",
+    details:
+      "Showing empathy towards the emotions and experiences of those involved in a conflict helps create a supportive and understanding environment, which can lead to more effective conflict resolution.",
+  },
+  {
+    skill: "Conflict Management",
+    details:
+      "Teaching students problem-solving skills, such as brainstorming solutions, evaluating options, and making compromises, helps them resolve conflicts in a constructive and positive manner.",
+  },
+];
+
+const classroomManagementCardInfo = [
+  {
+    skill: "Classroom Management",
+    details: "Being able to clearly convey instructions and expectations but also being able to listen actively to students' concerns and feedback.",
+  },
+  {
+    skill: "Classroom Management",
+    details:
+      " Consistency in enforcing rules and consequences helps create a predictable and stable environment for students, which is crucial for effective classroom management.",
+  },
+  {
+    skill: "Classroom Management",
+    details:
+      "Being organized helps teachers plan and execute lessons more efficiently, which can reduce disruptions and keep students engaged.",
+  },
+];
+
+const boundarySettingCardInfo = [
+  {
+    skill: "Boundary Setting",
+    details: "Setting clear and consistent boundaries helps establish expectations and consequences for students' behavior. This clarity reduces confusion and allows students to understand what is expected of them.",
+  },
+  {
+    skill: "Boundary Setting",
+    details:
+      "While consistency is important, teachers also need to be flexible in their approach to boundary setting. Being able to adapt boundaries to fit the situation and individual needs of students is key to effective classroom management.",
+  },
+  {
+    skill: "Boundary Setting",
+    details:
+      "Setting boundaries with empathy and understanding helps build positive relationships with students. Teachers who are empathetic and understanding of students' backgrounds and circumstances can set boundaries that are fair and supportive.",
+  },
+];
+
+
+
+export {
+  skillData,
+  adviceData,
+  blogData,
+  skillShellData,
+  askAdviceCardData,
+  giveAdviceCardData,
+  skillInfo,
+  lifeWorkBalanceCardInfo,
+  leadershipCardInfo,
+  homeEconomicsCardInfo,
+  criticalThinkingCardInfo,
+  creativityCardInfo,
+  conflictManagementCardInfo,
+  classroomManagementCardInfo,
+  boundarySettingCardInfo,
+};

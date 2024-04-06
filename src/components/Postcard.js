@@ -4,9 +4,12 @@ import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 
+
 export default function Postcard({ type, cardId, setCommentsArray }) {
   const [comment, setComment] = useState("");
   const [commentsList, setCommentsList] = useState([]);
+  const [showContentCard, setShowContentCard] = useState(false);
+  
 
   const handlePostClick = () => {
     if (comment.trim() === "") {
@@ -15,14 +18,14 @@ export default function Postcard({ type, cardId, setCommentsArray }) {
 
     const newComment = {
       id: commentsList.length + 1,
+      type: type,
       text: comment,
     };
 
     setCommentsList([...commentsList, newComment]);
     setComment("");
-
-    // Update the comments array in Advice component
-    setCommentsArray((prevComments) => [...prevComments, newComment]);
+    setCommentsArray((prevComments) => [newComment, ...prevComments]);
+    setShowContentCard(true);
   };
 
   return (

@@ -7,6 +7,7 @@ import Discover from "../assets/discover.png";
 import Community from "../assets/community.png";
 import Home from "../assets/Home.png";
 import SkillButton from "../components/Skillbutton";
+import BlankSkillCard from "../components/skillcards/Blankskillcard";
 import TechCard from "../components/skillcards/Techcard";
 import ClassroomManagementCard from "../components/skillcards/ClassroomManagementCard";
 import LifeWorkBalanceCard from "../components/skillcards/LifeWorkBalanceCard";
@@ -23,7 +24,7 @@ import CreativityCard from "../components/skillcards/CreativityCard";
 import { skillShellData } from "../components/Data";
 
 function SkillShellPage() {
-  const [selectedButton, setSelectedButton] = useState(null);
+  const [selectedButton, setSelectedButton] = useState("");
   const newComponentRef = useRef(null);
 
   useEffect(() => {
@@ -64,11 +65,11 @@ function SkillShellPage() {
         {selectedButton === "Life Work Balance" && <LifeWorkBalanceCard />}
         {selectedButton === "Home Economics" && <HomeEconomicsCard />}
         {selectedButton === "Boundary Setting" && <BoundarySettingCard />}
-        {selectedButton === "Time Management" && <TimeManagementCard />}
-        {selectedButton === "Physical Education" && <PhysicalEducationCard />}
+        {selectedButton === "Time Management" && <BehaviourManagementCard skillname={selectedButton} />}
+        {selectedButton === "Physical Education" && <BehaviourManagementCard skillname={selectedButton} />}
         {selectedButton === "Conflict Management" && <ConflictManagementCard />}
         {selectedButton === "Behaviour Management" && (
-          <BehaviourManagementCard />
+          <BehaviourManagementCard skillname={selectedButton}/>
         )}
         {selectedButton === "Resourcefulness" && <ResourcefulnessCard />}
         {selectedButton === "Critical Thinking" && <CriticalThinkingCard />}
