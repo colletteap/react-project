@@ -58,23 +58,7 @@ function SkillShellPage() {
         ))}
       </div>
       <div ref={newComponentRef}>
-        {selectedButton === "Technology" && <TechCard />}
-        {selectedButton === "Classroom Management" && (
-          <ClassroomManagementCard />
-        )}
-        {selectedButton === "Life Work Balance" && <LifeWorkBalanceCard />}
-        {selectedButton === "Home Economics" && <HomeEconomicsCard />}
-        {selectedButton === "Boundary Setting" && <BoundarySettingCard />}
-        {selectedButton === "Time Management" && <BehaviourManagementCard skillname={selectedButton} />}
-        {selectedButton === "Physical Education" && <BehaviourManagementCard skillname={selectedButton} />}
-        {selectedButton === "Conflict Management" && <ConflictManagementCard />}
-        {selectedButton === "Behaviour Management" && (
-          <BehaviourManagementCard skillname={selectedButton}/>
-        )}
-        {selectedButton === "Resourcefulness" && <ResourcefulnessCard />}
-        {selectedButton === "Critical Thinking" && <CriticalThinkingCard />}
-        {selectedButton === "Leadership" && <LeadershipCard />}
-        {selectedButton === "Creativity" && <CreativityCard />}
+      {selectedButton && <BlankSkillCard skillname={{ skillname: selectedButton }} />}
       </div>
       <div className="footerA">
         <Link to="/">

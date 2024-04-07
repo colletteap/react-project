@@ -19,9 +19,9 @@ const headingStyle = {
   paddingBottom: "40px",
 };
 
-const BehaviourManagementCard = ( skillname ) => {
+const BehaviourManagementCard = ({ skillname }) => {
 
-  const behaviourSkill = skillInfo.filter ((item) => {return item.skill == skillname});
+  const behaviourSkill = skillInfo.filter ((item) => {return item.skill == skillname.skillname});
 
   console.log("full skill", skillInfo);
   console.log("skill data", skillname, behaviourSkill)
@@ -33,6 +33,7 @@ const BehaviourManagementCard = ( skillname ) => {
         {behaviourSkill.map((item, index) => (
           <BlankSkillCard
             skill = {item.skill}
+            details= {item.details}
           />
         ))}
       </div>

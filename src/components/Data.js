@@ -251,9 +251,7 @@ const skillInfo = [
     details:
       "Setting clear expectations for behavior and communicating them effectively to students helps prevent misunderstandings and reduces the likelihood of disruptive behavior.",
   },
-];
 
-const lifeWorkBalanceCardInfo = [
   {
     skill: "Life Work Balance",
     details:
@@ -269,9 +267,7 @@ const lifeWorkBalanceCardInfo = [
     details:
       "Teaching can be a stressful profession, so having effective stress management strategies is essential. This can include exercise, mindfulness practices, hobbies, or seeking support from colleagues or mental health professionals.",
   },
-];
 
-const leadershipCardInfo = [
   {
     skill: "Leadership",
     details:
@@ -287,9 +283,7 @@ const leadershipCardInfo = [
     details:
       "Being empathetic allows leaders to understand and relate to the feelings and perspectives of others, which helps build trust and rapport. It also enables leaders to make decisions that consider the well-being of those they lead.",
   },
-];
 
-const homeEconomicsCardInfo = [
   {
     skill: "Home Economics",
     details:
@@ -305,9 +299,7 @@ const homeEconomicsCardInfo = [
     details:
       "Teaching students basic sewing skills, such as hemming, sewing on buttons, and repairing clothing, as well as clothing care techniques, helps promote sustainability and self-sufficiency in managing their wardrobe.",
   },
-];
 
-const criticalThinkingCardInfo = [
   {
     skill: "Critical Thinking",
     details:
@@ -323,9 +315,7 @@ const criticalThinkingCardInfo = [
     details:
       "Setting clear expectations for behavior and communicating them effectively to students helps prevent misunderstandings and reduces the likelihood of disruptive behavior.",
   },
-];
 
-const creativityCardInfo = [
   {
     skill: "Creativity",
     details: "Creativity often involves finding innovative solutions to challenges or problems. Teachers who encourage students to think creatively help them develop problem-solving skills that can be applied in various contexts.",
@@ -340,9 +330,7 @@ const creativityCardInfo = [
     details:
       "Creativity often requires the ability to adapt and change course when needed. Teachers who foster a flexible mindset in students help them approach problems and tasks with an open mind, leading to more creative outcomes.",
   },
-];
 
-const conflictManagementCardInfo = [
   {
     skill: "Conflict Management",
     details: " Actively listening to the concerns and perspectives of all parties involved in a conflict helps teachers understand the root cause of the conflict and find a resolution that satisfies everyone.",
@@ -357,9 +345,7 @@ const conflictManagementCardInfo = [
     details:
       "Teaching students problem-solving skills, such as brainstorming solutions, evaluating options, and making compromises, helps them resolve conflicts in a constructive and positive manner.",
   },
-];
 
-const classroomManagementCardInfo = [
   {
     skill: "Classroom Management",
     details: "Being able to clearly convey instructions and expectations but also being able to listen actively to students' concerns and feedback.",
@@ -374,9 +360,7 @@ const classroomManagementCardInfo = [
     details:
       "Being organized helps teachers plan and execute lessons more efficiently, which can reduce disruptions and keep students engaged.",
   },
-];
 
-const boundarySettingCardInfo = [
   {
     skill: "Boundary Setting",
     details: "Setting clear and consistent boundaries helps establish expectations and consequences for students' behavior. This clarity reduces confusion and allows students to understand what is expected of them.",
@@ -403,12 +387,4 @@ export {
   askAdviceCardData,
   giveAdviceCardData,
   skillInfo,
-  lifeWorkBalanceCardInfo,
-  leadershipCardInfo,
-  homeEconomicsCardInfo,
-  criticalThinkingCardInfo,
-  creativityCardInfo,
-  conflictManagementCardInfo,
-  classroomManagementCardInfo,
-  boundarySettingCardInfo,
 };
