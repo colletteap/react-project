@@ -7,20 +7,7 @@ import Discover from "../assets/discover.png";
 import Community from "../assets/community.png";
 import Home from "../assets/Home.png";
 import SkillButton from "../components/Skillbutton";
-import BlankSkillCard from "../components/skillcards/Blankskillcard";
-import TechCard from "../components/skillcards/Techcard";
-import ClassroomManagementCard from "../components/skillcards/ClassroomManagementCard";
-import LifeWorkBalanceCard from "../components/skillcards/LifeWorkBalanceCard";
-import HomeEconomicsCard from "../components/skillcards/HomeEconomicsCard";
-import BoundarySettingCard from "../components/skillcards/BoundarySettingCard";
-import TimeManagementCard from "../components/skillcards/TimeManagementCard";
-import PhysicalEducationCard from "../components/skillcards/PhysicalEducationCard";
-import ConflictManagementCard from "../components/skillcards/ConflictManagementCard";
-import BehaviourManagementCard from "../components/skillcards/BehaviourManagementCard";
-import ResourcefulnessCard from "../components/skillcards/ResourcefulnessCard";
-import CriticalThinkingCard from "../components/skillcards/CriticalThinkingCard";
-import LeadershipCard from "../components/skillcards/LeadershipCard";
-import CreativityCard from "../components/skillcards/CreativityCard";
+import BlankSkillCard from "../components/Blankskillcard";
 import { skillShellData } from "../components/Data";
 
 function SkillShellPage() {

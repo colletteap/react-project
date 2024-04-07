@@ -2,7 +2,7 @@ import * as React from "react";
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
-import { skillInfo } from "../Data";
+import { skillInfo } from "./Data";
 
 export default function BlankSkillCard({ skillname }) {
   const filteredSkills = skillInfo.filter((item) => item.skill === skillname.skillname);
