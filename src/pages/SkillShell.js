@@ -20,8 +20,8 @@ function SkillShellPage() {
     }
   }, [selectedButton]);
 
-  const handleButtonClick = (buttonName) => {
-    setSelectedButton(buttonName);
+  const handleButtonClick = (skill) => {
+    setSelectedButton(skill);
   };
 
   return (
