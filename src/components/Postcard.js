@@ -4,11 +4,9 @@ import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 
-
-export default function Postcard({ type, cardId, setCommentsArray }) {
+export default function Postcard({ type, cardId, setCommentsArray, setShowPostcard, setQuestionButton }) {
   const [comment, setComment] = useState("");
   const [commentsList, setCommentsList] = useState([]);
-  const [showContentCard, setShowContentCard] = useState(false);
   
 
   const handlePostClick = () => {
@@ -25,7 +23,7 @@ export default function Postcard({ type, cardId, setCommentsArray }) {
     setCommentsList([...commentsList, newComment]);
     setComment("");
     setCommentsArray((prevComments) => [newComment, ...prevComments]);
-    setShowContentCard(true);
+    setShowPostcard(false);
   };
 
   return (

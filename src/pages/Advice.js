@@ -13,6 +13,7 @@ import { askAdviceCardData } from "../components/Data";
 function Advice() {
   const [showPostcard, setShowPostcard] = useState(false);
   const [showAskQuestion, setShowAskQuestion] = useState(true);
+  const [showQuestionButton, setShowQuestionButton] = useState(true);
   const [commentsArray, setCommentsArray] = useState(() => {
     const storedComments = localStorage.getItem('commentsArray');
     return storedComments ? JSON.parse(storedComments) : [];
@@ -41,8 +42,9 @@ function Advice() {
       <>
         <div className="questionButtonContainer">
           <img className="smImg" src={GiveAdvice} alt="Give Advice" />
-          {showAskQuestion && <ActionButton skill="Ask Question" onClick={handleBtnAClick} />}
-          {showPostcard && <PostCard type="Question" setCommentsArray={setCommentsArray} />}
+          <div>{showAskQuestion && <ActionButton skill="Ask Question" onClick={handleBtnAClick} />}
+          {showPostcard && <PostCard type="Question" setCommentsArray={setCommentsArray} setShowPostcard={setShowPostcard} setQuestionButton={setShowQuestionButton}/>}
+          </div>
           <img className="smImg" src={AskAdvice} alt="Ask Advice" />
         </div>
         <h2 className="centeredContainer">Magic in progress..</h2>
