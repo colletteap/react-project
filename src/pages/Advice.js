@@ -13,9 +13,8 @@ import { askAdviceCardData } from "../components/Data";
 function Advice() {
   const [showPostcard, setShowPostcard] = useState(false);
   const [showAskQuestion, setShowAskQuestion] = useState(true);
-  const [showQuestionButton, setShowQuestionButton] = useState(true);
   const [commentsArray, setCommentsArray] = useState(() => {
-    const storedComments = localStorage.getItem('commentsArray');
+    const storedComments = localStorage.getItem("commentsArray");
     return storedComments ? JSON.parse(storedComments) : [];
   });
 
@@ -24,7 +23,7 @@ function Advice() {
     if (!showPostcard) {
       setShowPostcard(true);
       setShowAskQuestion(false);
-    } 
+    }
   };
 
   return (
@@ -32,43 +31,55 @@ function Advice() {
       <div className="SearchBarContainer">
         <SearchBar />
       </div>
-          
+
       <div className="centeredContainer threeRows">
         <h3>Teaching without support is overwhelming</h3>
         <h4>Ask a teacher a question</h4>
         <h4>Answer a teacher's question</h4>
       </div>
-    
+
       <>
         <div className="questionButtonContainer">
           <img className="smImg" src={GiveAdvice} alt="Give Advice" />
-          <div>{showAskQuestion && <ActionButton skill="Ask Question" onClick={handleBtnAClick} />}
-          {showPostcard && <PostCard type="Question" setCommentsArray={setCommentsArray} setShowPostcard={setShowPostcard} setQuestionButton={setShowQuestionButton}/>}
+          <div>
+            {showAskQuestion && (
+              <ActionButton skill="Ask Question" onClick={handleBtnAClick} />
+            )}
+            {showPostcard && (
+              <PostCard
+                type="Question"
+                setCommentsArray={setCommentsArray}
+                setShowPostcard={setShowPostcard}
+                setShowAskQuestion={setShowAskQuestion}
+              />
+            )}
           </div>
           <img className="smImg" src={AskAdvice} alt="Ask Advice" />
         </div>
         <h2 className="centeredContainer">Magic in progress..</h2>
-        
+
         <div className="receiveAdviceDiv">
           {commentsArray.map((comment) => (
-            <div key={comment.id}>
-              {comment.text}
-            </div>
+            <div key={comment.id}>{comment.text}</div>
           ))}
           {askAdviceCardData.map((type, index) => (
-            <ContentCard key={index} type={type.type} cardId={type.cardId} question={type.question} />
+            <ContentCard
+              key={index}
+              type={type.type}
+              cardId={type.cardId}
+              question={type.question}
+            />
           ))}
         </div>
       </>
-      
+
       <div className="footerA">
         <Link to="/">
-          <img src={Home} alt="Home" style={{ padding: "5px", }} />
+          <img src={Home} alt="Home" style={{ padding: "5px" }} />
         </Link>
       </div>
     </div>
   );
 }
-
 
 export default Advice;

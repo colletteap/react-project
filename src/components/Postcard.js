@@ -4,7 +4,7 @@ import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 
-export default function Postcard({ type, cardId, setCommentsArray, setShowPostcard, setQuestionButton }) {
+export default function Postcard({ type, cardId, setCommentsArray, setShowPostcard, setShowAskQuestion }) {
   const [comment, setComment] = useState("");
   const [commentsList, setCommentsList] = useState([]);
   
