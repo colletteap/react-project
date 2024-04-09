@@ -24,6 +24,7 @@ export default function Postcard({ type, cardId, setCommentsArray, setShowPostca
     setComment("");
     setCommentsArray((prevComments) => [newComment, ...prevComments]);
     setShowPostcard(false);
+    setShowAskQuestion(true);
   };
 
   return (
