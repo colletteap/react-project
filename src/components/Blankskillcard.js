@@ -33,9 +33,11 @@ export default function BlankSkillCard({ skillname }) {
             key={index}
             variant="outlined"
             sx={{
+              backgroundColor: "#42536b",
               minWidth: 300,
               width: "25%",
-              borderRadius: "5px",
+              border: "2px solid #fcf9da",
+              borderRadius: "10px",
               "--Card-radius": (theme) => theme.vars.radius.xs,
             }}
           >
@@ -45,14 +47,14 @@ export default function BlankSkillCard({ skillname }) {
             >
               <CardContent>
                 <Typography
-                  sx={{ textAlign: "start", fontWeight: "bold", position: "absolute", top: 3 }}
+                  sx={{ color: "#ffff", textAlign: "start", fontWeight: "bold", position: "absolute", top: 3 }}
                   fontSize="16px"
                 >
                   {item.skill}
                 </Typography>
 
                 <Typography
-                  sx={{ textAlign: "start", border: "1px solid #233349", borderRadius: "5px", padding: "6px", marginTop: "30px" }}
+                  sx={{ backgroundColor: "#ffff", textAlign: "start", border: "1px solid #233349", borderRadius: "5px", padding: "6px", marginTop: "30px" }}
                 >
                   {item.details}
                 </Typography>

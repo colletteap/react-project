@@ -34,10 +34,10 @@ export default function Questioncard({ type, cardId, question }) {
     <Card
       variant="outlined"
       sx={{
-        backgroundColor: "#fcf9da",
+        backgroundColor: "#42536b",
         minWidth: 300,
         width: "25%",
-        border: "2px solid black",
+        border: "2px solid #fcf9da",
         borderRadius: "15px",
         "--Card-radius": (theme) => theme.vars.radius.xs,
         height: "20vh",
@@ -51,7 +51,7 @@ export default function Questioncard({ type, cardId, question }) {
       <CardContent
         sx={{
           backgroundColor: "#ffff",
-          border: "2px solid #233349",
+          border: "2px solid #fcf9da",
           borderRadius: "10px",
           padding: "8px",
         }}
@@ -80,7 +80,7 @@ export default function Questioncard({ type, cardId, question }) {
           key={commentItem.id}
           sx={{
             backgroundColor: "#ffff",
-            border: "2px solid #8c7b6f",
+            border: "2px solid #fcf9da",
             borderRadius: "10px",
             padding: "8px",
             fontSize: "sm",
@@ -103,7 +103,7 @@ export default function Questioncard({ type, cardId, question }) {
             flex: 1,
             px: 0,
             "--Input-focusedThickness": "0px",
-            border: "2px solid #233349",
+            border: "2px solid #fcf9da",
             borderRadius: "5px",
             padding: "5px",
           }}
