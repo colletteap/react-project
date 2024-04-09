@@ -24,6 +24,7 @@ const urls = [
 
 function Blog() {
   const [currentUrlIndex, setCurrentUrlIndex] = useState(0);
+  const [searchInput, setSearchInput] = useState("");
 
   const handleClick = () => {
     const nextUrlIndex = (currentUrlIndex + 1) % urls.length;
@@ -31,16 +32,21 @@ function Blog() {
     window.open(urls[nextUrlIndex], '_blank');
   };
 
+  const handleSearchChange = (event) => {
+    setSearchInput(event.target.value);
+  };
+
   return (
     <div>
       <div className="CenterContainer">
-        <SearchBar />
+        <SearchBar onChange={handleSearchChange}/>
       </div>
       <div className="CenterContainer">
         <button className='resourceButton' onClick={handleClick}>Resource of the Day!</button>
       </div>
       <div className="BlogPageContainer">
-        {blogPageData.map((type, index) => (
+        {blogPageData.filter((type) => type.content.toLowerCase().includes(searchInput.toLowerCase())
+          ).map((type, index) => (
         <Blogcard
           key={index}
           title={type.title}
