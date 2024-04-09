@@ -1,6 +1,8 @@
 import BlogLanding1 from "../assets/bloglanding1.png";
 import BlogLanding2 from "../assets/bloglanding2.png";
 import BlogLanding3 from "../assets/bloglanding3.png";
+import BlogLanding4 from "../assets/BlogLanding4.png";
+
 
 const skillData = [
   { skill: "Technology", linkTo: "/SkillShell/Technology" },
@@ -239,7 +241,8 @@ const skillInfo = [
   },
   {
     skill: "Behaviour Management",
-    details: "Using positive reinforcement, such as praise, rewards, and encouragement, to reinforce desired behaviors helps motivate students to continue behaving appropriately.",
+    details:
+      "Using positive reinforcement, such as praise, rewards, and encouragement, to reinforce desired behaviors helps motivate students to continue behaving appropriately.",
   },
   {
     skill: "Behaviour Management",
@@ -318,7 +321,8 @@ const skillInfo = [
 
   {
     skill: "Creativity",
-    details: "Creativity often involves finding innovative solutions to challenges or problems. Teachers who encourage students to think creatively help them develop problem-solving skills that can be applied in various contexts.",
+    details:
+      "Creativity often involves finding innovative solutions to challenges or problems. Teachers who encourage students to think creatively help them develop problem-solving skills that can be applied in various contexts.",
   },
   {
     skill: "Creativity",
@@ -333,7 +337,8 @@ const skillInfo = [
 
   {
     skill: "Conflict Management",
-    details: " Actively listening to the concerns and perspectives of all parties involved in a conflict helps teachers understand the root cause of the conflict and find a resolution that satisfies everyone.",
+    details:
+      " Actively listening to the concerns and perspectives of all parties involved in a conflict helps teachers understand the root cause of the conflict and find a resolution that satisfies everyone.",
   },
   {
     skill: "Conflict Management",
@@ -348,7 +353,8 @@ const skillInfo = [
 
   {
     skill: "Classroom Management",
-    details: "Being able to clearly convey instructions and expectations but also being able to listen actively to students' concerns and feedback.",
+    details:
+      "Being able to clearly convey instructions and expectations but also being able to listen actively to students' concerns and feedback.",
   },
   {
     skill: "Classroom Management",
@@ -363,7 +369,8 @@ const skillInfo = [
 
   {
     skill: "Boundary Setting",
-    details: "Setting clear and consistent boundaries helps establish expectations and consequences for students' behavior. This clarity reduces confusion and allows students to understand what is expected of them.",
+    details:
+      "Setting clear and consistent boundaries helps establish expectations and consequences for students' behavior. This clarity reduces confusion and allows students to understand what is expected of them.",
   },
   {
     skill: "Boundary Setting",
@@ -377,7 +384,41 @@ const skillInfo = [
   },
 ];
 
-
+const blogPageData = [
+  {
+    title: "Google Classroom Tips",
+    content:
+      "NewEd Tech was a YouTube channel geared toward helping teachers learn tech is simple, quick & manageable bites. They then expanded into a website where, with a free plan, you can learn bite sized, useful teacher skills.",
+    linkTo: "https://newedtechclassroom.com/",
+    image: BlogLanding1,
+    para1: "",
+    para2: "",
+  },
+  {
+    title: "Brene Brown's Leadership Tools",
+    content: "Brene Brown has a Ph. D in the social work field, has a very popular Ted talk and has a Netflix special based around personal development so that you can bring your best self into every situation.",
+    linkTo: "https://brenebrown.com/hubs/dare-to-lead/",
+    image: BlogLanding2,
+    para1: "",
+    para2: "",
+  },
+  {
+    title: "The Happy Teacher Planner",
+    content: "With this planner, you can use a personalized calendar to keep track of special events and your to do list; focus on your personal growth through using a reflective journal and core values list; has a substitute plan and has resources for the tough times. ",
+    linkTo: "https://colletteap.github.io/gratitude-planner/",
+    image: BlogLanding3,
+    para1: "",
+    para2: ""
+  },
+  {
+    title: "The Burned In Teacher",
+    content: "The Burned In Teacher website is a collection of resources from a quiz, blogs, free webinars, community and podcasts to help teachers overcome their feelings of burnout.",
+    linkTo: "https://www.burnedinteacher.com/",
+    image: BlogLanding4,
+    para1: "",
+    para2: ""
+  },
+];
 
 export {
   skillData,
@@ -387,4 +428,5 @@ export {
   askAdviceCardData,
   giveAdviceCardData,
   skillInfo,
+  blogPageData,
 };
