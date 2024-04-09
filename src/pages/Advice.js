@@ -17,6 +17,17 @@ function Advice() {
     const storedComments = localStorage.getItem("commentsArray");
     return storedComments ? JSON.parse(storedComments) : [];
   });
+const [searchInput, setSearchInput] = useState("");
+
+const handleSearchChange = (event) => {
+  setSearchInput(event.target.value);
+};
+
+const filteredComments = commentsArray.filter((comment) =>
+comment.text.toLowerCase().includes(searchInput.toLowerCase())
+);
+console.log("filter:", filteredComments);
+
 
   const handleBtnAClick = () => {
     console.log("show postcard", showPostcard);
@@ -29,7 +40,7 @@ function Advice() {
   return (
     <div>
       <div className="SearchBarContainer">
-        <SearchBar />
+        <SearchBar onChange={handleSearchChange}/>
       </div>
 
       <div className="centeredContainer threeRows">
@@ -59,13 +70,15 @@ function Advice() {
         <h2 className="centeredContainer">Magic in progress..</h2>
 
         <div className="receiveAdviceDiv">
-          {commentsArray.map((comment) => (
+          {filteredComments.map((comment) => (
             <div key={comment.id}><ContentCard
             type={"Question:"}
             question={comment.text}/>
             </div>
           ))}
-          {askAdviceCardData.map((type, index) => (
+          {askAdviceCardData.filter((type) => type.question.toLowerCase().includes(searchInput.toLowerCase())
+          )
+          .map((type, index) => (
             <ContentCard
               key={index}
               type={type.type}
