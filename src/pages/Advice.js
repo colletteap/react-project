@@ -60,7 +60,10 @@ function Advice() {
 
         <div className="receiveAdviceDiv">
           {commentsArray.map((comment) => (
-            <div key={comment.id}>{comment.text}</div>
+            <div key={comment.id}><ContentCard
+            type={"Question:"}
+            question={comment.text}/>
+            </div>
           ))}
           {askAdviceCardData.map((type, index) => (
             <ContentCard

@@ -20,6 +20,10 @@ export default function Postcard({ type, cardId, setCommentsArray, setShowPostca
       text: comment,
     };
 
+const storedComments = localStorage.getItem("commentsArray");
+const commentsArray = storedComments ? JSON.parse(storedComments) : [];
+localStorage.setItem("commentsArray", JSON.stringify([newComment, ...commentsArray]));
+
     setCommentsList([...commentsList, newComment]);
     setComment("");
     setCommentsArray((prevComments) => [newComment, ...prevComments]);
