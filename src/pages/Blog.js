@@ -4,23 +4,8 @@ import Blogcard from "../components/Blogcard";
 import SearchBar from "../components/Searchbar";
 import "../styles/Blog.css";
 import Home from "../assets/Home.png";
-import { blogPageData } from "../components/Data";
+import { blogPageData, urls } from "../components/Data";
 
-const urls = [
-  'https://www.burnedinteacher.com/',
-  'https://teacherwellnesscenter.com/',
-  'https://brenebrown.com/hubs/dare-to-lead/',
-  'https://newedtechclassroom.com/',
-  'https://www.teachstarter.com/resource-availability/free/',
-  'https://www.refseek.com/directory/teacher_resources.html',
-  'https://www.pbslearningmedia.org/',
-  'https://www.carsondellosa.com/free-resources/',
-  'https://sharemylesson.com/',
-  'https://www.youtube.com/@LearnBright',
-  'https://www.youtube.com/@SciShowKids',
-  'https://www.youtube.com/@crashcoursekids',
-  'https://artforkidshub.com/',
-];
 
 function Blog() {
   const [currentUrlIndex, setCurrentUrlIndex] = useState(0);

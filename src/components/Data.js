@@ -420,6 +420,22 @@ const blogPageData = [
   },
 ];
 
+const urls = [
+  'https://www.burnedinteacher.com/',
+  'https://teacherwellnesscenter.com/',
+  'https://brenebrown.com/hubs/dare-to-lead/',
+  'https://newedtechclassroom.com/',
+  'https://www.teachstarter.com/resource-availability/free/',
+  'https://www.refseek.com/directory/teacher_resources.html',
+  'https://www.pbslearningmedia.org/',
+  'https://www.carsondellosa.com/free-resources/',
+  'https://sharemylesson.com/',
+  'https://www.youtube.com/@LearnBright',
+  'https://www.youtube.com/@SciShowKids',
+  'https://www.youtube.com/@crashcoursekids',
+  'https://artforkidshub.com/',
+];
+
 export {
   skillData,
   adviceData,
@@ -429,4 +445,5 @@ export {
   giveAdviceCardData,
   skillInfo,
   blogPageData,
+  urls
 };
