@@ -34,6 +34,7 @@ export default function Questioncard({ type, cardId, question }) {
     <Card
       variant="outlined"
       sx={{
+        backgroundColor: "#fcf9da",
         minWidth: 300,
         width: "25%",
         border: "2px solid black",
@@ -49,6 +50,7 @@ export default function Questioncard({ type, cardId, question }) {
     >
       <CardContent
         sx={{
+          backgroundColor: "#ffff",
           border: "2px solid #233349",
           borderRadius: "10px",
           padding: "8px",
@@ -77,7 +79,8 @@ export default function Questioncard({ type, cardId, question }) {
         <CardContent
           key={commentItem.id}
           sx={{
-            border: "2px solid #A8512F",
+            backgroundColor: "#ffff",
+            border: "2px solid #8c7b6f",
             borderRadius: "10px",
             padding: "8px",
             fontSize: "sm",
@@ -106,6 +109,10 @@ export default function Questioncard({ type, cardId, question }) {
           }}
         />
         <Link
+        sx={{
+          backgroundColor: "#8c7b6f",
+          color: "#ffff",
+        }}
           onClick={handlePostClick}
           underline="none"
           role="button"

@@ -15,7 +15,6 @@
     display: grid;
     width: auto;
     justify-items: center;
-    padding: 20px 0 20px 0;
   }
 
   @media screen and (max-width: 1080px) {
