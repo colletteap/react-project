@@ -6,6 +6,8 @@
   grid-template-areas: "logo text";
   justify-items: center;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .blueLandingContainer {
@@ -21,11 +23,14 @@
 
 .ImageContainer {
   grid-area: logo;
-  max-width: 50%;
+  min-width: 100px;
+  max-width: 300px;
 }
 
 .ImageContainerText {
   grid-area: text;
+  min-width: 400px;
+  max-width: 600px;
 }
 
 .ImageContainer img,
