@@ -13,6 +13,8 @@
 }
 
 .adviceLandingContainer {
+  display: grid;
+  grid-template-rows: 1fr 1 fr;
   padding: 0 0 25px 0;
 }
 
