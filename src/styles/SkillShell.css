@@ -22,16 +22,8 @@
   height: 100%;
 }
 
-.skillContainer {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 1fr));
-  grid-template-rows: repeat(3, minmax(50px, 1fr));
-  padding: 50px;
-  gap: 30px 30px;
-}
 
-.skillContainer > * {
-  transform: scale(1.15);
-}
+
+
 
 
