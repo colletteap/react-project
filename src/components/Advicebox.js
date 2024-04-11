@@ -13,7 +13,8 @@ export default function AdviceBox({ type, question, linkTo, comment }) {
     <Card
       variant="outlined"
       sx={{
-        minWidth: 300,
+        minWidth: 200,
+        maxWidth: 330,
         border: "3px solid #233349",
         borderRadius: "10px",
       }}
