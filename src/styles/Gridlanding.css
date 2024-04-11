@@ -1,5 +1,6 @@
 .GridContainer {
-  display: grid;
+  display: flex;
+  flex-flow: row wrap;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "logo text";

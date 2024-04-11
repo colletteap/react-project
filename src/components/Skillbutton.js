@@ -10,7 +10,7 @@ export default function SkillButton({ skill, linkTo, onClick }) {
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
         gridGap: "10px",
         padding: "10px",
         justifyItems: "center",
@@ -20,7 +20,7 @@ export default function SkillButton({ skill, linkTo, onClick }) {
         <Button
           variant="contained"
           size="large"
-          sx={{ bgcolor: "#ffff", color: "#233349", borderRadius: "10px" }}
+          sx={{ minWidth: 140, bgcolor: "#ffff", color: "#233349", borderRadius: "10px" }}
           onClick={onClick}
          
         >

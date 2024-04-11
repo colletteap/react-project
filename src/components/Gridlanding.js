@@ -12,10 +12,10 @@ const GridLanding = () => {
     <>
       <div className="GridContainer">
         <div className="ImageContainer">
-          <img src={LargeLogo} alt="Growth Logo" />
+          <img src={LargeLogo} alt="Growth Logo" sx={{minWidth: 150, maxWidth: 300}} />
         </div>
         <div className="ImageContainerText">
-          <img src={LogoText} alt="LogoText" />
+          <img src={LogoText} alt="LogoText" sx={{minWidth: 150, maxWidth: 300}} />
         </div>
       </div>
       <div className="blueLandingContainer">
