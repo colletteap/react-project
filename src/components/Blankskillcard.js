@@ -7,25 +7,34 @@ import { skillInfo } from "./Data";
 export default function BlankSkillCard({ skillname }) {
   const filteredSkills = skillInfo.filter((item) => item.skill === skillname.skillname);
 
+  const container = {
+    display: "flex",
+    flexFlow: "row wrap",
+  }
+  
   const cardStyle = {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr",
-    gap: "30px",
+    display: "flex",
+    flexFlow: "row wrap",
     padding: "10px",
-    marginLeft: "50px",
+    justifyContent: "center",
+    width: "100%",
+    margin: "10px",
+    gap: "20px",
   };
   
   const headingStyle = {
     display: "flex",
     justifyContent: "center",
+    width: "100%",
     fontFamily: "Verdana, sans serif",
     color: "#233349",
     backgroundColor: "#fcf9da",
-    paddingBottom: "40px",
+    padding: "40px 20px 40px 20px",
   };
 
   return (
     <>
+    <div style={container}>
       <h1 style={headingStyle}>Learn new skills below</h1>
       <div style={cardStyle}>
         {filteredSkills.map((item, index) => (
@@ -62,6 +71,7 @@ export default function BlankSkillCard({ skillname }) {
             </CardContent>
           </Card>
         ))}
+      </div>
       </div>
     </>
   );

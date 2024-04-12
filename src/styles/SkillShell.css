@@ -22,7 +22,10 @@
   height: 100%;
 }
 
-
+.skillCardContainer {
+  display: flex;
+  flex-shrink: 3;
+}
 
 
 
