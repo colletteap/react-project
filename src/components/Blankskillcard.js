@@ -19,7 +19,7 @@ export default function BlankSkillCard({ skillname }) {
     justifyContent: "center",
     width: "100%",
     margin: "10px",
-    gap: "20px",
+    gap: "80px",
   };
   
   const headingStyle = {
