@@ -35,7 +35,7 @@ function SkillShellPage() {
           <img className="img" src={Superhero} alt="Superhero" />
         </div>
       </div>
-      <div className="skillContainer">
+      <div className="SkillContainer">
         {skillShellData.map((skill, index) => (
           <SkillButton
             key={index}
