@@ -41,7 +41,7 @@ function Blog() {
           para1={type.para1}
           para2={type.para2}
         />
-        ))};
+        ))}
       </div>
       <div className="footerA">
       <Link to="../Home">
@@ -49,7 +49,7 @@ function Blog() {
 </Link>
       </div>
     </div>
-  );
+  )
 }
 
 export default Blog;

@@ -1,20 +1,23 @@
 .BlogPageContainer {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   gap: 40px 40px; 
-  grid-template-areas: 
-    ". . ."
-    ". . ."
-    ". . ."; 
-    align-items: stretch;
-    padding: 20px 0 0 60px;
+  padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .BlogPageContainer {
+      transform: scale(0.9);
+    }
   }
 
   .CenterContainer {
     display: grid;
     width: auto;
     justify-items: center;
+    padding: 10px;
   }
 
   @media screen and (max-width: 1080px) {

@@ -24,6 +24,7 @@ export default function Questioncard({ type, cardId, question }) {
     const newComment = {
       id: commentsList.length + 1,
       text: comment,
+      cardId: cardId,
     };
 
     setCommentsList([...commentsList, newComment]);
