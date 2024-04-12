@@ -44,8 +44,8 @@ console.log("filter:", filteredComments);
       </div>
 
       <div className="centeredContainer threeRows">
-        <h3>Teaching without support is overwhelming</h3>
-        <h4>Ask a teacher a question</h4>
+        <h3 className="center">Teaching without support is overwhelming</h3>
+        <h4> Ask a teacher a question</h4>
         <h4>Answer a teacher's question</h4>
       </div>
 
@@ -67,7 +67,7 @@ console.log("filter:", filteredComments);
           </div>
           <img className="smImg" src={AskAdvice} alt="Ask Advice" />
         </div>
-        <h2 className="centeredContainer">Magic in progress..</h2>
+        <h2 className="centeredContainer center">Magic in progress..</h2>
 
         <div className="receiveAdviceDiv">
           {filteredComments.map((comment) => (

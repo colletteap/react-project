@@ -35,8 +35,7 @@ export default function Questioncard({ type, cardId, question }) {
       variant="outlined"
       sx={{
         backgroundColor: "#42536b",
-        minWidth: 300,
-        width: "25%",
+        width: "300px",
         border: "2px solid #fcf9da",
         borderRadius: "15px",
         "--Card-radius": (theme) => theme.vars.radius.xs,
