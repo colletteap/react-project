@@ -23,7 +23,7 @@ function SkillShellPage() {
   const handleButtonClick = (skill) => {
     setSelectedButton(skill);
   };
-
+console.log("img", Discover);
   return (
     <div className="blueBody">
       <div className="whiteLandingContainer">

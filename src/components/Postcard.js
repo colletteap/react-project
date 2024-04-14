@@ -18,6 +18,7 @@ export default function Postcard({ type, cardId, setCommentsArray, setShowPostca
       id: commentsList.length + 1,
       type: type,
       text: comment,
+      cardId: cardId,
     };
 
 const storedComments = localStorage.getItem("commentsArray");
@@ -35,8 +36,7 @@ localStorage.setItem("commentsArray", JSON.stringify([newComment, ...commentsArr
     <Card
       variant="outlined"
       sx={{
-        minWidth: 300,
-        width: "25%",
+        width: "300px",
         border: "2px solid black",
         borderRadius: "15px",
         "--Card-radius": (theme) => theme.vars.radius.xs,
