@@ -2,6 +2,7 @@ import BlogLanding1 from "../assets/bloglanding1.png";
 import BlogLanding2 from "../assets/bloglanding2.png";
 import BlogLanding3 from "../assets/bloglanding3.png";
 import BlogLanding4 from "../assets/BlogLanding4.png";
+import BlogLanding5 from "../assets/BlogLanding5.png";
 
 
 const skillData = [
@@ -416,6 +417,14 @@ const blogPageData = [
     linkTo: "https://www.burnedinteacher.com/",
     image: BlogLanding4,
     para1: "",
+    para2: ""
+  },
+  {
+    title: "PowerSchool Training",
+    content: "META PowerSchool Team has created a playlist of trainings that can help you understand how to use PowerSchool best.",
+    linkTo: "https://www.youtube.com/playlist?list=PLc5YC3mQTEF7itz_FHGAbx3rt9pPkAWh_",
+    image: BlogLanding5,
+    para1: "Within the playlist are videos on topics such as: Start of the Year, Online Report Card Demo, Attendance Management, PowerTeacher Pro Gradebook and more.",
     para2: ""
   },
 ];

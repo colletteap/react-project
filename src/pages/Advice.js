@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "../styles/Advice.css";
 import { Link } from "react-router-dom";
 import ActionButton from "../components/Actionbutton";
@@ -44,7 +45,7 @@ console.log("filter:", filteredComments);
         <SearchBar onChange={handleSearchChange}/>
       </div>
 
-      <div className="centeredContainer threeRows">
+      <div className="centeredContainer">
       <img className="smImg" src={GiveAdvice} alt="Give Advice" />
         <img className="medImg" src={AdviceText} alt="Advice Text" />
         <img className="smImg" src={AskAdvice} alt="Ask Advice" />
