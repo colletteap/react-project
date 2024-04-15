@@ -6,25 +6,22 @@
 
 .centeredContainer {
 display: flex;
+flex-flow: row wrap;
+gap: 100px;
 justify-content: center;
 align-content: center;
-}
-
-.threeRows {
-  display: grid;
-  width: auto;
-	grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center; 
-  height: auto;
-  gap: 10px;
-  padding: 20px 0 0 0;
 }
 
 .smImg {
   width: 30%;
   min-width: 70px;
   max-width: 150px;
+}
+
+.medImg {
+  width: 60%;
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .center {
@@ -83,6 +80,9 @@ align-content: center;
   gap: 43px;
  margin: 0;
 }
+.centeredContainer {
+  gap: 10px;
+  }
 }
 
 

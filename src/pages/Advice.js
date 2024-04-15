@@ -8,6 +8,7 @@ import SearchBar from "../components/Searchbar";
 import Home from "../assets/Home.png";
 import GiveAdvice from "../assets/GiveAdvice.png";
 import AskAdvice from "../assets/AskAdvice.png";
+import AdviceText from "../assets/AdviceText.png";
 import { askAdviceCardData } from "../components/Data";
 
 function Advice() {
@@ -44,14 +45,14 @@ console.log("filter:", filteredComments);
       </div>
 
       <div className="centeredContainer threeRows">
-        <h3 className="center">Teaching without support is overwhelming</h3>
-        <h4> Ask a teacher a question</h4>
-        <h4>Answer a teacher's question</h4>
+      <img className="smImg" src={GiveAdvice} alt="Give Advice" />
+        <img className="medImg" src={AdviceText} alt="Advice Text" />
+        <img className="smImg" src={AskAdvice} alt="Ask Advice" />
       </div>
 
       <>
         <div className="questionButtonContainer">
-          <img className="smImg" src={GiveAdvice} alt="Give Advice" />
+          
           <div>
             {showAskQuestion && (
               <ActionButton skill="Ask Question" onClick={handleBtnAClick} />
@@ -65,7 +66,7 @@ console.log("filter:", filteredComments);
               />
             )}
           </div>
-          <img className="smImg" src={AskAdvice} alt="Ask Advice" />
+         
         </div>
         <h2 className="centeredContainer center">Magic in progress..</h2>
 
