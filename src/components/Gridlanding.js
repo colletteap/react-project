@@ -1,4 +1,5 @@
 import React from "react";
+import Grid from "@mui/joy/Grid";
 import LargeLogo from "../assets/GrowthBlue.png";
 import LogoText from "../assets/TopGridText.png";
 import Emailimg from "../assets/Emailimg.png";
@@ -10,24 +11,24 @@ import BlogLanding from "./Bloglanding";
 const GridLanding = () => {
   return (
     <>
-      <div className="GridContainer">
-        <div className="ImageContainer">
+      <Grid className="GridContainer">
+        <Grid className="ImageContainer">
           <img src={LargeLogo} alt="Growth Logo" />
-        </div>
-        <div className="ImageContainerText">
+        </Grid>
+        <Grid className="ImageContainerText">
           <img src={LogoText} alt="LogoText" />
-        </div>
-      </div>
-      <div className="blueLandingContainer">
+        </Grid>
+      </Grid>
+      <Grid className="blueLandingContainer">
         <SkillLanding />
-      </div>
-      <div className="adviceLandingContainer">
+      </Grid>
+      <Grid className="adviceLandingContainer">
         <AdviceLanding />
-      </div>
-      <div className="blueLandingContainer">
+      </Grid>
+      <Grid className="blueLandingContainer">
         <BlogLanding />
-      </div>
-      <div className="whiteLandingContainer centerContainer">
+      </Grid>
+      <Grid className="whiteLandingContainer centerContainer">
         <a href="mailto:garlandcollette@gmail.com" className="centerContainer">
           <img
             src={Emailimg}
@@ -35,7 +36,7 @@ const GridLanding = () => {
             style={{ padding: "5px", width: "10%" }}
           />
         </a>
-      </div>
+      </Grid>
     </>
   );
 };
