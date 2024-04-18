@@ -1,9 +1,6 @@
 .GridContainer {
   display: flex;
   flex-flow: row wrap;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "logo text";
   justify-items: center;
   align-items: center;
   justify-content: center;
@@ -22,13 +19,12 @@
 }
 
 .ImageContainer {
-  grid-area: logo;
   min-width: 100px;
   max-width: 300px;
+  padding-left: 150px;
 }
 
 .ImageContainerText {
-  grid-area: text;
   min-width: 400px;
   max-width: 600px;
   padding-left: 200px;
@@ -38,6 +34,9 @@
   .ImageContainerText {
     padding-left: 2px;
   } 
+  .ImageContainer {
+    padding-left: 2px;
+  }
 }
 
 .ImageContainer img,
