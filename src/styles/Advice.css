@@ -5,11 +5,11 @@
 }
 
 .centeredContainer {
-display: flex;
-flex-flow: row wrap;
-gap: 100px;
-justify-content: center;
-align-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 100px;
+  justify-content: center;
+  align-content: center;
 }
 
 .smImg {
@@ -45,7 +45,7 @@ align-content: center;
   justify-content: center;
   gap: 200px;
   justify-items: center;
-  align-items: center; 
+  align-items: center;
   height: auto;
 }
 
@@ -53,7 +53,7 @@ align-content: center;
   display: grid;
   width: auto;
   grid-template-rows: repeat(3, 1fr);
-	grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 20px;
   justify-content: center;
@@ -66,7 +66,7 @@ align-content: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-	gap: 40px;
+  gap: 40px;
   padding: 30px 40px 20px 40px;
   background-color: #233349;
   justify-items: center;
@@ -76,19 +76,18 @@ align-content: center;
   .AdviceContainer {
     padding-left: 20px;
   }
-.questionButtonContainer {
-  gap: 43px;
- margin: 0;
-}
-.centeredContainer {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
-  gap: 10px;
+  .questionButtonContainer {
+    gap: 43px;
+    margin: 0;
+  }
+  .centeredContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
   }
 }
-
 
 .footerA {
   display: flex;

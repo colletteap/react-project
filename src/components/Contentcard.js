@@ -89,10 +89,7 @@ export default function Questioncard({ type, cardId, question }) {
           {commentItem.text}
         </CardContent>
       ))}
-      <CardContent
-        orientation="horizontal"
-        sx={{ gap: 1 }}
-      >
+      <CardContent orientation="horizontal" sx={{ gap: 1 }}>
         <Input
           variant="plain"
           size="sm"
@@ -109,10 +106,10 @@ export default function Questioncard({ type, cardId, question }) {
           }}
         />
         <Link
-        sx={{
-          backgroundColor: "#8c7b6f",
-          color: "#ffff",
-        }}
+          sx={{
+            backgroundColor: "#8c7b6f",
+            color: "#ffff",
+          }}
           onClick={handlePostClick}
           underline="none"
           role="button"

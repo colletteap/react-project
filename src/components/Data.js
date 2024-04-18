@@ -4,7 +4,6 @@ import BlogLanding3 from "../assets/bloglanding3.png";
 import BlogLanding4 from "../assets/BlogLanding4.png";
 import BlogLanding5 from "../assets/BlogLanding5.png";
 
-
 const skillData = [
   { skill: "Technology", linkTo: "/SkillShell/Technology" },
   { skill: "Classroom Management", linkTo: "/SkillShell/Classroom-Management" },
@@ -397,7 +396,8 @@ const blogPageData = [
   },
   {
     title: "Brene Brown's Leadership Tools",
-    content: "Brene Brown has a Ph. D in the social work field, has a very popular Ted talk and has a Netflix special based around personal development so that you can bring your best self into every situation.",
+    content:
+      "Brene Brown has a Ph. D in the social work field, has a very popular Ted talk and has a Netflix special based around personal development so that you can bring your best self into every situation.",
     linkTo: "https://brenebrown.com/hubs/dare-to-lead/",
     image: BlogLanding2,
     para1: "",
@@ -405,44 +405,49 @@ const blogPageData = [
   },
   {
     title: "The Happy Teacher Planner",
-    content: "With this planner, you can use a personalized calendar to keep track of special events and your to do list; focus on your personal growth through using a reflective journal and core values list; has a substitute plan and has resources for the tough times. ",
+    content:
+      "With this planner, you can use a personalized calendar to keep track of special events and your to do list; focus on your personal growth through using a reflective journal and core values list; has a substitute plan and has resources for the tough times. ",
     linkTo: "https://colletteap.github.io/gratitude-planner/",
     image: BlogLanding3,
     para1: "",
-    para2: ""
+    para2: "",
   },
   {
     title: "The Burned In Teacher",
-    content: "The Burned In Teacher website is a collection of resources from a quiz, blogs, free webinars, community and podcasts to help teachers overcome their feelings of burnout.",
+    content:
+      "The Burned In Teacher website is a collection of resources from a quiz, blogs, free webinars, community and podcasts to help teachers overcome their feelings of burnout.",
     linkTo: "https://www.burnedinteacher.com/",
     image: BlogLanding4,
     para1: "",
-    para2: ""
+    para2: "",
   },
   {
     title: "PowerSchool Training",
-    content: "META PowerSchool Team has created a playlist of trainings that can help you understand how to use PowerSchool best.",
-    linkTo: "https://www.youtube.com/playlist?list=PLc5YC3mQTEF7itz_FHGAbx3rt9pPkAWh_",
+    content:
+      "META PowerSchool Team has created a playlist of trainings that can help you understand how to use PowerSchool best.",
+    linkTo:
+      "https://www.youtube.com/playlist?list=PLc5YC3mQTEF7itz_FHGAbx3rt9pPkAWh_",
     image: BlogLanding5,
-    para1: "Within the playlist are videos on topics such as: Start of the Year, Online Report Card Demo, Attendance Management, PowerTeacher Pro Gradebook and more.",
-    para2: ""
+    para1:
+      "Within the playlist are videos on topics such as: Start of the Year, Online Report Card Demo, Attendance Management, PowerTeacher Pro Gradebook and more.",
+    para2: "",
   },
 ];
 
 const urls = [
-  'https://www.burnedinteacher.com/',
-  'https://teacherwellnesscenter.com/',
-  'https://brenebrown.com/hubs/dare-to-lead/',
-  'https://newedtechclassroom.com/',
-  'https://www.teachstarter.com/resource-availability/free/',
-  'https://www.refseek.com/directory/teacher_resources.html',
-  'https://www.pbslearningmedia.org/',
-  'https://www.carsondellosa.com/free-resources/',
-  'https://sharemylesson.com/',
-  'https://www.youtube.com/@LearnBright',
-  'https://www.youtube.com/@SciShowKids',
-  'https://www.youtube.com/@crashcoursekids',
-  'https://artforkidshub.com/',
+  "https://www.burnedinteacher.com/",
+  "https://teacherwellnesscenter.com/",
+  "https://brenebrown.com/hubs/dare-to-lead/",
+  "https://newedtechclassroom.com/",
+  "https://www.teachstarter.com/resource-availability/free/",
+  "https://www.refseek.com/directory/teacher_resources.html",
+  "https://www.pbslearningmedia.org/",
+  "https://www.carsondellosa.com/free-resources/",
+  "https://sharemylesson.com/",
+  "https://www.youtube.com/@LearnBright",
+  "https://www.youtube.com/@SciShowKids",
+  "https://www.youtube.com/@crashcoursekids",
+  "https://artforkidshub.com/",
 ];
 
 export {
@@ -454,5 +459,5 @@ export {
   giveAdviceCardData,
   skillInfo,
   blogPageData,
-  urls
+  urls,
 };

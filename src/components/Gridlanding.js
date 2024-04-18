@@ -12,10 +12,10 @@ const GridLanding = () => {
     <>
       <div className="GridContainer">
         <div className="ImageContainer">
-          <img src={LargeLogo} alt="Growth Logo"  />
+          <img src={LargeLogo} alt="Growth Logo" />
         </div>
         <div className="ImageContainerText">
-          <img src={LogoText} alt="LogoText"  />
+          <img src={LogoText} alt="LogoText" />
         </div>
       </div>
       <div className="blueLandingContainer">
@@ -28,9 +28,13 @@ const GridLanding = () => {
         <BlogLanding />
       </div>
       <div className="whiteLandingContainer centerContainer">
-      <a href="mailto:garlandcollette@gmail.com" className="centerContainer">
-<img src={Emailimg} alt="Email" style={{ padding: "5px", width: '10%' }} />
-</a>
+        <a href="mailto:garlandcollette@gmail.com" className="centerContainer">
+          <img
+            src={Emailimg}
+            alt="Email"
+            style={{ padding: "5px", width: "10%" }}
+          />
+        </a>
       </div>
     </>
   );

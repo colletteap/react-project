@@ -4,10 +4,15 @@ import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 
-export default function Postcard({ type, cardId, setCommentsArray, setShowPostcard, setShowAskQuestion }) {
+export default function Postcard({
+  type,
+  cardId,
+  setCommentsArray,
+  setShowPostcard,
+  setShowAskQuestion,
+}) {
   const [comment, setComment] = useState("");
   const [commentsList, setCommentsList] = useState([]);
-  
 
   const handlePostClick = () => {
     if (comment.trim() === "") {
@@ -21,9 +26,12 @@ export default function Postcard({ type, cardId, setCommentsArray, setShowPostca
       cardId: cardId,
     };
 
-const storedComments = localStorage.getItem("commentsArray");
-const commentsArray = storedComments ? JSON.parse(storedComments) : [];
-localStorage.setItem("commentsArray", JSON.stringify([newComment, ...commentsArray]));
+    const storedComments = localStorage.getItem("commentsArray");
+    const commentsArray = storedComments ? JSON.parse(storedComments) : [];
+    localStorage.setItem(
+      "commentsArray",
+      JSON.stringify([newComment, ...commentsArray])
+    );
 
     setCommentsList([...commentsList, newComment]);
     setComment("");

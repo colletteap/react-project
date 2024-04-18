@@ -23,7 +23,7 @@ function SkillShellPage() {
   const handleButtonClick = (skill) => {
     setSelectedButton(skill);
   };
-console.log("img", Discover);
+  console.log("img", Discover);
   return (
     <div className="blueBody">
       <div className="whiteLandingContainer">
@@ -45,7 +45,9 @@ console.log("img", Discover);
         ))}
       </div>
       <div ref={newComponentRef}>
-      {selectedButton && <BlankSkillCard skillname={{ skillname: selectedButton }} />}
+        {selectedButton && (
+          <BlankSkillCard skillname={{ skillname: selectedButton }} />
+        )}
       </div>
       <div className="footerA">
         <Link to="/">
