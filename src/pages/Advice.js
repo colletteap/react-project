@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Advice.css";
+import Grid from "@mui/joy/Grid";
 import { Link } from "react-router-dom";
 import ActionButton from "../components/Actionbutton";
 import ContentCard from "../components/Contentcard";
@@ -38,20 +39,20 @@ function Advice() {
   };
 
   return (
-    <div>
-      <div className="SearchBarContainer">
+    <Grid>
+      <Grid className="SearchBarContainer">
         <SearchBar onChange={handleSearchChange} />
-      </div>
+      </Grid>
 
-      <div className="centeredContainer">
+      <Grid className="centeredContainer">
         <img className="smImg" src={GiveAdvice} alt="Give Advice" />
         <img className="medImg" src={AdviceText} alt="Advice Text" />
         <img className="smImg" src={AskAdvice} alt="Ask Advice" />
-      </div>
+      </Grid>
 
       <>
-        <div className="questionButtonContainer">
-          <div>
+        <Grid className="questionButtonContainer">
+          <Grid>
             {showAskQuestion && (
               <ActionButton skill="Ask Question" onClick={handleBtnAClick} />
             )}
@@ -63,15 +64,15 @@ function Advice() {
                 setShowAskQuestion={setShowAskQuestion}
               />
             )}
-          </div>
-        </div>
+          </Grid>
+        </Grid>
         <h2 className="centeredContainer center">Magic in progress..</h2>
 
-        <div className="receiveAdviceDiv">
+        <Grid className="receiveAdviceDiv">
           {filteredComments.map((comment) => (
-            <div key={comment.id}>
+            <Grid key={comment.id}>
               <ContentCard type={"Question:"} question={comment.text} />
-            </div>
+            </Grid>
           ))}
           {askAdviceCardData
             .filter((type) =>
@@ -85,15 +86,15 @@ function Advice() {
                 question={type.question}
               />
             ))}
-        </div>
+        </Grid>
       </>
 
-      <div className="footerA">
+      <Grid className="footerA">
         <Link to="/">
           <img src={Home} alt="Home" style={{ padding: "5px" }} />
         </Link>
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 }
 
