@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Grid from "@mui/joy/Grid";
 import { Link } from "react-router-dom";
 import Blogcard from "../components/Blogcard";
 import SearchBar from "../components/Searchbar";
@@ -22,14 +23,14 @@ function Blog() {
   };
 
   return (
-    <div>
-      <div className="CenterContainer">
+    <Grid>
+      <Grid className="CenterContainer">
         <SearchBar onChange={handleSearchChange}/>
-      </div>
-      <div className="CenterContainer">
+      </Grid>
+      <Grid className="CenterContainer">
         <button className='resourceButton' onClick={handleClick}>Resource of the Day!</button>
-      </div>
-      <div className="BlogPageContainer">
+      </Grid>
+      <Grid className="BlogPageContainer">
         {blogPageData.filter((type) => type.content.toLowerCase().includes(searchInput.toLowerCase())
           ).map((type, index) => (
         <Blogcard
@@ -42,13 +43,13 @@ function Blog() {
           para2={type.para2}
         />
         ))}
-      </div>
-      <div className="footerA">
+      </Grid>
+      <Grid className="footerA">
       <Link to="../Home">
 <img src={Home} alt="Home" style={{ padding: "5px", }} />
 </Link>
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   )
 }
 
