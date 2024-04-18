@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "../styles/Advice.css";
 import { Link } from "react-router-dom";
 import ActionButton from "../components/Actionbutton";
