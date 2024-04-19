@@ -25,7 +25,7 @@ function Advice() {
     setSearchInput(event.target.value);
   };
 
-  console.log("commentArray filter", commentsArray);
+  console.log("commentsArray filter", commentsArray);
   const filteredComments = commentsArray.filter((comment) =>
     comment.text.toLowerCase().includes(searchInput.toLowerCase())
   );
@@ -72,7 +72,10 @@ function Advice() {
         <Grid className="receiveAdviceDiv">
           {filteredComments.map((comment) => (
             
-              <ContentCard type={"Question:"} question={comment.text} />
+              <ContentCard key={comment.id}
+              type={"Question:"}
+              cardId={comment.cardId}
+              question={comment.text} />
             
           ))}
           {askAdviceCardData

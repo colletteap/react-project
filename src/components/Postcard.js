@@ -4,18 +4,29 @@ import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 
+// Import startements
+
 export default function Postcard({
   type,
   cardId,
   setCommentsArray,
   setShowPostcard,
   setShowAskQuestion,
-}) {
+}) 
+
+// Declares a functional component named 'Postcard' that accepts 5 props and returns JSX to render a card for posting comments
+
+{
   const [comment, setComment] = useState("");
   const [commentsList, setCommentsList] = useState([]);
 
+// These are state hooks; defining a state variable of comment and a function setComment, initial value is an empty string
+
   const handlePostClick = () => {
     if (comment.trim() === "") {
+     
+// This is the event handler, a function called when user clicks Post button, checks if comment is not empty...
+
       return;
     }
 
@@ -26,6 +37,8 @@ export default function Postcard({
       cardId: cardId,
     };
 
+// will return object newComment
+
     const storedComments = localStorage.getItem("commentsArray");
     const commentsArray = storedComments ? JSON.parse(storedComments) : [];
     localStorage.setItem(
@@ -33,12 +46,16 @@ export default function Postcard({
       JSON.stringify([newComment, ...commentsArray])
     );
 
+// Putting the commentsArray into local storage and creating a newComment to be placed in front of the exisiting commentsArray
+
     setCommentsList([...commentsList, newComment]);
     setComment("");
     setCommentsArray((prevComments) => [newComment, ...prevComments]);
     setShowPostcard(false);
     setShowAskQuestion(true);
   };
+
+  // Updates commentsList, resets comment, adds new comment to commentsArray and updates state to show and hide postcard
 
   return (
     <Card

@@ -5,27 +5,44 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-export default function ContentCard({ type, cardId, question }) {
+// Import statements
+
+export default function ContentCard({ type, cardId, question }) 
+
+// Defines functional component that accepts 3 props and returns JSX to render a card for displaying and posting comments
+
+{
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
     const storedComments = localStorage.getItem(`comments_${cardId}`);
     return storedComments ? JSON.parse(storedComments) : [];
   });
 
+/* State hooks, define comment variable and function setComment with initial value being an empty string
+   The initial value for commentsList is retrieved from local storage using cardId prop, if there
+   is no value, it defaults to an empty array*/
+
   React.useEffect(() => {
     localStorage.setItem(`comments_${cardId}`, JSON.stringify(commentsList));
   }, [commentsList, cardId]);
 
+/* This effect hook is used to update local storage whenever commentsList or cardId changes
+ & stores commentsList array in local storage under key specific to cardId */
+
   const handlePostClick = () => {
     if (comment.trim() === "") {
+     
+// this function called when user clicks Post checks if comment is empty..
+
       return;
     }
-
     const newComment = {
       id: commentsList.length + 1,
       text: comment,
       cardId: cardId,
     };
+
+// If not, it creates a new comment object newComment and adds to commentsList and resets it to an empty string
 
     setCommentsList([...commentsList, newComment]);
     setComment("");
