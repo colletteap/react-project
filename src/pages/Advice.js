@@ -12,6 +12,8 @@ import AskAdvice from "../assets/AskAdvice.png";
 import AdviceText from "../assets/AdviceText.png";
 import { askAdviceCardData } from "../components/Data";
 
+// Import statements
+
 function Advice() {
   const [showPostcard, setShowPostcard] = useState(false);
   const [showAskQuestion, setShowAskQuestion] = useState(true);
@@ -20,6 +22,8 @@ function Advice() {
     return storedComments ? JSON.parse(storedComments) : [];
   });
   const [searchInput, setSearchInput] = useState("");
+
+// State hooks, toggling visibility, defining commentsArray variable to come from local storage if any
 
   const handleSearchChange = (event) => {
     setSearchInput(event.target.value);
@@ -31,6 +35,8 @@ function Advice() {
   );
   console.log("filter:", filteredComments);
 
+// Event handler to update searchInput for search bar
+
   const handleBtnAClick = () => {
     console.log("show postcard", showPostcard);
     if (!showPostcard) {
@@ -38,6 +44,8 @@ function Advice() {
       setShowAskQuestion(false);
     }
   };
+
+// Event handler for visibility of Postcard
 
   return (
     <Grid>
