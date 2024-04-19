@@ -71,9 +71,9 @@ function Advice() {
 
         <Grid className="receiveAdviceDiv">
           {filteredComments.map((comment) => (
-            <Grid key={comment.id}>
+            
               <ContentCard type={"Question:"} question={comment.text} />
-            </Grid>
+            
           ))}
           {askAdviceCardData
             .filter((type) =>

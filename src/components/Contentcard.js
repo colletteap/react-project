@@ -63,12 +63,13 @@ export default function ContentCard({ type, cardId, question }) {
           fontWeight="lg"
           textColor="text.primary"
         ></Link>
-        <Typography fontSize="sm">
+        <Typography fontSize="sm" style={{ whiteSpace: 'pre-wrap'}}>
           <Link
             component="button"
             color="neutral"
             fontWeight="lg"
             textColor="text.primary"
+            
           >
             {type}
           </Link>{" "}
