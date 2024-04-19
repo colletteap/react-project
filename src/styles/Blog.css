@@ -6,12 +6,8 @@
   gap: 40px 40px; 
   padding: 20px;
   background-color: #233349;
-  }
-
-  @media (max-width: 768px) {
-    .BlogPageContainer {
-      transform: scale(0.9);
-    }
+  width: 100%;
+  margin-top: 20px;
   }
 
   .CenterContainer {

@@ -5,7 +5,7 @@ import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
 
-export default function Questioncard({ type, cardId, question }) {
+export default function ContentCard({ type, cardId, question }) {
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
     const storedComments = localStorage.getItem(`comments_${cardId}`);
@@ -89,7 +89,10 @@ export default function Questioncard({ type, cardId, question }) {
           {commentItem.text}
         </CardContent>
       ))}
-      <CardContent orientation="horizontal" sx={{ gap: 1 }}>
+      <CardContent
+        orientation="horizontal"
+        sx={{ gap: 1 }}
+      >
         <Input
           variant="plain"
           size="sm"
@@ -106,10 +109,10 @@ export default function Questioncard({ type, cardId, question }) {
           }}
         />
         <Link
-          sx={{
-            backgroundColor: "#8c7b6f",
-            color: "#ffff",
-          }}
+        sx={{
+          backgroundColor: "#8c7b6f",
+          color: "#ffff",
+        }}
           onClick={handlePostClick}
           underline="none"
           role="button"

@@ -25,6 +25,7 @@ function Advice() {
     setSearchInput(event.target.value);
   };
 
+  console.log("commentArray filter", commentsArray);
   const filteredComments = commentsArray.filter((comment) =>
     comment.text.toLowerCase().includes(searchInput.toLowerCase())
   );

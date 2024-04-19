@@ -141,41 +141,6 @@ const askAdviceCardData = [
   },
 ];
 
-const giveAdviceCardData = [
-  {
-    type: "Advice",
-    cardId: "1",
-    advice: "Know the supports and resources of your teacher's union",
-  },
-  {
-    type: "Advice",
-    cardId: "2",
-    advice:
-      "Ask your colleagues questions, someone may have the exact answer you're looking for",
-  },
-  {
-    type: "Advice",
-    cardId: "3",
-    advice: "ASMR videos on YouTube for 20 minutes helped my students focus",
-  },
-  {
-    type: "Advice",
-    cardId: "4",
-    advice:
-      "Learn how to emotionally regulate yourself, then you can help your students co-regulate",
-  },
-  {
-    type: "Advice",
-    cardId: "5",
-    advice: "Get your classes outside whenever you can",
-  },
-  {
-    type: "Advice",
-    cardId: "6",
-    advice: "You don't need to be an island, ask for help and keep asking.",
-  },
-];
-
 const skillInfo = [
   {
     skill: "Technology",
@@ -456,7 +421,6 @@ export {
   blogData,
   skillShellData,
   askAdviceCardData,
-  giveAdviceCardData,
   skillInfo,
   blogPageData,
   urls,
