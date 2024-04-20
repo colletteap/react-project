@@ -7,15 +7,40 @@
     justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .SkillContainer {
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
-    grid-template-rows: repeat(6, minmax(30px, 1fr));
-  }
+
+
+.skillButton {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 40px;
+  padding-bottom: 30px;
+  transform: scale(1.8); */
 }
+
+.skillButton button {
+  color: #233349;
+  cursor: pointer;
+}
+
 .whiteHeading {
   color: #ffff;
   font-size: 30px;
   text-align: center;
   margin: 0;
 }
+
+
+.SkillContainer #open{
+  display: flex;
+}
+
+ .SkillContainer #close {
+  display: none;
+ }
+
+@media (min-width: 768px) {
+  .skillButton {
+    display: none;
+  }
+}
+

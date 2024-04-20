@@ -50,6 +50,7 @@
 
 .navbar #open .hiddenLinks {
   display: inherit;
+  background-color: red;
 }
 
  .navbar #close .hiddenLinks {
