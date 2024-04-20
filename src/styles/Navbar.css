@@ -8,6 +8,7 @@
 }
 
 .logoNav {
+  display: block;
   transform: scale(2);
 }
 
@@ -20,7 +21,7 @@
 }
 
 .navbar .leftSide img {
-  width: 7%;
+  width: 7% ;
 }
 
 .navbar .rightSide {
@@ -61,10 +62,9 @@
 
 .navbar #open .hiddenLinks {
   display: inherit;
-  margin-left: 30px;
 }
 
-.navbar #close .hiddenLinks {
+.navbar #close .logoNav, .navbar #close .hiddenLinks {
   display: none;
 }
 
