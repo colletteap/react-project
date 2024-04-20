@@ -7,9 +7,8 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.logoNav {
-  display: block;
-  transform: scale(2);
+.navbar .logoNav {
+  margin: 10px 0 0 300px;
 }
 
 .navbar .leftSide {
@@ -45,17 +44,6 @@
   cursor: pointer;
 }
 
-.navbar .rightSide svg {
-  font-size: 40px;
-}
-
-.navbar #open {
-  padding-left: 0px;
-}
-.navbar #open img {
-  display: none;
-}
-
 .navbar #close img {
   display: inherit;
 }
@@ -64,7 +52,7 @@
   display: inherit;
 }
 
-.navbar #close .logoNav, .navbar #close .hiddenLinks {
+ .navbar #close .hiddenLinks {
   display: none;
 }
 
@@ -105,3 +93,9 @@
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .logoNav {
+  display: none;
+  }
+  }
