@@ -9,6 +9,7 @@ import Community from "../assets/community.png";
 import Home from "../assets/Home.png";
 import SkillButton from "../components/Skillbutton";
 import BlankSkillCard from "../components/Blankskillcard";
+import SkillShellDropDown from "../components/SkillShellDropDown";
 import { skillShellData } from "../components/Data";
 
 function SkillShellPage() {
@@ -37,6 +38,7 @@ function SkillShellPage() {
         </Grid>
       </Grid>
       <Grid className="SkillContainer">
+        <SkillShellDropDown />
         {skillShellData.map((skill, index) => (
           <SkillButton
             key={index}
