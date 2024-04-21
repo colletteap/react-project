@@ -4,10 +4,8 @@
   grid-template-columns: repeat(6, 1fr);
   padding: 35px 0 20px 0;
   justify-items: center;
-    justify-content: center;
+  justify-content: center;
 }
-
-
 
 .skillButton {
   display: flex;
@@ -29,18 +27,16 @@
   margin: 0;
 }
 
-
-.SkillContainer #open{
+.SkillContainer #open {
   display: flex;
 }
 
- .SkillContainer #close {
+.SkillContainer #close {
   display: none;
- }
+}
 
 @media (min-width: 768px) {
   .skillButton {
     display: none;
   }
 }
-
