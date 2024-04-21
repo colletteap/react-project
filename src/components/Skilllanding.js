@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grid } from "@mui/material";
-import SkillDropDown from "./SkillDropDown";
+import SkillLandingDropDown from "./SkillLandingDropDown";
 import ReorderIcon from "@mui/icons-material/Reorder";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import "../styles/Skilllanding.css";
@@ -22,7 +22,7 @@ const SkillLanding = () => {
       <h1 className="whiteHeading">Skills from real teachers</h1>
       <Grid item xs={6} className="skillButton">
         <button onClick={toggleSkillLanding}>
-          <SkillDropDown />
+          <SkillLandingDropDown />
         </button>
       </Grid>
       {(openSkillLanding || matches) && (

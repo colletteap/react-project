@@ -4,7 +4,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import { skillData } from './Data';
 import { useNavigate } from 'react-router-dom';
 
-export default function SkillDropDown() {
+export default function SkillLandingDropDown() {
 const navigate = useNavigate();
 
 const handleSkillSelect = (event, skill) => {
