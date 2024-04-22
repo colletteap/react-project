@@ -19,7 +19,7 @@ if (skill) {
     id="dropdown"
     options={skillData}
     getOptionLabel={(option) => option.skill}
-    sx={{ width: 300 }}
+    sx={{ width: 300, backgroundColor: "#87ACDF", borderRadius: "10px" }}
     onChange={handleSkillSelect}
     renderInput={(params) => <TextField {...params} label="Choose a skill..." />}
   />
