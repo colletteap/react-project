@@ -38,7 +38,7 @@ function SkillShellPage() {
         </Grid>
       </Grid>
       <Grid className="SkillContainer">
-        <SkillShellDropDown />
+        <SkillShellDropDown onChange={handleButtonClick} />
         {skillShellData.map((skill, index) => (
           <SkillButton
             key={index}

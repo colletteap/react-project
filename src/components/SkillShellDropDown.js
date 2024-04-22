@@ -2,16 +2,8 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { skillInfo } from './Data';
-import { useNavigate } from 'react-router-dom';
 
-export default function SkillShellDropDown() {
-const navigate = useNavigate();
-
-const handleSkillSelect = (event, skill) => {
-if (skill) {
-    navigate(skill.linkTo);
-}
-};
+export default function SkillShellDropDown({ onChange }) {
 
   return (
     <Autocomplete
@@ -19,8 +11,8 @@ if (skill) {
     id="dropdown"
     options={skillInfo}
     getOptionLabel={(option) => option.skill}
-    sx={{ width: 300, backgroundColor: "#87ACDF", borderRadius: "10px" }}
-    onChange={handleSkillSelect}
+    sx={{ width: 300, backgroundColor: "#fcf9da", borderRadius: "10px" }}
+    onChange={onChange}
     renderInput={(params) => <TextField {...params} label="Choose a skill..." />}
   />
   );
