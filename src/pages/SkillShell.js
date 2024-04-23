@@ -12,7 +12,8 @@ import BlankSkillCard from "../components/Blankskillcard";
 import SkillShellDropDown from "../components/SkillShellDropDown";
 import { skillShellData } from "../components/Data";
 
-function SkillShellPage() {
+export default function SkillShellPage() {
+  const [selectedSkill, setSelectedSkill] = useState(null);
   const [selectedButton, setSelectedButton] = useState("");
   const newComponentRef = useRef(null);
 
@@ -21,6 +22,10 @@ function SkillShellPage() {
       newComponentRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [selectedButton]);
+
+  const handleSkillChange = (skill) => {
+    setSelectedSkill(skill);
+  };
 
   const handleButtonClick = (skill) => {
     setSelectedButton(skill);
@@ -39,6 +44,8 @@ function SkillShellPage() {
       </Grid>
       <Grid className="SkillContainer">
         <SkillShellDropDown onChange={handleButtonClick} />
+        {selectedSkill && <BlankSkillCard skillname={{ skillname: selectedButton}} />}
+
         {skillShellData.map((skill, index) => (
           <SkillButton
             key={index}
@@ -60,5 +67,3 @@ function SkillShellPage() {
     </Grid>
   );
 }
-
-export default SkillShellPage;
