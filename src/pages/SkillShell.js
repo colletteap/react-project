@@ -23,14 +23,16 @@ export default function SkillShellPage() {
     }
   }, [selectedButton]);
 
-  const handleSkillChange = (skill) => {
+  const handleButtonClick = (skill) => {
+    setSelectedButton(skill);
     setSelectedSkill(skill);
   };
 
-  const handleButtonClick = (skill) => {
+  const handleSkillChange = (skill) => {
     setSelectedButton(skill);
+    setSelectedSkill(skill);
   };
-  console.log("img", Discover);
+
   return (
     <Grid className="blueBody">
       <Grid className="whiteLandingContainer">
@@ -43,8 +45,8 @@ export default function SkillShellPage() {
         </Grid>
       </Grid>
       <Grid className="SkillContainer">
-        <SkillShellDropDown onChange={handleButtonClick} />
-        {selectedSkill && <BlankSkillCard skillname={{ skillname: selectedButton}} />}
+        <SkillShellDropDown onChange={handleSkillChange} />
+        {selectedSkill && <BlankSkillCard skillname={{ skillname: selectedSkill }} />}
 
         {skillShellData.map((skill, index) => (
           <SkillButton
