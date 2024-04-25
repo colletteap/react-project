@@ -28,6 +28,10 @@ console.log("newref", useEffect);
     console.log("skillshelldropdown", handleButtonClick);
   };
 
+  const handleSkillSelect = (skill) => {
+    setSelectedButton(skill.skill);
+  };
+
   return (
     <Grid className="blueBody">
       <Grid className="whiteLandingContainer">
@@ -40,7 +44,7 @@ console.log("newref", useEffect);
         </Grid>
       </Grid>
       <Grid className="SkillContainer">
-        <SkillShellDropDown onChange={handleButtonClick} />
+        <SkillShellDropDown onChange={handleSkillSelect} />
         
         {skillShellData.map((skill, index) => (
           <SkillButton
