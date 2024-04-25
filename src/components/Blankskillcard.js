@@ -5,8 +5,11 @@ import Typography from "@mui/joy/Typography";
 import { skillInfo } from "./Data";
 
 export default function BlankSkillCard({ skillname }) {
+  console.log("skillb", skillname.skillname);
   const filteredSkills = skillInfo.filter((item) => item.skill === skillname.skillname);
-
+ 
+console.log("skill", filteredSkills);
+console.log("skilla", skillname.skillname);
   const container = {
     display: "flex",
     flexFlow: "row wrap",

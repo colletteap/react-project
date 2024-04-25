@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import { skillInfo } from './Data';
+import { skillShellData } from './Data';
 
 export default function SkillShellDropDown({ onChange }) {
   const [selectedSkill, setSelectedSkill] = useState(null);
@@ -10,12 +10,12 @@ export default function SkillShellDropDown({ onChange }) {
     setSelectedSkill(newValue);
     onChange(newValue);
   };
-
+console.log("selectedskill", setSelectedSkill);
   return (
     <Autocomplete
       disablePortal
       id="dropdown"
-      options={skillInfo}
+      options={skillShellData}
       getOptionLabel={(option) => option.skill}
       sx={{ width: 300, backgroundColor: "#fff", borderRadius: "10px" }}
       onChange={handleSkillChange}
