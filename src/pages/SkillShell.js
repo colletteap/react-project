@@ -36,7 +36,7 @@ console.log("newref", useEffect);
 
   return (
     <Grid className="blueBody">
-      <Grid className="whiteLandingContainer">
+      <Grid sx={{paddingBottom: "20px"}}className="whiteLandingContainer">
         <h2 style={{ textAlign: "center" }}>Skill Shell</h2>
         <Grid className="imgContainer">
           <img className="img" src={Discover} alt="Discover" />
