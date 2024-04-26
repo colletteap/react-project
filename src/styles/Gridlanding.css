@@ -12,6 +12,12 @@
   padding-bottom: 25px;
 }
 
+.skillButtonContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .adviceLandingContainer {
   display: grid;
   grid-template-rows: 1fr 1 fr;

@@ -20,7 +20,7 @@ const GridLanding = () => {
         </Grid>
       </Grid>
       <Grid className="blueLandingContainer">
-        <SkillLanding />
+        <SkillLanding className="skillButtonContainer"/>
       </Grid>
       <Grid className="adviceLandingContainer">
         <AdviceLanding />

@@ -27,14 +27,6 @@
   margin: 0;
 }
 
-.SkillContainer #open {
-  display: flex;
-}
-
-.SkillContainer #close {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .skillButton {
     display: none;
