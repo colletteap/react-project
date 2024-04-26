@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "@mui/joy/Grid";
+import { Link } from "react-router-dom";
 import LargeLogo from "../assets/GrowthBlue.png";
 import LogoText from "../assets/TopGridText.png";
 import Emailimg from "../assets/Emailimg.png";
@@ -19,11 +20,13 @@ const GridLanding = () => {
           <img src={LogoText} alt="LogoText" />
         </Grid>
       </Grid>
-      <Grid className="blueLandingContainer">
-        <SkillLanding className="skillButtonContainer"/>
+      <Grid sx={{ padding: '0 20px 20px 20px' }} className="blueLandingContainer">
+        <SkillLanding/>
       </Grid>
       <Grid className="adviceLandingContainer">
-        <AdviceLanding />
+        <Link to="/Advice" className="textDeco">
+        <AdviceLanding/>
+        </Link>
       </Grid>
       <Grid className="blueLandingContainer">
         <BlogLanding />

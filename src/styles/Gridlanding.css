@@ -12,6 +12,10 @@
   padding-bottom: 25px;
 }
 
+.textDeco {
+  text-decoration: none;
+}
+
 .skillButtonContainer {
   display: flex;
   flex-flow: row wrap;
