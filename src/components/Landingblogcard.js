@@ -17,6 +17,7 @@ export default function Landingblogcard({ content, title, linkTo, image }) {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        borderRadius: "15px",
       }}
     >
       <CardHeader
@@ -42,7 +43,7 @@ export default function Landingblogcard({ content, title, linkTo, image }) {
             sx={{
               textTransform: "capitalize",
               bgcolor: "#233349",
-              borderRadius: "10px",
+              borderRadius: "15px",
               marginTop: "10px",
             }}
           >
