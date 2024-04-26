@@ -4,12 +4,19 @@ import Logo from "../assets/navbarlogo.png";
 import { Link } from "react-router-dom";
 import ReorderIcon from "@mui/icons-material/Reorder";
 import "../styles/Navbar.css";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Navbar() {
+  const matches = useMediaQuery("(min-width:768px)");
+  console.log("matches", matches);
+  const mini = useMediaQuery("(max-width:768px)");
+
   const [openLinks, setOpenLinks] = useState(false);
 
   const toggleNavBar = () => {
-    setOpenLinks(!openLinks);
+    if (mini) {
+    setOpenLinks(!openLinks)
+    };
   };
 
   return (
@@ -19,6 +26,7 @@ function Navbar() {
           <img src={Logo} />
         </Link>
       </Grid>
+      {matches ? null :(
       <Grid className="leftSide" id={openLinks ? "open" : "close"}>
         <Grid className="hiddenLinks">
           <Link to="./"> Home </Link>
@@ -27,6 +35,7 @@ function Navbar() {
           <Link to="./Blog"> Blog </Link>
         </Grid>
       </Grid>
+      )}
       <Grid className="rightSide">
         <Link to="./"> Home </Link>
         <Link to="./SkillShell"> Skill Shell </Link>

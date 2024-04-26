@@ -32,7 +32,7 @@
 }
 
 .navbar a {
-  color: white;
+  color: blue;
   text-decoration: none;
   margin: 20px;
 }
@@ -40,7 +40,7 @@
 .navbar .rightSide button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: red;
   cursor: pointer;
 }
 
