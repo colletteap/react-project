@@ -17,9 +17,9 @@ console.log("selectedskill", setSelectedSkill);
       id="dropdown"
       options={skillShellData}
       getOptionLabel={(option) => option.skill}
-      sx={{ width: 300, backgroundColor: "#fff", borderRadius: "10px" }}
+      sx={{ width: 300, backgroundColor: "#fff", borderRadius: "15px" }}
       onChange={handleSkillChange}
-      renderInput={(params) => <TextField {...params} label="Choose a skill..." />}
+      renderInput={(params) => <TextField {...params} label="Choose a skill..."/>}
     />
   );
 }
