@@ -58,7 +58,6 @@ function Advice() {
         <img className="medImg" src={AdviceText} alt="Advice Text" />
         <img className="smImg" src={AskAdvice} alt="Ask Advice" />
       </Grid>
-
       <>
         <Grid className="questionButtonContainer">
           <Grid>
@@ -75,9 +74,9 @@ function Advice() {
             )}
           </Grid>
         </Grid>
-        <h2 className="centeredContainer center">Magic in progress..</h2>
+        <h2 className="center">Magic in progress..</h2>
 
-        <Grid className="receiveAdviceDiv">
+        <Grid sx={{padding: "20px"}} className="receiveAdviceDiv">
           {filteredComments.map((comment) => (
             
               <ContentCard key={comment.id}
