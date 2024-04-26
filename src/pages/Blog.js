@@ -30,7 +30,7 @@ function Blog() {
       <Grid className="CenterContainer">
         <button className='resourceButton' onClick={handleClick}>Resource of the Day!</button>
       </Grid>
-      <Grid className="BlogPageContainer">
+      <Grid sx={{padding: "20px"}}className="BlogPageContainer">
         {blogPageData.filter((type) => type.content.toLowerCase().includes(searchInput.toLowerCase())
           ).map((type, index) => (
         <Blogcard

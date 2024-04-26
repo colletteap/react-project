@@ -48,8 +48,7 @@ export default function Blogcard({
         justifySelf: "stretch",
         alignItems: "center",
         flexDirection: "column",
-        border: "5px solid #233349",
-        borderRadius: "10px",
+        borderRadius: "20px",
       }}
     >
       <CardHeader
@@ -59,6 +58,7 @@ export default function Blogcard({
             fontFamily: "Verdana, sans-serif",
             color: "#233349",
             fontWeight: "bold",
+            textAlign: "center",
           },
         }}
       />
