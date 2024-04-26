@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Grid from "@mui/joy/Grid";
 import "../styles/SkillShell.css";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import Skill from "../assets/skill.png";
 import Superhero from "../assets/superhero.png";
 import Discover from "../assets/discover.png";
@@ -13,7 +14,8 @@ import SkillShellDropDown from "../components/SkillShellDropDown";
 import { skillShellData } from "../components/Data";
 
 export default function SkillShellPage() {
-
+  const matches = useMediaQuery("(min-width:768px)");
+  console.log("matches", matches);
   const [selectedButton, setSelectedButton] = useState("");
   const newComponentRef = useRef(null);
 
@@ -43,11 +45,11 @@ console.log("newref", useEffect);
           <img className="img" src={Superhero} alt="Superhero" />
         </Grid>
       </Grid>
-      <Grid>
+      <Grid sx={{ padding: '20px' }}>
         <Grid className="dropDownContainer">
         <SkillShellDropDown onChange={handleSkillSelect} />
         </Grid>
-        <Grid className="SkillContainer">
+        {( matches ) && ( <Grid className="SkillContainer">
         {skillShellData.map((skill, index) => (
           <SkillButton
             key={index}
@@ -56,8 +58,9 @@ console.log("newref", useEffect);
           />
         ))}
         </Grid>
+        )};
       </Grid>
-      <Grid ref={newComponentRef}>
+      <Grid sx={{ paddingBottom: '40px' }} ref={newComponentRef}>
         {selectedButton && (
           <BlankSkillCard skillname={{ skillname: selectedButton }} />
         )}
