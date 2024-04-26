@@ -16,6 +16,8 @@ import { skillShellData } from "../components/Data";
 export default function SkillShellPage() {
   const matches = useMediaQuery("(min-width:768px)");
   console.log("matches", matches);
+  const mini = useMediaQuery("(max-width:768px");
+  console.log("mini", mini);
   const [selectedButton, setSelectedButton] = useState("");
   const newComponentRef = useRef(null);
 
@@ -24,7 +26,7 @@ export default function SkillShellPage() {
       newComponentRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [selectedButton]);
-console.log("newref", useEffect);
+  console.log("newref", useEffect);
   const handleButtonClick = (skill) => {
     setSelectedButton(skill);
     console.log("skillshelldropdown", handleButtonClick);
@@ -36,7 +38,7 @@ console.log("newref", useEffect);
 
   return (
     <Grid className="blueBody">
-      <Grid sx={{paddingBottom: "20px"}}className="whiteLandingContainer">
+      <Grid sx={{ paddingBottom: "20px" }} className="whiteLandingContainer">
         <h2 style={{ textAlign: "center" }}>Skill Shell</h2>
         <Grid className="imgContainer">
           <img className="img" src={Discover} alt="Discover" />
@@ -45,22 +47,26 @@ console.log("newref", useEffect);
           <img className="img" src={Superhero} alt="Superhero" />
         </Grid>
       </Grid>
-      <Grid sx={{ padding: '60px 20px 20px 20px' }}>
-        <Grid className="dropDownContainer">
-        <SkillShellDropDown onChange={handleSkillSelect} />
-        </Grid>
-        {( matches ) && ( <Grid className="SkillContainer">
-        {skillShellData.map((skill, index) => (
-          <SkillButton
-            key={index}
-            skill={skill.skill}
-            onClick={() => handleButtonClick(skill.skill)}
-          />
-        ))}
-        </Grid>
-        )};
+      <Grid sx={{ padding: "60px 20px 20px 20px" }}>
+        {mini && (
+          <Grid className="dropDownContainer">
+            <SkillShellDropDown onChange={handleSkillSelect} />
+          </Grid>
+        )}
+        {matches && (
+          <Grid className="SkillContainer">
+            {skillShellData.map((skill, index) => (
+              <SkillButton
+                key={index}
+                skill={skill.skill}
+                onClick={() => handleButtonClick(skill.skill)}
+              />
+            ))}
+          </Grid>
+        )}
+        ;
       </Grid>
-      <Grid sx={{ paddingBottom: '40px' }} ref={newComponentRef}>
+      <Grid sx={{ paddingBottom: "40px" }} ref={newComponentRef}>
         {selectedButton && (
           <BlankSkillCard skillname={{ skillname: selectedButton }} />
         )}
@@ -71,6 +77,5 @@ console.log("newref", useEffect);
         </Link>
       </Grid>
     </Grid>
-  
-      );
-    }
+  );
+}

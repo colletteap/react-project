@@ -32,7 +32,7 @@
 }
 
 .navbar a {
-  color: blue;
+  color: white;
   text-decoration: none;
   margin: 20px;
 }
@@ -40,7 +40,7 @@
 .navbar .rightSide button {
   background-color: transparent;
   border: none;
-  color: red;
+  color: white;
   cursor: pointer;
 }
 
@@ -50,7 +50,6 @@
 
 .navbar #open .hiddenLinks {
   display: inherit;
-  background-color: red;
 }
 
  .navbar #close .hiddenLinks {
