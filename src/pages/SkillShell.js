@@ -45,7 +45,7 @@ console.log("newref", useEffect);
           <img className="img" src={Superhero} alt="Superhero" />
         </Grid>
       </Grid>
-      <Grid sx={{ padding: '40px 20px 0px 20px' }}>
+      <Grid sx={{ padding: '60px 20px 20px 20px' }}>
         <Grid className="dropDownContainer">
         <SkillShellDropDown onChange={handleSkillSelect} />
         </Grid>

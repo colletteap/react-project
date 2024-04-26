@@ -33,6 +33,7 @@ console.log("skilla", skillname.skillname);
     color: "#233349",
     backgroundColor: "#fcf9da",
     padding: "40px 20px 40px 20px",
+    textAlign: "center",
   };
 
   return (
