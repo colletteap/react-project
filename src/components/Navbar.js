@@ -21,11 +21,13 @@ function Navbar() {
 
   return (
     <Grid className="navbar">
+      {mini ? null :(
       <Grid className="logoNav">
         <Link to="./">
           <img src={Logo} />
         </Link>
       </Grid>
+      )}
       {matches ? null :(
       <Grid className="leftSide" id={openLinks ? "open" : "close"}>
         <Grid className="hiddenLinks">
@@ -36,15 +38,19 @@ function Navbar() {
         </Grid>
       </Grid>
       )}
+      {mini ? null :(
       <Grid className="rightSide">
         <Link to="./"> Home </Link>
         <Link to="./SkillShell"> Skill Shell </Link>
         <Link to="./Advice"> Advice </Link>
         <Link to="./Blog"> Blog </Link>
-        <button onClick={toggleNavBar}>
+      </Grid>
+      )}
+      {matches ? null :(
+        <button sx={{ color: "#233349" }}onClick={toggleNavBar}>
           <ReorderIcon />
         </button>
-      </Grid>
+        )}
     </Grid>
   );
 }

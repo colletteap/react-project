@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@mui/joy/Grid";
 import { Link } from "react-router-dom";
-import LargeLogo from "../assets/GrowthBlue.png";
+import LargeLogo from "../assets/GrowthBlueHQ.png";
 import LogoText from "../assets/TopGridText.png";
 import Emailimg from "../assets/Emailimg.png";
 import "../styles/Gridlanding.css";
