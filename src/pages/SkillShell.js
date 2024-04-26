@@ -43,9 +43,11 @@ console.log("newref", useEffect);
           <img className="img" src={Superhero} alt="Superhero" />
         </Grid>
       </Grid>
-      <Grid className="SkillContainer">
+      <Grid>
+        <Grid className="dropDownContainer">
         <SkillShellDropDown onChange={handleSkillSelect} />
-        
+        </Grid>
+        <Grid className="SkillContainer">
         {skillShellData.map((skill, index) => (
           <SkillButton
             key={index}
@@ -53,6 +55,7 @@ console.log("newref", useEffect);
             onClick={() => handleButtonClick(skill.skill)}
           />
         ))}
+        </Grid>
       </Grid>
       <Grid ref={newComponentRef}>
         {selectedButton && (

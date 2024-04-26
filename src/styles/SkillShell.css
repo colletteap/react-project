@@ -12,6 +12,11 @@
   height: 100%;
 }
 
+.dropDownContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .imgContainer {
   display: grid;
   grid-template-rows: 1fr;
