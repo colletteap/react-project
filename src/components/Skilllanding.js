@@ -15,9 +15,7 @@ const SkillLanding = () => {
       <h1 className="whiteHeading">Skills from real teachers</h1>
       <Grid >
         <Grid item xs={6} className="skillButton">
-        <button >
           <SkillLandingDropDown />
-        </button>
       </Grid>
       {(matches) && (
         <Grid className="SkillContainer">
