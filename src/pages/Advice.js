@@ -9,7 +9,7 @@ import SearchBar from "../components/Searchbar";
 import Home from "../assets/Home.png";
 import GiveAdvice from "../assets/GiveAdvice.png";
 import AskAdvice from "../assets/AskAdvice.png";
-import AdviceText from "../assets/AdviceText.png";
+import AdviceText from "../assets/AdviceTextHQ.png";
 import { askAdviceCardData } from "../components/Data";
 
 // Import statements
@@ -54,9 +54,9 @@ function Advice() {
       </Grid>
 
       <Grid className="centeredContainer">
-        <img className="smImg" src={GiveAdvice} alt="Give Advice" />
+        
         <img className="medImg" src={AdviceText} alt="Advice Text" />
-        <img className="smImg" src={AskAdvice} alt="Ask Advice" />
+        
       </Grid>
       <>
         <Grid className="questionButtonContainer">

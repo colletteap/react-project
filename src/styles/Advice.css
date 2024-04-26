@@ -7,15 +7,8 @@
 .centeredContainer {
   display: flex;
   flex-flow: row wrap;
-  gap: 100px;
   justify-content: center;
   align-content: center;
-}
-
-.smImg {
-  width: 30%;
-  min-width: 70px;
-  max-width: 150px;
 }
 
 .medImg {
@@ -28,16 +21,6 @@
   text-align: center;
 }
 
-.AdviceInputContainer {
-  display: grid;
-  width: auto;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  padding: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
 .questionButtonContainer {
   display: flex;
   flex-flow: row wrap;
@@ -47,19 +30,6 @@
   justify-items: center;
   align-items: center;
   height: auto;
-}
-
-.AdvicePostsContainer {
-  display: grid;
-  width: auto;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 20px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  background-color: #fcf9da;
 }
 
 .receiveAdviceDiv {
@@ -80,13 +50,7 @@
     gap: 43px;
     margin: 0;
   }
-  .centeredContainer {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
-    gap: 10px;
+  h2 {
+    transform: scale(0.8);
   }
 }
-
-
