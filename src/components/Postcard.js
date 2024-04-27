@@ -22,33 +22,33 @@ export default function Postcard({
 
 // These are state hooks; defining a state variable of comment and a function setComment, initial value is an empty string
 
-  const handlePostClick = () => {
+  const handlePostQuestionClick = () => {
     if (comment.trim() === "") {
      
 // This is the event handler, a function called when user clicks Post button, checks if comment is not empty...
 
       return;
     }
+    const storedComments = localStorage.getItem("commentsArray");
+    const commentsArray = storedComments ? JSON.parse(storedComments) : [];
 
     const newComment = {
       id: commentsList.length + 1,
       type: type,
       text: comment,
-      cardId: cardId,
+      cardId: commentsArray.length + 1,
     };
 
 // will return object newComment
-
-    const storedComments = localStorage.getItem("commentsArray");
-    const commentsArray = storedComments ? JSON.parse(storedComments) : [];
+   
     localStorage.setItem(
       "commentsArray",
       JSON.stringify([newComment, ...commentsArray])
     );
-
+    
 // Putting the commentsArray into local storage and creating a newComment to be placed in front of the exisiting commentsArray
 
-    setCommentsList([...commentsList, newComment]);
+    setCommentsList([newComment, ...commentsList]);
     setComment("");
     setCommentsArray((prevComments) => [newComment, ...prevComments]);
     setShowPostcard(false);
@@ -107,7 +107,7 @@ export default function Postcard({
             padding: "5px",
           }}
         />
-        <Link onClick={handlePostClick} underline="none" role="button">
+        <Link onClick={handlePostQuestionClick} underline="none" role="button">
           Post
         </Link>
       </CardContent>

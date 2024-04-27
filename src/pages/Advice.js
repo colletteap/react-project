@@ -23,7 +23,7 @@ function Advice() {
   });
   const [searchInput, setSearchInput] = useState("");
 
-// State hooks, toggling visibility, defining commentsArray variable to come from local storage if any
+  // State hooks, toggling visibility, defining commentsArray variable to come from local storage if any
 
   const handleSearchChange = (event) => {
     setSearchInput(event.target.value);
@@ -35,7 +35,7 @@ function Advice() {
   );
   console.log("filter:", filteredComments);
 
-// Event handler to update searchInput for search bar
+  // Event handler to update searchInput for search bar
 
   const handleBtnAClick = () => {
     console.log("show postcard", showPostcard);
@@ -45,7 +45,7 @@ function Advice() {
     }
   };
 
-// Event handler for visibility of Postcard
+  // Event handler for visibility of Postcard
 
   return (
     <Grid>
@@ -54,9 +54,7 @@ function Advice() {
       </Grid>
 
       <Grid className="centeredContainer">
-        
         <img className="medImg" src={AdviceText} alt="Advice Text" />
-        
       </Grid>
       <>
         <Grid className="questionButtonContainer">
@@ -76,14 +74,14 @@ function Advice() {
         </Grid>
         <h2 className="center">Magic in progress..</h2>
 
-        <Grid sx={{padding: "20px"}} className="receiveAdviceDiv">
+        <Grid sx={{ padding: "20px" }} className="receiveAdviceDiv">
           {filteredComments.map((comment) => (
-            
-              <ContentCard key={comment.id}
+            <ContentCard
+              key={comment.id}
               type={"Question:"}
               cardId={comment.cardId}
-              question={comment.text} />
-            
+              question={comment.text}
+            />
           ))}
           {askAdviceCardData
             .filter((type) =>

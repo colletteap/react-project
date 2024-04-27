@@ -23,8 +23,11 @@ export default function ContentCard({ type, cardId, question })
    is no value, it defaults to an empty array*/
 
   React.useEffect(() => {
+    console.log("card id", cardId);
+
     localStorage.setItem(`comments_${cardId}`, JSON.stringify(commentsList));
   }, [commentsList, cardId]);
+
 
 /* This effect hook is used to update local storage whenever commentsList or cardId changes
  & stores commentsList array in local storage under key specific to cardId */
@@ -39,14 +42,15 @@ export default function ContentCard({ type, cardId, question })
     const newComment = {
       id: commentsList.length + 1,
       text: comment,
-      cardId: cardId,
+      cardId: commentsList.length + 1,
     };
-
+console.log("new comment", newComment);
 // If not, it creates a new comment object newComment and adds to commentsList and resets it to an empty string
 
     setCommentsList([...commentsList, newComment]);
     setComment("");
   };
+ // console.log("comment", comment)
 
   return (
     <Card
