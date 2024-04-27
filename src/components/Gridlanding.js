@@ -8,11 +8,15 @@ import "../styles/Gridlanding.css";
 import SkillLanding from "./Skilllanding";
 import AdviceLanding from "./Advicelanding";
 import BlogLanding from "./Bloglanding";
+import CustomButton from "../soundReact/customButton";
 
 const GridLanding = () => {
   return (
     <>
       <Grid className="GridContainer">
+        <Grid>
+          <CustomButton/>
+        </Grid>
         <Grid className="ImageContainer">
           <img src={LargeLogo} alt="Growth Logo" />
         </Grid>
