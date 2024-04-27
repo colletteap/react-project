@@ -7,12 +7,15 @@ const CustomButton = () => {
     const start = () => {
         audio.play()
     };
-
-    const 
+    
 
     return (
         <div>
-            <button onClick={start}> Play Sound</button>
+            <button onClick={start} 
+            sx={{
+                borderRadius: "15px",
+            }}
+            > Play Sound</button>
         </div>
     );
 };
