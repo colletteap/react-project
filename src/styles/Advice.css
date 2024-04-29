@@ -17,6 +17,11 @@
   max-width: 500px;
 }
 
+.magicBand {
+  width: 100%;
+  max-width: 1440px;
+}
+
 .center {
   text-align: center;
 }

@@ -7,7 +7,7 @@ import ContentCard from "../components/Contentcard";
 import PostCard from "../components/Postcard";
 import SearchBar from "../components/Searchbar";
 import Home from "../assets/Home.png";
-import Magic from "../assets/Magic.png";
+import Magic from "../assets/MagicSeg.png";
 import AdviceText from "../assets/AdviceTextHQ.png";
 import { askAdviceCardData } from "../components/Data";
 
@@ -71,8 +71,9 @@ function Advice() {
             )}
           </Grid>
         </Grid>
-        <img  className="medImg" src={Magic} alt="shooting stars"/>
-
+        <Grid className="center">
+        <img className="magicBand" src={Magic} alt="shooting stars"/>
+        </Grid>
         <Grid sx={{ padding: "20px" }} className="receiveAdviceDiv">
           {filteredComments.map((comment) => (
             <ContentCard

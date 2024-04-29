@@ -12,7 +12,12 @@ const CustomButton = () => {
         backgroundColor: "white",
         color: "#233349",
         padding: "10px 20px",
-        cursor: "pointer"
+        cursor: "pointer",
+        transition: "background-color 0.3s",
+        ":hover": {
+            backgroundColor: "#233349",
+            color: "white"
+        }
     };
 
     const start = () => {
