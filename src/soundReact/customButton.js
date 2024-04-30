@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from "@mui/joy/Grid";
 import ClickSound from "./clicksound.wav";
 
-const CustomButton = () => {
+const CustomButton = ({children}) => {
     let audio = new Audio(ClickSound);
 
     const buttonStyle = {
@@ -14,10 +14,7 @@ const CustomButton = () => {
         padding: "10px 20px",
         cursor: "pointer",
         transition: "background-color 0.3s",
-        ":hover": {
-            backgroundColor: "#233349",
-            color: "white"
-        }
+        textDecoration: "none",
     };
 
     const start = () => {
@@ -27,7 +24,9 @@ const CustomButton = () => {
 
     return (
         <Grid>
-            <button onClick={start} style={buttonStyle}> Play Sound</button>
+            <button onClick={start} style={buttonStyle}>
+                {children}
+            </button>
         </Grid>
     );
 };

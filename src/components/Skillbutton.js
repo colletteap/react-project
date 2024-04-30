@@ -1,11 +1,11 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
+import CustomButton from "../soundReact/customButton";
 import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 
-export default function SkillButton({ skill, linkTo, onClick }) {
- 
+export default function SkillButton({ skill, linkTo }) {
+  
   return (
     <div
       style={{
@@ -17,11 +17,10 @@ export default function SkillButton({ skill, linkTo, onClick }) {
       }}
     >
       <Link to={linkTo}>
-        <Button
+        <CustomButton 
           variant="contained"
           size="large"
-          sx={{ minWidth: 140, bgcolor: "#ffff", color: "#233349", borderRadius: "10px" }}
-          onClick={onClick}
+          sx={{ minWidth: 180 }}
          
         >
           <Typography
@@ -34,7 +33,7 @@ export default function SkillButton({ skill, linkTo, onClick }) {
           >
             {skill}
           </Typography>
-        </Button>
+        </CustomButton>
       </Link>
       
     </div>
