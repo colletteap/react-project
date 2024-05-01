@@ -137,6 +137,7 @@ console.log("new comment", newComment);
           color: "#ffff",
         }}
           onClick={handlePostClick}
+          variant={"Post"}
           underline="none"
           role="button"
           border="1px solid #233349"

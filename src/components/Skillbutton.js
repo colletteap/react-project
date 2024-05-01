@@ -18,10 +18,10 @@ export default function SkillButton({ skill, linkTo, onClick }) {
     >
       <Link to={linkTo}>
         <CustomButton 
-          variant="contained"
           size="large"
           sx={{ minWidth: 180 }}
           onClick={onClick}
+          variant={"Skill"}
         >
           <Typography
             sx={{

@@ -7,6 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import CustomButton from "../soundReact/customButton";
 
 export default function Landingblogcard({ content, title, linkTo, image }) {
   return (
@@ -38,7 +39,7 @@ export default function Landingblogcard({ content, title, linkTo, image }) {
       </CardContent>
       <CardActions disableSpacing>
         <Link to={linkTo}>
-          <Button
+          <CustomButton
             variant="contained"
             sx={{
               textTransform: "capitalize",
@@ -46,9 +47,10 @@ export default function Landingblogcard({ content, title, linkTo, image }) {
               borderRadius: "15px",
               marginTop: "10px",
             }}
+           
           >
             See more!
-          </Button>
+          </CustomButton>
         </Link>
       </CardActions>
     </Card>
