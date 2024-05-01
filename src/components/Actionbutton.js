@@ -1,6 +1,7 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
+import CustomButton from "../soundReact/customButton";
 
 
 export default function ActionButton({ skill, onClick }) {
@@ -15,7 +16,7 @@ export default function ActionButton({ skill, onClick }) {
         justifyItems: "center",
       }}
     >
-        <Button
+        <CustomButton
           variant="contained"
           size="medium"
           sx={{ bgcolor: "#233349", color: "#ffff", fontWeight: "bolder", borderRadius: "10px", "&:hover": {backgroundColor: "#5378AB",}  }}
@@ -30,7 +31,7 @@ export default function ActionButton({ skill, onClick }) {
           >
             {skill}
           </Typography>
-        </Button>
+        </CustomButton>
     </div>
   );
 }

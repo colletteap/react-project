@@ -4,8 +4,8 @@ import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 
-export default function SkillButton({ skill, linkTo }) {
-  
+export default function SkillButton({ skill, linkTo, onClick }) {
+
   return (
     <div
       style={{
@@ -21,7 +21,7 @@ export default function SkillButton({ skill, linkTo }) {
           variant="contained"
           size="large"
           sx={{ minWidth: 180 }}
-         
+          onClick={onClick}
         >
           <Typography
             sx={{

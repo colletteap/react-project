@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from "@mui/joy/Grid";
 import ClickSound from "./clicksound.wav";
 
-const CustomButton = ({children}) => {
+const CustomButton = ({children, onClick}) => {
     let audio = new Audio(ClickSound);
 
     const buttonStyle = {
@@ -18,7 +18,10 @@ const CustomButton = ({children}) => {
     };
 
     const start = () => {
-        audio.play()
+        audio.play();
+        console.log("onClick clicked");
+        onClick();
+        
     };
     
 

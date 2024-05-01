@@ -14,10 +14,13 @@ import SkillShellDropDown from "../components/SkillShellDropDown";
 import { skillShellData } from "../components/Data";
 
 export default function SkillShellPage() {
+
   const matches = useMediaQuery("(min-width:768px)");
   console.log("matches", matches);
+
   const mini = useMediaQuery("(max-width:768px");
   console.log("mini", mini);
+
   const [selectedButton, setSelectedButton] = useState("");
   const newComponentRef = useRef(null);
 
@@ -27,6 +30,7 @@ export default function SkillShellPage() {
     }
   }, [selectedButton]);
   console.log("newref", useEffect);
+  
   const handleButtonClick = (skill) => {
     setSelectedButton(skill);
     console.log("skillshelldropdown", handleButtonClick);
