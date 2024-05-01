@@ -4,6 +4,7 @@ import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
 import Typography from "@mui/joy/Typography";
+import CustomButton from "../soundReact/customButton";
 
 // Import statements
 
@@ -130,7 +131,7 @@ console.log("new comment", newComment);
             padding: "5px",
           }}
         />
-        <Link
+        <CustomButton
         sx={{
           backgroundColor: "#8c7b6f",
           color: "#ffff",
@@ -143,7 +144,7 @@ console.log("new comment", newComment);
           padding="5px"
         >
           Post
-        </Link>
+        </CustomButton>
       </CardContent>
     </Card>
   );

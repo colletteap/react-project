@@ -6,6 +6,7 @@ import SearchBar from "../components/Searchbar";
 import "../styles/Blog.css";
 import Home from "../assets/Home.png";
 import { blogPageData, urls } from "../components/Data";
+import CustomButton from "../soundReact/customButton";
 
 
 function Blog() {
@@ -28,7 +29,9 @@ function Blog() {
         <SearchBar onChange={handleSearchChange}/>
       </Grid>
       <Grid className="CenterContainer">
-        <button className='resourceButton' onClick={handleClick}>Resource of the Day!</button>
+        <CustomButton className='resourceButton' onClick={handleClick}>
+          Resource of the Day!
+          </CustomButton>
       </Grid>
       <Grid sx={{padding: "20px"}}className="BlogPageContainer">
         {blogPageData.filter((type) => type.content.toLowerCase().includes(searchInput.toLowerCase())

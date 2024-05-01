@@ -3,6 +3,7 @@ import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Link from "@mui/joy/Link";
 import Input from "@mui/joy/Input";
+import CustomButton from "../soundReact/customButton";
 
 // Import startements
 
@@ -107,9 +108,9 @@ export default function Postcard({
             padding: "5px",
           }}
         />
-        <Link onClick={handlePostQuestionClick} underline="none" role="button">
+        <CustomButton onClick={handlePostQuestionClick} underline="none" role="button">
           Post
-        </Link>
+        </CustomButton>
       </CardContent>
     </Card>
   );
