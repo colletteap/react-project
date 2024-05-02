@@ -4,10 +4,11 @@ import ClickSound from "./clicksound.wav";
 const CustomButton = ({children, onClick, variant}) => {
     let audio = new Audio(ClickSound);
     const buttonStyle = {
-        fontFamily: "Helvetica, sans serif",
-        border: "solid 3px #233349",
+        fontFamily: "Arial, sans serif",
+        fontWeight: "bold",
         boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)",
         borderRadius: "15px",
+        fontSize: variant === "Blog" ? "1.9em" : "1em",
         padding: "10px 20px",
         cursor: "pointer",
         transition: "background-color 0.3s",

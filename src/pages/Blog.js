@@ -29,7 +29,8 @@ function Blog() {
         <SearchBar onChange={handleSearchChange}/>
       </Grid>
       <Grid className="CenterContainer">
-        <CustomButton className='resourceButton' onClick={handleClick}>
+        <CustomButton className='resourceButton' onClick={handleClick}
+        variant={Blog}>
           Resource of the Day!
           </CustomButton>
       </Grid>
