@@ -108,7 +108,10 @@ export default function Postcard({
             padding: "5px",
           }}
         />
-        <CustomButton onClick={handlePostQuestionClick} underline="none" role="button">
+        <CustomButton onClick={handlePostQuestionClick} 
+        variant={"Post"}
+        underline="none" 
+        role="button">
           Post
         </CustomButton>
       </CardContent>

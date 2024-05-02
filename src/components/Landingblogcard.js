@@ -40,7 +40,7 @@ export default function Landingblogcard({ content, title, linkTo, image }) {
       <CardActions disableSpacing>
         <Link to={linkTo}>
           <CustomButton
-            variant="contained"
+            variant="Question"
             sx={{
               textTransform: "capitalize",
               bgcolor: "#233349",

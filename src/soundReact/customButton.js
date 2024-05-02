@@ -1,13 +1,12 @@
 import React from 'react';
 import Grid from "@mui/joy/Grid";
 import ClickSound from "./clicksound.wav";
-
 const CustomButton = ({children, onClick, variant}) => {
     let audio = new Audio(ClickSound);
-
     const buttonStyle = {
         fontFamily: "Helvetica, sans serif",
-        border: "solid 1px #233349",
+        border: "solid 3px #233349",
+        boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)",
         borderRadius: "15px",
         padding: "10px 20px",
         cursor: "pointer",
@@ -21,7 +20,6 @@ const CustomButton = ({children, onClick, variant}) => {
             : variant === "Post" ? "#fcf9da"
             : "#ffff",
     };
-
     const start = () => {
         audio.play();
         console.log("onClick clicked");
@@ -29,8 +27,6 @@ const CustomButton = ({children, onClick, variant}) => {
             onClick()
         }
     };
-    
-
     return (
         <Grid>
             <button onClick={start} style={buttonStyle}>
@@ -39,5 +35,4 @@ const CustomButton = ({children, onClick, variant}) => {
         </Grid>
     );
 };
-
 export default CustomButton;
