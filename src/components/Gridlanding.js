@@ -8,6 +8,7 @@ import "../styles/Gridlanding.css";
 import SkillLanding from "./Skilllanding";
 import AdviceLanding from "./Advicelanding";
 import BlogLanding from "./Bloglanding";
+import SoundButton from "../soundReact/GlobalButton";
 
 const GridLanding = () => {
   return (
@@ -19,6 +20,9 @@ const GridLanding = () => {
         <Grid className="ImageContainerText">
           <img src={LogoText} alt="LogoText" />
         </Grid>
+      </Grid>
+      <Grid className="soundContainer">
+      <SoundButton/>
       </Grid>
       <Grid sx={{ padding: '0 20px 20px 20px' }} className="blueLandingContainer">
         <SkillLanding/>

@@ -7,6 +7,11 @@
   align-content: center;
 }
 
+.soundContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .blueLandingContainer {
   background-color: #233349;
   padding-bottom: 25px;
