@@ -32,18 +32,18 @@ function Navbar() {
       <Grid className="leftSide" id={openLinks ? "open" : "close"}>
         <Grid className="hiddenLinks">
           <Link to="./"> Home </Link>
-          <Link to="./SkillShell"> Skill Shell </Link>
+          <Link to="./SkillShell"> Learn </Link>
           <Link to="./Advice"> Advice </Link>
-          <Link to="./Blog"> Blog </Link>
+          <Link to="./Blog"> Tools </Link>
         </Grid>
       </Grid>
       )}
       {mini ? null :(
       <Grid className="rightSide">
         <Link to="./"> Home </Link>
-        <Link to="./SkillShell"> Skill Shell </Link>
+        <Link to="./SkillShell"> Learn </Link>
         <Link to="./Advice"> Advice </Link>
-        <Link to="./Blog"> Blog </Link>
+        <Link to="./Blog"> Tools </Link>
       </Grid>
       )}
       {matches ? null :(

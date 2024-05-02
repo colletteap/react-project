@@ -26,6 +26,7 @@ function Blog() {
   return (
     <Grid>
       <Grid className="CenterContainer">
+      <h2 style={{ textAlign: "center" }}>Teacher's Toolkit</h2>
         <SearchBar onChange={handleSearchChange}/>
       </Grid>
       <Grid className="CenterContainer">

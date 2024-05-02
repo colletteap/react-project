@@ -43,7 +43,7 @@ export default function SkillShellPage() {
   return (
     <Grid className="blueBody">
       <Grid sx={{ paddingBottom: "20px" }} className="whiteLandingContainer">
-        <h2 style={{ textAlign: "center" }}>Skill Shell</h2>
+        <h2 style={{ textAlign: "center" }}>Learn from Experience</h2>
         <Grid className="imgContainer">
           <img className="img" src={Discover} alt="Discover" />
           <img className="img" src={Skill} alt="Skill" />
