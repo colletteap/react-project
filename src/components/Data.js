@@ -22,7 +22,7 @@ const skillData = [
   { skill: "Critical Thinking", linkTo: "/SkillShell/Critical-Thinking" },
   { skill: "Leadership", linkTo: "/SkillShell/Leadership" },
   { skill: "Creativity", linkTo: "/SkillShell/Creativity" },
-  { skill: "More+", linkTo: "/SkillShell" },
+  { skill: "Relationships", linkTo: "/SkillShell" },
 ];
 
 const adviceData = [
@@ -104,6 +104,10 @@ const skillShellData = [
   },
   { skill: "Leadership" },
   { skill: "Creativity" },
+  { skill: "Art" },
+  { skill: "Organization" },
+  { skill: "Relationships" },
+  { skill: "Soft Skills" },
 ];
 
 const askAdviceCardData = [
@@ -346,6 +350,54 @@ const skillInfo = [
     skill: "Boundary Setting",
     details:
       "Setting boundaries with empathy and understanding helps build positive relationships with students. Teachers who are empathetic and understanding of students' backgrounds and circumstances can set boundaries that are fair and supportive.",
+  },
+  {
+    skill: "Art",
+    details: "Provide opportunities for students to explore and express their own ideas. Encouraging creativity can lead to unique and meaningful artworks."
+  },
+  {
+    skill: "Art",
+    details: "Offer feedback that is specific, positive, and actionable. This can help students improve their skills and confidence in creating art."
+  },
+  {
+    skill: "Art",
+    details: "Connect art lessons to historical and cultural contexts to help students understand the significance of artworks and broaden their perspectives."
+  },
+  {
+    skill: "Organization",
+    details: "Keep track of important dates, deadlines, and events using a planner or digital calendar. "
+  },
+  {
+    skill: "Organization",
+    details: "Develop a system for organizing paperwork, such as student assignments, assessments, and administrative documents."
+  },
+  {
+    skill: "Organization",
+    details: "Establishing routines and procedures can help create a structured and organized classroom environment."
+  },
+  {
+    skill: "Relationships",
+    details: "Take the time to get to know your students as individuals. Show genuine interest in their lives, hobbies, and interests outside of school. "
+  },
+  {
+    skill: "Relationships",
+    details: "Create a welcoming and supportive atmosphere in your classroom. Be approachable and available to listen to your students' concerns, questions, and ideas. "
+  },
+  {
+    skill: "Relationships",
+    details: "Establish clear and open lines of communication with your students. Be clear and consistent in your expectations, providing constructive feedback, and addressing any issues or concerns in a timely and respectful manner. "
+  },
+  { 
+    skill: "Soft Skills",
+    details: "Use a journal. Reflect on your teaching practice and experiences to identify areas where you can improve your soft skills." 
+  },
+  { 
+    skill: "Soft Skills",
+    details: "Coursera, Udemy, EdX. Take advantage of professional development opportunities, such as workshops, courses, and conferences, to improve your soft skills." 
+  },
+  { 
+    skill: "Soft Skills",
+    details: "Ask for feedback from colleagues, mentors, and students to gain insights into your soft skills." 
   },
 ];
 
