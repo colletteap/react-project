@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "@mui/material";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -37,18 +38,21 @@ export default function Blogcard({
     setExpanded(!expanded);
   };
 
+  const isMobile = useMediaQuery("(max-width:768px)");
+
   return (
     <Card
       sx={{
         height: 500,
         maxWidth: 385,
-        minWidth: 350,
         display: "flex",
         justifyContent: "center",
         justifySelf: "stretch",
         alignItems: "center",
         flexDirection: "column",
         borderRadius: "20px",
+        width: isMobile ? "80%" : "100%",
+        height: isMobile ? "50%" : "100%", 
       }}
     >
       <CardHeader

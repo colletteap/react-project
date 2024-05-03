@@ -34,7 +34,7 @@ function Navbar() {
         <Grid className="hiddenLinks">
           <Link to="./"> Home </Link>
           <Link to="./SkillShell"> Learn </Link>
-          <Link to="./Advice"> Advice </Link>
+          <Link to="./Advice"> Ask </Link>
           <Link to="./Blog"> Tools </Link>
         </Grid>
       </Grid>
@@ -44,7 +44,7 @@ function Navbar() {
         <SoundButton/>
         <Link to="./"> Home </Link>
         <Link to="./SkillShell"> Learn </Link>
-        <Link to="./Advice"> Advice </Link>
+        <Link to="./Advice"> Ask </Link>
         <Link to="./Blog"> Tools </Link>
       </Grid>
       )}
