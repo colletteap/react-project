@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import ReorderIcon from "@mui/icons-material/Reorder";
 import "../styles/Navbar.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import SoundButton from "../soundReact/GlobalButton";
 
 function Navbar() {
   const matches = useMediaQuery("(min-width:768px)");
@@ -40,6 +41,7 @@ function Navbar() {
       )}
       {mini ? null :(
       <Grid className="rightSide">
+        <SoundButton/>
         <Link to="./"> Home </Link>
         <Link to="./SkillShell"> Learn </Link>
         <Link to="./Advice"> Advice </Link>
