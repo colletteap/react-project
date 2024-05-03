@@ -25,7 +25,8 @@ export default function SkillButton({ skill, linkTo, onClick }) {
         >
           <Typography
             sx={{
-              fontFamily: "Arial",
+              fontFamily: "Quicksand",
+              fontWeight: "bold",
               fontSize: "19px",
               textTransform: "initial",
               whiteSpace: "nowrap",

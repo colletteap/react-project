@@ -4,7 +4,7 @@
   background-color: #233349;
   display: flex;
   flex-direction: row;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: "Quicksand", sans-serif;
 }
 
 .navbar .logoNav {
