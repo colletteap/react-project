@@ -4,7 +4,12 @@ import SoundOn from '../assets/SoundOn.png';
 import SoundOff from '../assets/SoundOff.png';
 
 const SoundButton = () => {
+
   const { isSoundOn, toggleSound } = useSoundContext();
+
+  /* this is the simpler way to access state and function
+  from SoundContext.Provider*/
+
   const buttonStyle = {
     fontFamily: "Arial, sans serif",
     border: "solid 4px #fff",
@@ -18,6 +23,7 @@ const SoundButton = () => {
     color: "#ffff",
     backgroundColor: "#233349",
 };
+
   return (
     <button onClick={toggleSound} style={buttonStyle}>
       <img src={isSoundOn ? SoundOff : SoundOn}/>

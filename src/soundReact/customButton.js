@@ -5,6 +5,9 @@ import { useSoundContext } from './SoundContext';
 
 const CustomButton = ({children, onClick, variant}) => {
     const { isSoundOn } = useSoundContext();
+
+    // bringing in state so that it knows what sound to connect to
+
     let audio = new Audio(ClickSound);
 
     const buttonStyle = {
@@ -28,6 +31,8 @@ const CustomButton = ({children, onClick, variant}) => {
 
     const start = () => {
         if (isSoundOn) {
+/* state here is true, so it will always play unless global button is clicked
+then the rest of the start function does not execute and no sound*/
         audio.play();
         }
         console.log("onClick clicked");
