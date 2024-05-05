@@ -59,6 +59,8 @@ console.log("new comment", newComment);
       sx={{
         backgroundColor: "#42536b",
         width: "300px",
+        fontFamily: "Quicksand",
+        fontWeight: "bold",
         border: "2px solid #fcf9da",
         borderRadius: "15px",
         "--Card-radius": (theme) => theme.vars.radius.xs,

@@ -23,7 +23,7 @@ export default function ActionButton({ skill, onClick }) {
         >
           <Typography
             sx={{
-              fontFamily: "Verdana",
+              fontFamily: "Quicksand",
               textTransform: "initial",
               whiteSpace: "nowrap",
             }}
