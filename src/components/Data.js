@@ -264,7 +264,7 @@ const skillInfo = [
   {
     skill: "Home Economics",
     details:
-      "Educating students about budgeting, saving, and making informed financial decisions helps them develop important life skills for managing their finances effectively.",
+      "Educating students about budgeting, saving, and making informed financial decisions helps them develop important life skills for managing their finances effectively. Tip: check out the app Kiddie Kredit.",
   },
   {
     skill: "Home Economics",
