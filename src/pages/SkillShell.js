@@ -24,11 +24,19 @@ export default function SkillShellPage() {
   const [selectedButton, setSelectedButton] = useState("");
   const newComponentRef = useRef(null);
 
+  /* useRef does not re-render the page, it is used to reference a Grid node
+      in the component to notify useEffect to execute*/
+
   useEffect(() => {
     if (selectedButton && newComponentRef.current) {
       newComponentRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [selectedButton]);
+
+  /* The dependency array is selectedButton and when selectedButton
+  and newComponentRef.current (current value of useRef) then the scrollIntoView
+  behaviour executes*/
+  
   console.log("newref", useEffect);
   
   const handleButtonClick = (skill) => {
