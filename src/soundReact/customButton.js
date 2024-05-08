@@ -3,8 +3,9 @@ import Grid from "@mui/joy/Grid";
 import ClickSound from "./clicksound.wav";
 import { useSoundContext } from './SoundContext';
 
-const CustomButton = ({children, onClick, variant}) => {
+const CustomButton = ({children, onClick, variant, disableSound}) => {
     const { isSoundOn } = useSoundContext();
+    disableSound = disableSound ? disableSound : false;
 
     // bringing in state so that it knows what sound to connect to
 
@@ -30,7 +31,8 @@ const CustomButton = ({children, onClick, variant}) => {
     };
 
     const start = () => {
-        if (isSoundOn) {
+        if (isSoundOn && !disableSound) {
+            console.log("something");
 /* state here is true, so it will always play unless global button is clicked
 then the rest of the start function does not execute and no sound*/
         audio.play();

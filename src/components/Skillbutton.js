@@ -22,6 +22,7 @@ export default function SkillButton({ skill, linkTo, onClick }) {
           sx={{ minWidth: 180 }}
           onClick={onClick}
           variant={"Skill"}
+          disableSound={true}
         >
           <Typography
             sx={{

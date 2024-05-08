@@ -3,7 +3,7 @@ import { useSoundContext } from './SoundContext';
 import SoundOn from '../assets/SoundOn.png';
 import SoundOff from '../assets/SoundOff.png';
 
-const SoundButton = () => {
+const SoundToggleButton = () => {
 
   const { isSoundOn, toggleSound } = useSoundContext();
 
@@ -31,4 +31,4 @@ const SoundButton = () => {
   );
 };
 
-export default SoundButton;
+export default SoundToggleButton;

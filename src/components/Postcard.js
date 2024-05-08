@@ -111,6 +111,7 @@ export default function Postcard({
         variant={"Post"}
         underline="none" 
         role="button">
+          
           Post
         </CustomButton>
       </CardContent>
