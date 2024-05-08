@@ -72,7 +72,6 @@ export default function Postcard({
         <Link
           component="button"
           underline="none"
-          fontSize="sm"
           fontWeight="lg"
           textColor="text.primary"
         >
