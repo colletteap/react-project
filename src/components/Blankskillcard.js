@@ -39,7 +39,7 @@ console.log("skilla", skillname.skillname);
   return (
     <>
     <div style={container}>
-      <h1 style={headingStyle}>Learn new skills below</h1>
+      <h1 style={headingStyle}>Learn new skills</h1>
       <div style={cardStyle}>
         {filteredSkills.map((item, index) => (
           <Card
