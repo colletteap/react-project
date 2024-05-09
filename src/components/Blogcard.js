@@ -29,16 +29,9 @@ export default function Blogcard({
   title,
   linkTo,
   image,
-  para1,
-  para2,
 }) {
-  const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
-  const isMobile = useMediaQuery("(max-width:768px)");
+  const isMobile = useMediaQuery("(max-width:769px)");
 
   return (
     <Card
@@ -59,7 +52,7 @@ export default function Blogcard({
         title={title}
         titleTypographyProps={{
           sx: {
-            fontFamily: "Verdana, sans-serif",
+            fontFamily: "Quicksand, sans-serif",
             color: "#233349",
             fontWeight: "bold",
             textAlign: "center",
@@ -86,21 +79,7 @@ export default function Blogcard({
             Check out the source!
           </Button>
         </Link>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </ExpandMore>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>{para1}</Typography>
-          <Typography paragraph>{para2}</Typography>
-        </CardContent>
-      </Collapse>
     </Card>
   );
 }
