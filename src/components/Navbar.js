@@ -49,7 +49,7 @@ function Navbar() {
       </Grid>
       )}
       {matches ? null :(
-        <button sx={{ color: "#233349" }}onClick={toggleNavBar}>
+        <button sx={{ color: "#233349" }} onClick={toggleNavBar}>
           <ReorderIcon />
         </button>
         )}

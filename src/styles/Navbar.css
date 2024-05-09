@@ -57,12 +57,8 @@
 }
 
 .navbar #open a {
-  width: 70px;
   margin: 5px;
 }
-
-
-
 
   .navbar .rightSide {
     justify-content: flex-end;
