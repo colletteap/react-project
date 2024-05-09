@@ -8,9 +8,9 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import SoundToggleButton from "../soundReact/GlobalButton";
 
 function Navbar() {
-  const matches = useMediaQuery("(min-width:768px)");
+  const matches = useMediaQuery("(min-width:767px)");
   console.log("matches", matches);
-  const mini = useMediaQuery("(max-width:768px)");
+  const mini = useMediaQuery("(max-width:767px)");
 
   const [openLinks, setOpenLinks] = useState(false);
 
