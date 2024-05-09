@@ -44,8 +44,6 @@ function Blog() {
           content={type.content}
           linkTo={type.linkTo}
           image={type.image}
-          para1={type.para1}
-          para2={type.para2}
         />
         ))}
       </Grid>

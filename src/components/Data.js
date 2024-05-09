@@ -408,8 +408,6 @@ const blogPageData = [
       "NewEd Tech was a YouTube channel geared toward helping teachers learn tech is simple, quick & manageable bites. They then expanded into a website where, with a free plan, you can learn bite sized, useful teacher skills.",
     linkTo: "https://newedtechclassroom.com/",
     image: BlogLanding1,
-    para1: "",
-    para2: "",
   },
   {
     title: "Brene Brown's Leadership Tools",
@@ -417,8 +415,6 @@ const blogPageData = [
       "Brene Brown has a Ph. D in the social work field, has a very popular Ted talk and has a Netflix special based around personal development so that you can bring your best self into every situation.",
     linkTo: "https://brenebrown.com/hubs/dare-to-lead/",
     image: BlogLanding2,
-    para1: "",
-    para2: "",
   },
   {
     title: "The Happy Teacher Planner",
@@ -426,8 +422,6 @@ const blogPageData = [
       "With this planner, you can use a personalized calendar to keep track of special events and your to do list; focus on your personal growth through using a reflective journal and core values list; has a substitute plan and has resources for the tough times. ",
     linkTo: "https://colletteap.github.io/gratitude-planner/",
     image: BlogLanding3,
-    para1: "",
-    para2: "",
   },
   {
     title: "The Burned In Teacher",
@@ -435,8 +429,6 @@ const blogPageData = [
       "The Burned In Teacher website is a collection of resources from a quiz, blogs, free webinars, community and podcasts to help teachers overcome their feelings of burnout.",
     linkTo: "https://www.burnedinteacher.com/",
     image: BlogLanding4,
-    para1: "",
-    para2: "",
   },
   {
     title: "PowerSchool Training",
@@ -445,9 +437,6 @@ const blogPageData = [
     linkTo:
       "https://www.youtube.com/playlist?list=PLc5YC3mQTEF7itz_FHGAbx3rt9pPkAWh_",
     image: BlogLanding5,
-    para1:
-      "Within the playlist are videos on topics such as: Start of the Year, Online Report Card Demo, Attendance Management, PowerTeacher Pro Gradebook and more.",
-    para2: "",
   },
 ];
 
