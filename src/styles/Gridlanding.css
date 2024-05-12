@@ -1,10 +1,8 @@
 .GridContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-items: center;
   align-items: center;
   justify-content: center;
-  align-content: center;
 }
 
 .soundContainer {
@@ -51,6 +49,13 @@
   } 
   .ImageContainer {
     padding-left: 2px;
+  }
+}
+
+@media (max-width: 769px) {
+  .GridContainer {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 
