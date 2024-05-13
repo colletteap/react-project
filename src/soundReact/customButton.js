@@ -6,6 +6,8 @@ import { useSoundContext } from './SoundContext';
 const CustomButton = ({children, onClick, variant, disableSound}) => {
     const { isSoundOn } = useSoundContext();
     disableSound = disableSound ? disableSound : false;
+    /* if disableSound is truthy, execute disableSound, if not then disableSound 
+    is false or not truthy and do not execute*/
 
     // bringing in state so that it knows what sound to connect to
 
@@ -32,6 +34,7 @@ const CustomButton = ({children, onClick, variant, disableSound}) => {
 
     const start = () => {
         if (isSoundOn && !disableSound) {
+        // checks if isSoundOn is true & disableSound is false, if so will play audio
             console.log("something");
 /* state here is true, so it will always play unless global button is clicked
 then the rest of the start function does not execute and no sound*/
