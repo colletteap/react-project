@@ -1,4 +1,5 @@
 import * as React from "react";
+import Grid from "@mui/joy/Grid";
 import { Typography } from "@mui/material";
 import CustomButton from "../soundReact/customButton";
 
@@ -6,7 +7,7 @@ import CustomButton from "../soundReact/customButton";
 export default function ActionButton({ skill, onClick }) {
 
   return (
-    <div
+    <Grid
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
@@ -31,6 +32,6 @@ export default function ActionButton({ skill, onClick }) {
             {skill}
           </Typography>
         </CustomButton>
-    </div>
+    </Grid>
   );
 }

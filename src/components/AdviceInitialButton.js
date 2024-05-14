@@ -1,4 +1,5 @@
 import * as React from "react";
+import Grid from "@mui/joy/Grid";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
 
@@ -6,7 +7,7 @@ import { Typography } from "@mui/material";
 export default function AdviceInitialButton({ type, onClick }) {
 
   return (
-    <div
+    <Grid
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
@@ -32,6 +33,6 @@ export default function AdviceInitialButton({ type, onClick }) {
             {type}
           </Typography>
         </Button>
-    </div>
+    </Grid>
   );
 }

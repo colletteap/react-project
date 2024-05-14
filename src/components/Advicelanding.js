@@ -1,4 +1,5 @@
 import React from "react";
+import Grid from "@mui/joy/Grid";
 import AdviceBox from "./Advicebox";
 import "../styles/Advicelanding.css";
 import { adviceData } from "./Data";
@@ -8,7 +9,7 @@ const AdviceLanding = () => {
     <>
       <h1 className="blueHeading">Advice from real teachers</h1>
       
-        <div className="AdviceContainer">
+        <Grid className="AdviceContainer">
         {adviceData.map((item, index) => (
         <AdviceBox
           key={index}
@@ -18,7 +19,7 @@ const AdviceLanding = () => {
           comment={item.comment}
         />
         ))} 
-      </div>
+      </Grid>
       
     </>
   );
