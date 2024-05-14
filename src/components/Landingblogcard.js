@@ -25,7 +25,7 @@ export default function Landingblogcard({ content, title, linkTo, image }) {
         title={title}
         titleTypographyProps={{
           sx: {
-            fontFamily: "Verdana, sans-serif",
+            fontFamily: "Quicksand, sans-serif",
             color: "#233349",
             fontWeight: "bold",
           },

@@ -68,6 +68,13 @@ const blogData = [
     linkTo: "/Blog",
     image: BlogLanding3,
   },
+  {
+    title: "The Burned In Teacher",
+    content:
+      "The Burned In Teacher website is a collection of resources from a quiz, blogs, free webinars, community and podcasts to help teachers overcome their feelings of burnout.",
+    linkTo: "/Blog",
+    image: BlogLanding4,
+  },
 ];
 
 const skillShellData = [

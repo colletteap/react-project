@@ -34,7 +34,8 @@ const CustomButton = ({children, onClick, variant, disableSound}) => {
 
     const start = () => {
         if (isSoundOn && !disableSound) {
-        // checks if isSoundOn is true & disableSound is false, if so will play audio
+        /* checks if isSoundOn is true & disableSound is false, if so will play audio
+        
             console.log("something");
 /* state here is true, so it will always play unless global button is clicked
 then the rest of the start function does not execute and no sound*/
