@@ -16,10 +16,8 @@ import { skillShellData } from "../components/Data";
 export default function SkillShellPage() {
 
   const matches = useMediaQuery("(min-width:768px)");
-  console.log("matches", matches);
 
   const mini = useMediaQuery("(max-width:768px");
-  console.log("mini", mini);
 
   const [selectedButton, setSelectedButton] = useState("");
   const newComponentRef = useRef(null);
@@ -34,7 +32,7 @@ export default function SkillShellPage() {
   }, [selectedButton]);
 
   /* The dependency array is selectedButton and when selectedButton
-  and newComponentRef.current (current value of useRef) then the scrollIntoView
+  and newComponentRef.current (current value of useRef) are selected then the scrollIntoView
   behaviour executes*/
   
   console.log("newref", useEffect);
