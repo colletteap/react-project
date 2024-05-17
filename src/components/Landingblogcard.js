@@ -46,7 +46,6 @@ export default function Landingblogcard({ content, title, linkTo, image }) {
               borderRadius: "15px",
               marginTop: "10px",
             }}
-           
           >
             See more!
           </CustomButton>

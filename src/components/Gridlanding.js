@@ -9,34 +9,34 @@ import "../styles/Gridlanding.css";
 import SkillLanding from "./Skilllanding";
 import AdviceLanding from "./Advicelanding";
 import BlogLanding from "./Bloglanding";
-import useMediaQuery from "@mui/material/useMediaQuery"; 
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const GridLanding = () => {
-
-  const matches = useMediaQuery("(max-width:769px)")
-  const min = useMediaQuery("(min-width:769px)")
+  const matches = useMediaQuery("(max-width:769px)");
+  const min = useMediaQuery("(min-width:769px)");
 
   return (
     <>
       <Grid className="GridContainer">
         <Grid className="ImageContainer">
-          {matches ? null :(
-          <img src={LargeLogo} alt="Growth Logo" />
-          )}
-          {min ? null :(
-          <img src={GrowthSM} style={{paddingTop: "30px" }} alt="Growth" />
+          {matches ? null : <img src={LargeLogo} alt="Growth Logo" />}
+          {min ? null : (
+            <img src={GrowthSM} style={{ paddingTop: "30px" }} alt="Growth" />
           )}
         </Grid>
         <Grid className="ImageContainerText">
           <img src={LogoText} alt="LogoText" />
         </Grid>
       </Grid>
-      <Grid sx={{ padding: '0 20px 20px 20px' }} className="blueLandingContainer">
-        <SkillLanding/>
+      <Grid
+        sx={{ padding: "0 20px 20px 20px" }}
+        className="blueLandingContainer"
+      >
+        <SkillLanding />
       </Grid>
       <Grid className="adviceLandingContainer">
         <Link to="/Advice" className="textDeco">
-        <AdviceLanding/>
+          <AdviceLanding />
         </Link>
       </Grid>
       <Grid className="blueLandingContainer">

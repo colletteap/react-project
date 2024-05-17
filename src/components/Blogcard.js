@@ -9,13 +9,7 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "@mui/material";
 
-export default function Blogcard({
-  content,
-  title,
-  linkTo,
-  image,
-}) {
-
+export default function Blogcard({ content, title, linkTo, image }) {
   const isMobile = useMediaQuery("(max-width:769px)");
 
   return (
@@ -29,7 +23,7 @@ export default function Blogcard({
         flexDirection: "column",
         borderRadius: "20px",
         width: isMobile ? "80%" : "100%",
-        height: isMobile ? "50%" : "100%", 
+        height: isMobile ? "50%" : "100%",
       }}
     >
       <CardHeader
@@ -43,7 +37,7 @@ export default function Blogcard({
           },
         }}
       />
-      <CardMedia component="img" height= "280px" image={image} />
+      <CardMedia component="img" height="280px" image={image} />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {content}

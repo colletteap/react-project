@@ -70,7 +70,7 @@ function Advice() {
           </Grid>
         </Grid>
         <Grid className="center">
-        <img className="magicBand" src={Magic} alt="shooting stars"/>
+          <img className="magicBand" src={Magic} alt="shooting stars" />
         </Grid>
         <Grid sx={{ padding: "20px" }} className="receiveAdviceDiv">
           {filteredComments.map((comment) => (

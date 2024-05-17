@@ -13,21 +13,21 @@ const SkillLanding = () => {
   return (
     <>
       <h1 className="whiteHeading">Skills from real teachers</h1>
-      <Grid >
+      <Grid>
         <Grid item xs={6} className="skillButton">
           <SkillLandingDropDown />
-      </Grid>
-      {(matches) && (
-        <Grid className="SkillContainer">
-          {skillData.map((skill, index) => (
-            <SkillButton
-              key={index}
-              skill={skill.skill}
-              linkTo={skill.linkTo}
-            />
-          ))}
         </Grid>
-      )}
+        {matches && (
+          <Grid className="SkillContainer">
+            {skillData.map((skill, index) => (
+              <SkillButton
+                key={index}
+                skill={skill.skill}
+                linkTo={skill.linkTo}
+              />
+            ))}
+          </Grid>
+        )}
       </Grid>
     </>
   );

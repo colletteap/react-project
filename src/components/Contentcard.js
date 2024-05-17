@@ -8,18 +8,16 @@ import CustomButton from "../soundReact/customButton";
 
 // Import statements
 
-export default function ContentCard({ type, cardId, question }) 
+export default function ContentCard({ type, cardId, question }) {
+  // Defines functional component that accepts 3 props and returns JSX to render a card for displaying and posting comments
 
-// Defines functional component that accepts 3 props and returns JSX to render a card for displaying and posting comments
-
-{
   const [comment, setComment] = React.useState("");
   const [commentsList, setCommentsList] = React.useState(() => {
     const storedComments = localStorage.getItem(`comments_${cardId}`);
     return storedComments ? JSON.parse(storedComments) : [];
   });
 
-/* State hooks, define comment variable and function setComment with initial value being an empty string
+  /* State hooks, define comment variable and function setComment with initial value being an empty string
    The initial value for commentsList is retrieved from local storage using cardId prop, if there
    is no value, it defaults to an empty array*/
 
@@ -29,14 +27,12 @@ export default function ContentCard({ type, cardId, question })
     localStorage.setItem(`comments_${cardId}`, JSON.stringify(commentsList));
   }, [commentsList, cardId]);
 
-
-/* This effect hook is used to update local storage whenever commentsList or cardId changes
+  /* This effect hook is used to update local storage whenever commentsList or cardId changes
  & stores commentsList array in local storage under key specific to cardId */
 
   const handlePostClick = () => {
     if (comment.trim() === "") {
-     
-// this function called when user clicks Post checks if comment is empty..
+      // this function called when user clicks Post checks if comment is empty..
 
       return;
     }
@@ -45,13 +41,13 @@ export default function ContentCard({ type, cardId, question })
       text: comment,
       cardId: commentsList.length + 1,
     };
-console.log("new comment", newComment);
-// If not, it creates a new comment object newComment and adds to commentsList and resets it to an empty string
+    console.log("new comment", newComment);
+    // If not, it creates a new comment object newComment and adds to commentsList and resets it to an empty string
 
     setCommentsList([...commentsList, newComment]);
     setComment("");
   };
- // console.log("comment", comment)
+  // console.log("comment", comment)
 
   return (
     <Card
@@ -87,13 +83,12 @@ console.log("new comment", newComment);
           fontWeight="lg"
           textColor="text.primary"
         ></Link>
-        <Typography fontSize="sm" style={{ whiteSpace: 'pre-wrap'}}>
+        <Typography fontSize="sm" style={{ whiteSpace: "pre-wrap" }}>
           <Link
             component="button"
             color="neutral"
             fontWeight="lg"
             textColor="text.primary"
-            
           >
             {type}
           </Link>{" "}
@@ -114,10 +109,7 @@ console.log("new comment", newComment);
           {commentItem.text}
         </CardContent>
       ))}
-      <CardContent
-        orientation="horizontal"
-        sx={{ gap: 1 }}
-      >
+      <CardContent orientation="horizontal" sx={{ gap: 1 }}>
         <Input
           variant="plain"
           size="sm"
@@ -134,10 +126,10 @@ console.log("new comment", newComment);
           }}
         />
         <CustomButton
-        sx={{
-          backgroundColor: "#8c7b6f",
-          color: "#ffff",
-        }}
+          sx={{
+            backgroundColor: "#8c7b6f",
+            color: "#ffff",
+          }}
           onClick={handlePostClick}
           variant={"Post"}
           underline="none"

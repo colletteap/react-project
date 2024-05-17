@@ -3,9 +3,7 @@ import Grid from "@mui/joy/Grid";
 import { Typography } from "@mui/material";
 import CustomButton from "../soundReact/customButton";
 
-
 export default function ActionButton({ skill, onClick }) {
-
   return (
     <Grid
       style={{
@@ -16,22 +14,28 @@ export default function ActionButton({ skill, onClick }) {
         justifyItems: "center",
       }}
     >
-        <CustomButton
-          size="medium"
-          sx={{ bgcolor: "#233349", color: "#ffff", fontWeight: "bolder", borderRadius: "10px", "&:hover": {backgroundColor: "#5378AB",}  }}
-          onClick={onClick}
-          variant={"Question"}
+      <CustomButton
+        size="medium"
+        sx={{
+          bgcolor: "#233349",
+          color: "#ffff",
+          fontWeight: "bolder",
+          borderRadius: "10px",
+          "&:hover": { backgroundColor: "#5378AB" },
+        }}
+        onClick={onClick}
+        variant={"Question"}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Quicksand",
+            textTransform: "initial",
+            whiteSpace: "nowrap",
+          }}
         >
-          <Typography
-            sx={{
-              fontFamily: "Quicksand",
-              textTransform: "initial",
-              whiteSpace: "nowrap",
-            }}
-          >
-            {skill}
-          </Typography>
-        </CustomButton>
+          {skill}
+        </Typography>
+      </CustomButton>
     </Grid>
   );
 }

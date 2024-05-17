@@ -12,7 +12,6 @@ import SkillShellDropDown from "../components/SkillShellDropDown";
 import { skillShellData } from "../components/Data";
 
 export default function SkillShellPage() {
-
   const matches = useMediaQuery("(min-width:768px)");
 
   const mini = useMediaQuery("(max-width:768px");
@@ -32,9 +31,9 @@ export default function SkillShellPage() {
   /* The dependency array is selectedButton and when selectedButton
   and newComponentRef.current (current value of useRef) are selected then the scrollIntoView
   behaviour executes*/
-  
+
   console.log("newref", useEffect);
-  
+
   const handleButtonClick = (skill) => {
     setSelectedButton(skill);
     console.log("skillshelldropdown", handleButtonClick);
@@ -47,7 +46,9 @@ export default function SkillShellPage() {
   return (
     <Grid className="blueBody">
       <Grid sx={{ paddingBottom: "20px" }} className="whiteLandingContainer">
-        <h2 style={{ textAlign: "center", paddingTop: "20px" }}>Learn from Experience</h2>
+        <h2 style={{ textAlign: "center", paddingTop: "20px" }}>
+          Learn from Experience
+        </h2>
         <Grid className="imgContainer">
           <img className="img" src={Discover} alt="Discover" />
           <img className="img" src={Skill} alt="Skill" />

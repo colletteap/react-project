@@ -16,43 +16,43 @@ function Navbar() {
 
   const toggleNavBar = () => {
     if (mini) {
-    setOpenLinks(!openLinks)
-    };
+      setOpenLinks(!openLinks);
+    }
   };
 
   return (
     <Grid className="navbar">
-      {mini ? null :(
-      <Grid className="logoNav">
-        <Link to="./">
-          <img src={Logo} alt="logo"/>
-        </Link>
-      </Grid>
+      {mini ? null : (
+        <Grid className="logoNav">
+          <Link to="./">
+            <img src={Logo} alt="logo" />
+          </Link>
+        </Grid>
       )}
-      {matches ? null :(
-      <Grid className="leftSide" id={openLinks ? "open" : "close"}>
-        <Grid className="hiddenLinks">
+      {matches ? null : (
+        <Grid className="leftSide" id={openLinks ? "open" : "close"}>
+          <Grid className="hiddenLinks">
+            <Link to="./"> Home </Link>
+            <Link to="./SkillShell"> Learn </Link>
+            <Link to="./Advice"> Ask </Link>
+            <Link to="./Blog"> Tools </Link>
+          </Grid>
+        </Grid>
+      )}
+      {mini ? null : (
+        <Grid className="rightSide">
+          <SoundToggleButton />
           <Link to="./"> Home </Link>
           <Link to="./SkillShell"> Learn </Link>
           <Link to="./Advice"> Ask </Link>
           <Link to="./Blog"> Tools </Link>
         </Grid>
-      </Grid>
       )}
-      {mini ? null :(
-      <Grid className="rightSide">
-        <SoundToggleButton/>
-        <Link to="./"> Home </Link>
-        <Link to="./SkillShell"> Learn </Link>
-        <Link to="./Advice"> Ask </Link>
-        <Link to="./Blog"> Tools </Link>
-      </Grid>
-      )}
-      {matches ? null :(
+      {matches ? null : (
         <button sx={{ color: "#233349" }} onClick={toggleNavBar}>
           <ReorderIcon />
         </button>
-        )}
+      )}
     </Grid>
   );
 }

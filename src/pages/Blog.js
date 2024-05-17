@@ -6,7 +6,6 @@ import "../styles/Blog.css";
 import { blogPageData, urls } from "../components/Data";
 import CustomButton from "../soundReact/customButton";
 
-
 function Blog() {
   const [currentUrlIndex, setCurrentUrlIndex] = useState(0);
   const [searchInput, setSearchInput] = useState("");
@@ -14,7 +13,7 @@ function Blog() {
   const handleClick = () => {
     const nextUrlIndex = (currentUrlIndex + 1) % urls.length;
     setCurrentUrlIndex(nextUrlIndex);
-    window.open(urls[nextUrlIndex], '_blank');
+    window.open(urls[nextUrlIndex], "_blank");
   };
 
   const handleSearchChange = (event) => {
@@ -24,29 +23,35 @@ function Blog() {
   return (
     <Grid>
       <Grid className="CenterContainer">
-      <h2 style={{ textAlign: "center" }}>Teacher's Toolkit</h2>
-        <SearchBar onChange={handleSearchChange}/>
+        <h2 style={{ textAlign: "center" }}>Teacher's Toolkit</h2>
+        <SearchBar onChange={handleSearchChange} />
       </Grid>
       <Grid className="CenterContainer">
-        <CustomButton className='resourceButton' onClick={handleClick}
-        variant={Blog}>
+        <CustomButton
+          className="resourceButton"
+          onClick={handleClick}
+          variant={Blog}
+        >
           Resource of the Day!
-          </CustomButton>
+        </CustomButton>
       </Grid>
-      <Grid sx={{padding: "20px"}}className="BlogPageContainer">
-        {blogPageData.filter((type) => type.content.toLowerCase().includes(searchInput.toLowerCase())
-          ).map((type, index) => (
-        <Blogcard
-          key={index}
-          title={type.title}
-          content={type.content}
-          linkTo={type.linkTo}
-          image={type.image}
-        />
-        ))}
+      <Grid sx={{ padding: "20px" }} className="BlogPageContainer">
+        {blogPageData
+          .filter((type) =>
+            type.content.toLowerCase().includes(searchInput.toLowerCase())
+          )
+          .map((type, index) => (
+            <Blogcard
+              key={index}
+              title={type.title}
+              content={type.content}
+              linkTo={type.linkTo}
+              image={type.image}
+            />
+          ))}
       </Grid>
     </Grid>
-  )
+  );
 }
 
 export default Blog;

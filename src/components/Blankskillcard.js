@@ -6,14 +6,15 @@ import { skillInfo } from "./Data";
 import Grid from "@mui/joy/Grid";
 
 export default function BlankSkillCard({ skillname }) {
- 
-  const filteredSkills = skillInfo.filter((item) => item.skill === skillname.skillname);
- 
+  const filteredSkills = skillInfo.filter(
+    (item) => item.skill === skillname.skillname
+  );
+
   const container = {
     display: "flex",
     flexFlow: "row wrap",
-  }
-  
+  };
+
   const cardStyle = {
     display: "flex",
     flexFlow: "row wrap",
@@ -23,7 +24,7 @@ export default function BlankSkillCard({ skillname }) {
     margin: "10px",
     gap: "80px",
   };
-  
+
   const headingStyle = {
     display: "flex",
     justifyContent: "center",
@@ -37,44 +38,57 @@ export default function BlankSkillCard({ skillname }) {
 
   return (
     <>
-    <Grid style={container}>
-      <h1 style={headingStyle}>Learn new skills</h1>
-      <Grid style={cardStyle}>
-        {filteredSkills.map((item, index) => (
-          <Card
-            key={index}
-            variant="outlined"
-            sx={{
-              backgroundColor: "#42536b",
-              minWidth: 300,
-              width: "25%",
-              border: "2px solid #fcf9da",
-              borderRadius: "10px",
-              "--Card-radius": (theme) => theme.vars.radius.xs,
-            }}
-          >
-            <CardContent
-              orientation="horizontal"
-              sx={{ alignItems: "flex-start", gap: 10, position: "relative" }}
+      <Grid style={container}>
+        <h1 style={headingStyle}>Learn new skills</h1>
+        <Grid style={cardStyle}>
+          {filteredSkills.map((item, index) => (
+            <Card
+              key={index}
+              variant="outlined"
+              sx={{
+                backgroundColor: "#42536b",
+                minWidth: 300,
+                width: "25%",
+                border: "2px solid #fcf9da",
+                borderRadius: "10px",
+                "--Card-radius": (theme) => theme.vars.radius.xs,
+              }}
             >
-              <CardContent>
-                <Typography
-                  sx={{ color: "#ffff", textAlign: "start", fontWeight: "bold", position: "absolute", top: 3 }}
-                  fontSize="16px"
-                >
-                  {item.skill}
-                </Typography>
+              <CardContent
+                orientation="horizontal"
+                sx={{ alignItems: "flex-start", gap: 10, position: "relative" }}
+              >
+                <CardContent>
+                  <Typography
+                    sx={{
+                      color: "#ffff",
+                      textAlign: "start",
+                      fontWeight: "bold",
+                      position: "absolute",
+                      top: 3,
+                    }}
+                    fontSize="16px"
+                  >
+                    {item.skill}
+                  </Typography>
 
-                <Typography
-                  sx={{ backgroundColor: "#ffff", textAlign: "start", border: "1px solid #233349", borderRadius: "5px", padding: "6px", marginTop: "30px" }}
-                >
-                  {item.details}
-                </Typography>
+                  <Typography
+                    sx={{
+                      backgroundColor: "#ffff",
+                      textAlign: "start",
+                      border: "1px solid #233349",
+                      borderRadius: "5px",
+                      padding: "6px",
+                      marginTop: "30px",
+                    }}
+                  >
+                    {item.details}
+                  </Typography>
+                </CardContent>
               </CardContent>
-            </CardContent>
-          </Card>
-        ))}
-      </Grid>
+            </Card>
+          ))}
+        </Grid>
       </Grid>
     </>
   );

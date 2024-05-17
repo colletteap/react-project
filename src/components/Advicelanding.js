@@ -8,19 +8,18 @@ const AdviceLanding = () => {
   return (
     <>
       <h1 className="blueHeading">Advice from real teachers</h1>
-      
-        <Grid className="AdviceContainer">
+
+      <Grid className="AdviceContainer">
         {adviceData.map((item, index) => (
-        <AdviceBox
-          key={index}
-          type={item.type}
-          question={item.question}
-          linkTo={item.linkTo}
-          comment={item.comment}
-        />
-        ))} 
+          <AdviceBox
+            key={index}
+            type={item.type}
+            question={item.question}
+            linkTo={item.linkTo}
+            comment={item.comment}
+          />
+        ))}
       </Grid>
-      
     </>
   );
 };

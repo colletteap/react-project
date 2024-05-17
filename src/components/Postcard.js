@@ -13,20 +13,17 @@ export default function Postcard({
   setCommentsArray,
   setShowPostcard,
   setShowAskQuestion,
-}) 
+}) {
+  // Declares a functional component named 'Postcard' that accepts 5 props and returns JSX to render a card for posting comments
 
-// Declares a functional component named 'Postcard' that accepts 5 props and returns JSX to render a card for posting comments
-
-{
   const [comment, setComment] = useState("");
   const [commentsList, setCommentsList] = useState([]);
 
-// These are state hooks; defining a state variable of comment and a function setComment, initial value is an empty string
+  // These are state hooks; defining a state variable of comment and a function setComment, initial value is an empty string
 
   const handlePostQuestionClick = () => {
     if (comment.trim() === "") {
-     
-// This is the event handler, a function called when user clicks Post button, checks if comment is not empty...
+      // This is the event handler, a function called when user clicks Post button, checks if comment is not empty...
 
       return;
     }
@@ -40,14 +37,14 @@ export default function Postcard({
       cardId: commentsArray.length + 1,
     };
 
-// will return object newComment
-   
+    // will return object newComment
+
     localStorage.setItem(
       "commentsArray",
       JSON.stringify([newComment, ...commentsArray])
     );
-    
-// Putting the commentsArray into local storage and creating a newComment to be placed in front of the exisiting commentsArray
+
+    // Putting the commentsArray into local storage and creating a newComment to be placed in front of the exisiting commentsArray
 
     setCommentsList([newComment, ...commentsList]);
     setComment("");
@@ -107,11 +104,12 @@ export default function Postcard({
             padding: "5px",
           }}
         />
-        <CustomButton onClick={handlePostQuestionClick} 
-        variant={"Post"}
-        underline="none" 
-        role="button">
-          
+        <CustomButton
+          onClick={handlePostQuestionClick}
+          variant={"Post"}
+          underline="none"
+          role="button"
+        >
           Post
         </CustomButton>
       </CardContent>

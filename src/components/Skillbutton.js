@@ -4,9 +4,7 @@ import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Grid } from "@mui/joy";
 
-
 export default function SkillButton({ skill, linkTo, onClick }) {
-
   return (
     <Grid
       style={{
@@ -18,7 +16,7 @@ export default function SkillButton({ skill, linkTo, onClick }) {
       }}
     >
       <Link to={linkTo}>
-        <CustomButton 
+        <CustomButton
           size="large"
           sx={{ minWidth: 180 }}
           onClick={onClick}
@@ -38,7 +36,6 @@ export default function SkillButton({ skill, linkTo, onClick }) {
           </Typography>
         </CustomButton>
       </Link>
-      
     </Grid>
   );
 }
