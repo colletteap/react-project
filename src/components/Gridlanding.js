@@ -42,15 +42,6 @@ const GridLanding = () => {
       <Grid className="blueLandingContainer">
         <BlogLanding />
       </Grid>
-      <Grid className="whiteLandingContainer centerContainer">
-        <a href="mailto:garlandcollette@gmail.com" className="centerContainer">
-          <img
-            src={Emailimg}
-            alt="Email"
-            style={{ padding: "5px", width: "10%" }}
-          />
-        </a>
-      </Grid>
     </>
   );
 };

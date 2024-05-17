@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import "../styles/Advice.css";
 import Grid from "@mui/joy/Grid";
-import { Link } from "react-router-dom";
 import ActionButton from "../components/Actionbutton";
 import ContentCard from "../components/Contentcard";
 import PostCard from "../components/Postcard";
 import SearchBar from "../components/Searchbar";
-import Home from "../assets/Home.png";
 import Magic from "../assets/MagicSeg.png";
 import AdviceText from "../assets/AdviceTextHQ.png";
 import { askAdviceCardData } from "../components/Data";
@@ -97,12 +95,6 @@ function Advice() {
             ))}
         </Grid>
       </>
-
-      <Grid className="footerA">
-        <Link to="/">
-          <img src={Home} alt="Home" style={{ padding: "5px" }} />
-        </Link>
-      </Grid>
     </Grid>
   );
 }

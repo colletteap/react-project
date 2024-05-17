@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Grid from "@mui/joy/Grid";
-import { Link } from "react-router-dom";
 import Blogcard from "../components/Blogcard";
 import SearchBar from "../components/Searchbar";
 import "../styles/Blog.css";
-import Home from "../assets/Home.png";
 import { blogPageData, urls } from "../components/Data";
 import CustomButton from "../soundReact/customButton";
 
@@ -46,11 +44,6 @@ function Blog() {
           image={type.image}
         />
         ))}
-      </Grid>
-      <Grid className="footerA">
-      <Link to="../Home">
-<img src={Home} alt="Home" style={{ padding: "5px", }} />
-</Link>
       </Grid>
     </Grid>
   )

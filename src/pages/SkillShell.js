@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Grid from "@mui/joy/Grid";
 import "../styles/SkillShell.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -7,7 +6,6 @@ import Skill from "../assets/skill.png";
 import Superhero from "../assets/superhero.png";
 import Discover from "../assets/discover.png";
 import Community from "../assets/community.png";
-import Home from "../assets/Home.png";
 import SkillButton from "../components/Skillbutton";
 import BlankSkillCard from "../components/Blankskillcard";
 import SkillShellDropDown from "../components/SkillShellDropDown";
@@ -80,11 +78,6 @@ export default function SkillShellPage() {
         {selectedButton && (
           <BlankSkillCard skillname={{ skillname: selectedButton }} />
         )}
-      </Grid>
-      <Grid className="footerA">
-        <Link to="/">
-          <img src={Home} alt="Home" style={{ padding: "5px" }} />
-        </Link>
       </Grid>
     </Grid>
   );
