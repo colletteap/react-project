@@ -8,18 +8,18 @@ import Home from "../assets/Home.png";
 function Footer() {
 return(
 <Grid className=" footer">
-    <Grid>
+    <Grid sx={{width: "80px"}}>
         <a href="mailto:garlandcollette@gmail.com">
           <img
             src={Emailimg}
             alt="Email"
-            style={{ padding: "5px", width: "10%" }}
+            style={{ padding: "5px", width: "60%" }}
           />
         </a>
         </Grid>
-        <Grid>
+        <Grid sx={{width: "80px"}}>
         <Link to="/">
-          <img src={Home} alt="Home" style={{ padding: "5px", width: "30%"  }} />
+          <img src={Home} alt="Home" style={{ padding: "5px", width: "60%"  }} />
         </Link>
         </Grid>
       </Grid>
