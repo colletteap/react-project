@@ -26,7 +26,7 @@ const SoundToggleButton = () => {
 
   return (
     <button onClick={toggleSound} style={buttonStyle}>
-      <img src={isSoundOn ? SoundOff : SoundOn}/>
+      <img src={isSoundOn ? SoundOff : SoundOn} alt='sound toggle button'/>
     </button>
   );
 };

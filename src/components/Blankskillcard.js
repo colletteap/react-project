@@ -3,6 +3,7 @@ import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
 import { skillInfo } from "./Data";
+import Grid from "@mui/joy/Grid";
 
 export default function BlankSkillCard({ skillname }) {
  
@@ -36,9 +37,9 @@ export default function BlankSkillCard({ skillname }) {
 
   return (
     <>
-    <div style={container}>
+    <Grid style={container}>
       <h1 style={headingStyle}>Learn new skills</h1>
-      <div style={cardStyle}>
+      <Grid style={cardStyle}>
         {filteredSkills.map((item, index) => (
           <Card
             key={index}
@@ -73,8 +74,8 @@ export default function BlankSkillCard({ skillname }) {
             </CardContent>
           </Card>
         ))}
-      </div>
-      </div>
+      </Grid>
+      </Grid>
     </>
   );
 }

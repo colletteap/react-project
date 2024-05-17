@@ -25,7 +25,7 @@ function Navbar() {
       {mini ? null :(
       <Grid className="logoNav">
         <Link to="./">
-          <img src={Logo} />
+          <img src={Logo} alt="logo"/>
         </Link>
       </Grid>
       )}
