@@ -2,12 +2,13 @@ import * as React from "react";
 import CustomButton from "../soundReact/customButton";
 import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Grid } from "@mui/joy";
 
 
 export default function SkillButton({ skill, linkTo, onClick }) {
 
   return (
-    <div
+    <Grid
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
@@ -38,6 +39,6 @@ export default function SkillButton({ skill, linkTo, onClick }) {
         </CustomButton>
       </Link>
       
-    </div>
+    </Grid>
   );
 }

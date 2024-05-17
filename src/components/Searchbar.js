@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import Toolbar from "@mui/material/Toolbar";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
+import Grid from "@mui/joy/Grid";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -47,7 +48,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchBar({ onChange }) {
   console.log("onChange prop:", onChange);
   return (
-    <div>
+    <Grid>
       <Toolbar>
         <Search>
           <SearchIconWrapper>
@@ -67,6 +68,6 @@ export default function SearchBar({ onChange }) {
           />
         </Search>
       </Toolbar>
-    </div>
+    </Grid>
   );
 }

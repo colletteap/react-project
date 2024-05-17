@@ -2,13 +2,14 @@ import React from "react";
 import Landingblogcard from "./Landingblogcard.js";
 import "../styles/Bloglanding.css";
 import { blogData } from "./Data.js";
+import { Grid } from "@mui/joy";
 
 const BlogLanding = () => {
   return (
     <>
       <h1 className="whiteHeading">Resources from real teachers</h1>
 
-      <div className="BlogContainer">
+      <Grid className="BlogContainer">
         {blogData.map((item, index) => (
           <Landingblogcard
             key={index}
@@ -18,7 +19,7 @@ const BlogLanding = () => {
             image={item.image}
           />
         ))}
-      </div>
+      </Grid>
     </>
   );
 };
