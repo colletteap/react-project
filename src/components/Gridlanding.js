@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import LargeLogo from "../assets/GrowthBlueHQ.png";
 import LogoText from "../assets/TopGridText.png";
 import GrowthSM from "../assets/GrowthSM.svg";
-import Emailimg from "../assets/Emailimg.png";
 import "../styles/Gridlanding.css";
 import SkillLanding from "./Skilllanding";
 import AdviceLanding from "./Advicelanding";
