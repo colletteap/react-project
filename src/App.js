@@ -13,6 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path= "/react-project" element={<GridLanding />} />
           <Route path="/SkillShell/:skill" element={<SkillShell />} />
           <Route path="/SkillShell" element={<SkillShell />} />
           <Route path="/Advice" element={<Advice />} />
@@ -21,8 +22,6 @@ function App() {
         </Routes>
         <Footer/>
       </Router>
-
-      <div></div>
     </div>
   );
 }
