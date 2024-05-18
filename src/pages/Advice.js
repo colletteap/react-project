@@ -27,6 +27,7 @@ function Advice() {
   };
 
   console.log("commentsArray filter", commentsArray);
+  
   const filteredComments = commentsArray.filter((comment) =>
     comment.text.toLowerCase().includes(searchInput.toLowerCase())
   );
