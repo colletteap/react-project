@@ -13,14 +13,13 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path= "/react-project/" element={<GridLanding />} />
+          <Route path="/" element={<GridLanding />} />
           <Route path="/SkillShell/:skill" element={<SkillShell />} />
           <Route path="/SkillShell" element={<SkillShell />} />
           <Route path="/Advice" element={<Advice />} />
           <Route path="/Blog" element={<Blog />} />
-          <Route path="/" element={<GridLanding />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );
