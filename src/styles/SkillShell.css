@@ -7,6 +7,12 @@
   width: auto;
 }
 
+.topGrid {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
 .img {
   width: 80%;
   height: 100%;
@@ -25,6 +31,19 @@
   padding: 20px;
   width: auto;
   height: 100%;
+}
+
+.imgContainerSm {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px 10px;
+  padding: 10px;
+  width: 60%;
 }
 
 @media (max-width: 768px) {

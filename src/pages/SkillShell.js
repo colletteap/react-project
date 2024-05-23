@@ -49,11 +49,21 @@ export default function SkillShellPage() {
         <h2 style={{ textAlign: "center", paddingTop: "20px" }}>
           Learn from Experience
         </h2>
-        <Grid className="imgContainer">
+        <Grid className= "topGrid">
+          {mini ? null : (<Grid className="imgContainer">
           <img className="img" src={Discover} alt="Discover" />
           <img className="img" src={Skill} alt="Skill" />
           <img className="img" src={Community} alt="Community" />
           <img className="img" src={Superhero} alt="Superhero" />
+        </Grid>
+        )}
+        {matches ? null : (<Grid className="imgContainerSm">
+          <img className="img" src={Discover} alt="Discover" />
+          <img className="img" src={Skill} alt="Skill" />
+          <img className="img" src={Community} alt="Community" />
+          <img className="img" src={Superhero} alt="Superhero" />
+        </Grid>
+        )}
         </Grid>
       </Grid>
       <Grid sx={{ padding: "60px 20px 20px 20px" }}>
