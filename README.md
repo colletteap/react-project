@@ -1,4 +1,4 @@
-# ![Growth | Teachers Learning Together](./images/HTPlogo.png)
+# ![Growth | Teachers Learning Together](.//src/assets/GrowthLogo.png)
 ![Mobile and Desktop Friendly](./images/MobileDesktopreadme.png)
 ![Happy Planner video](/images/HTPtop.gif)
 
