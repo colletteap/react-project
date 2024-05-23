@@ -18,6 +18,7 @@ function App() {
           <Route path="/SkillShell" element={<SkillShell />} />
           <Route path="/Advice" element={<Advice />} />
           <Route path="/Blog" element={<Blog />} />
+          <Route path="*" element={<GridLanding />} />
         </Routes>
         <Footer />
       </Router>
