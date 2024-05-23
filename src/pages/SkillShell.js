@@ -12,9 +12,9 @@ import SkillShellDropDown from "../components/SkillShellDropDown";
 import { skillShellData } from "../components/Data";
 
 export default function SkillShellPage() {
-  const matches = useMediaQuery("(min-width:768px)");
+  const matches = useMediaQuery("(min-width:769px)");
 
-  const mini = useMediaQuery("(max-width:768px");
+  const mini = useMediaQuery("(max-width:769px");
 
   const [selectedButton, setSelectedButton] = useState("");
   const newComponentRef = useRef(null);
