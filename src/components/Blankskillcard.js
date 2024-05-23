@@ -29,7 +29,7 @@ export default function BlankSkillCard({ skillname }) {
     display: "flex",
     justifyContent: "center",
     width: "100%",
-    fontFamily: "Verdana, sans serif",
+    fontFamily: "Quicksand, sans serif",
     color: "#233349",
     backgroundColor: "#fcf9da",
     padding: "40px 20px 40px 20px",
