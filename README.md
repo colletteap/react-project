@@ -1,5 +1,5 @@
 # ![Growth | Teachers Learning Together](.//src/assets/GrowthLogo.png)
-![Mobile and Desktop Friendly](./images/MobileDesktopreadme.png)
+![Mobile and Desktop Friendly](.//src/assets/MobileDesktop.png)
 ![Happy Planner video](/images/HTPtop.gif)
 
 Share or learn new skills, ask or answer questions, and check out the teacher toolkit. <br>
@@ -8,7 +8,7 @@ Share or learn new skills, ask or answer questions, and check out the teacher to
 - This site is available through github pages: [Growth | Teachers Learning Together] (https://colletteap.github.io/react-project/#/)
 
 # **Live Demo Link**
-[Growth | Teachers Learning Together Demo](https://www.loom.com/share/4285ca82764d45dba2352d8ecff350c0?sid=d4615154-2745-462f-820a-09a8d68388f2)
+[Growth | Teachers Learning Together Demo]()
 
 # **Website Instructions**
 
