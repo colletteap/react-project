@@ -1,6 +1,6 @@
 # ![Growth | Teachers Learning Together](.//src/assets/GrowthLogo.png)
 ![Mobile and Desktop Friendly](.//src/assets/MobileDesktop.png)
-![Happy Planner video](/images/HTPtop.gif)
+![Growth video](.//src/assets/GrowthGIF.gif)
 
 Share or learn new skills, ask or answer questions, and check out the teacher toolkit. <br>
 
