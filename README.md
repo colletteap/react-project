@@ -14,15 +14,15 @@ Share or learn new skills, ask or answer questions, and check out the teacher to
 
 #### Share or learn skills on <strong>*Learn*</strong>.
 
-![Learn](./images/MyGreatDayreadme.png)
+![Learn](.//src/assets/Learn.png)
 ******
 #### Find mentorship & community on <strong>*Ask*</strong>.
 
-![Ask](./images/MonthlyCalendarreadme.png)
+![Ask](.//src/assets/Ask.png)
 ******
 #### Discover relevant resources on <strong>*Tools*</strong>.
 
-![Tools](./images/Journalreadme.png)
+![Tools](.//src/assets/Tools.png)
 ******
 
 # **Motivation**
