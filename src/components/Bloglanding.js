@@ -7,7 +7,7 @@ import { Grid } from "@mui/joy";
 const BlogLanding = () => {
   return (
     <>
-      <h1 className="whiteHeading">Resources from real teachers</h1>
+      <h1 className="whiteHeading">Tools from fellow teachers</h1>
 
       <Grid className="BlogContainer">
         {blogData.map((item, index) => (
