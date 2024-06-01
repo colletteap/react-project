@@ -26,7 +26,7 @@ const GridLanding = () => {
         </Grid>
         <Grid className="ImageContainerText">
           {matches ? null : (<img src={LogoText} alt="LogoText" />)}
-           {min ? null : (<img src={smallTop] alt="Logo Explanation" />)}
+           {min ? null : (<img src={smallTop} alt="Logo Explanation" />)}
         </Grid>
       </Grid>
       <Grid
