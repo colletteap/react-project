@@ -7,7 +7,7 @@ import { adviceData } from "./Data";
 const AdviceLanding = () => {
   return (
     <>
-      <h1 className="blueHeading">Advice from real teachers</h1>
+      <h1 className="blueHeading">Ask fellow teachers a question</h1>
 
       <Grid className="AdviceContainer">
         {adviceData.map((item, index) => (
