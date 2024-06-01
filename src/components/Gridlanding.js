@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import LargeLogo from "../assets/GrowthBlueHQ.png";
 import LogoText from "../assets/TopGridText.png";
 import GrowthSM from "../assets/GrowthSM.svg";
+import smallTop from "../assets/smallTop.svg";
 import "../styles/Gridlanding.css";
 import SkillLanding from "./Skilllanding";
 import AdviceLanding from "./Advicelanding";
@@ -18,13 +19,14 @@ const GridLanding = () => {
     <>
       <Grid className="GridContainer">
         <Grid className="ImageContainer">
-          {matches ? null : <img src={LargeLogo} alt="Growth Logo" />}
+          {matches ? null : (<img src={LargeLogo} alt="Growth Logo" />)}
           {min ? null : (
             <img src={GrowthSM} style={{ paddingTop: "30px" }} alt="Growth" />
           )}
         </Grid>
         <Grid className="ImageContainerText">
-          <img src={LogoText} alt="LogoText" />
+          {matches ? null : (<img src={LogoText} alt="LogoText" />)}
+           {min ? null : (<img src={smallTop] alt="Logo Explanation" />)}
         </Grid>
       </Grid>
       <Grid

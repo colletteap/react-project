@@ -35,23 +35,23 @@
 
 .imgContainerSm {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-items: center;
   align-items: center;
   justify-content: center;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0px 10px;
+  gap: 0px 5px;
   padding: 10px;
-  width: 60%;
+  width: 70%;
 }
 
 @media (max-width: 768px) {
   .imgContainer {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     padding-bottom: 20px;
   }
   .img {
