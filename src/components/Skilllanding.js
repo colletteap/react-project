@@ -12,7 +12,7 @@ const SkillLanding = () => {
 
   return (
     <>
-      <h1 className="whiteHeading">Skills from real teachers</h1>
+      <h1 className="whiteHeading">Learn skills from fellow teachers</h1>
       <Grid>
         <Grid item xs={6} className="skillButton">
           <SkillLandingDropDown />
